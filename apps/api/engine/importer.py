@@ -6,6 +6,7 @@ write to storage; the API layer decides what to keep.
 from __future__ import annotations
 
 import datetime as dt
+import json
 import re
 import uuid
 from pathlib import Path
@@ -52,15 +53,37 @@ CONTEXT_KEYWORDS: dict[str, str] = {
     "late_night": r"late night|up late|didn.t sleep|no sleep|tired|exhaust",
 }
 
-NAME_PATTERN = re.compile(r"\b(India|Seema|Shaan|George|Eric|Daphne|Sophia|Sasha|Stuart|Paul|Jonathan|Michael|Beri)\b")
-ROLE_FOR_NAME = {"India": "she", "Seema": "mum", "Shaan": "brother", "George": "dad", "Eric": "friend", "Daphne": "friend", "Sophia": "friend", "Sasha": "friend", "Stuart": "coach", "Paul": "coach", "Jonathan": "nurse", "Michael": "nurse", "Beri": "doctor"}
+# Real names never live in the repo. They are read from a gitignored file next to the diary,
+# apps/api/data/redact_names.json: {"<Name>": "<role word>", ...}. Ask the team for it; without it nothing is redacted,
+# so import_family_workbook refuses to run.
+REDACT_NAMES_FILE = Path(__file__).resolve().parents[1] / "data" / "redact_names.json"
+
+
+def _load_names() -> dict[str, str]:
+    try:
+        return json.loads(REDACT_NAMES_FILE.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return {}
+
+
+ROLE_FOR_NAME = _load_names()
+# Also catches possessives, with or without the apostrophe ("X's", "X’s", "Xs").
+NAME_PATTERN = re.compile(r"\b(" + "|".join(map(re.escape, ROLE_FOR_NAME)) + r")('s|’s|s)?\b") if ROLE_FOR_NAME else None
 NHS_PATTERN = re.compile(r"\b\d{3}\s?\d{3}\s?\d{4}\b")
+
+
+def _role(m: re.Match) -> str:
+    role = ROLE_FOR_NAME.get(m.group(1), "someone")
+    if not m.group(2):
+        return role
+    return "her" if role == "she" else f"{role}'s"
 
 
 def redact(text: str | None) -> str:
     if not text:
         return ""
-    text = NAME_PATTERN.sub(lambda m: ROLE_FOR_NAME.get(m.group(1), "someone"), text)
+    if NAME_PATTERN is not None:
+        text = NAME_PATTERN.sub(_role, text)
     text = NHS_PATTERN.sub("[nhs number removed]", text)
     return text.strip()
 
@@ -102,6 +125,8 @@ def import_family_workbook(path: str | Path, tz: str = TZ) -> tuple[list[Seizure
     Returns (events, warnings). Rows without a seizure date are dropped; times default to 12:00 when missing
     (flagged in warnings and as confidence=guess).
     """
+    if not ROLE_FOR_NAME:
+        raise RuntimeError(f"{REDACT_NAMES_FILE} is missing, so names in the notes cannot be redacted. Ask the team for it.")
     import openpyxl  # local import keeps engine importable without openpyxl in other contexts
 
     zone = ZoneInfo(tz)

@@ -8,7 +8,11 @@ from engine import import_family_workbook, EngineData, default_profile
 
 @pytest.fixture(scope="session")
 def diary():
-    events, _ = import_family_workbook(HERE.parent / "data" / "family_diary.xlsx")
+    # The family's workbook and the names file are private and not in the repo; get them from the team.
+    path = HERE.parent / "data" / "family_diary.xlsx"
+    if not path.exists() or not (HERE.parent / "data" / "redact_names.json").exists():
+        pytest.skip("private diary data (family_diary.xlsx, redact_names.json) not present")
+    events, _ = import_family_workbook(path)
     return events
 
 @pytest.fixture(scope="session")

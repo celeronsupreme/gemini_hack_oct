@@ -8,7 +8,8 @@ def test_import_counts(diary):
     assert len(diary) == 2598
     assert sum(e.severity == "severe" for e in diary) == 791
     assert all(e.start_time.tzinfo is not None for e in diary)
-    assert not any("Seema" in (e.notes or "") for e in diary), "names must be redacted on import"
+    from engine.importer import ROLE_FOR_NAME  # real names live only in the gitignored data/redact_names.json
+    assert ROLE_FOR_NAME and not any(n in (e.notes or "") for n in ROLE_FOR_NAME for e in diary), "names must be redacted on import"
 
 
 def test_hourly_profile_matches_brief(data):

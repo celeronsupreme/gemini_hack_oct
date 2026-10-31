@@ -16,3 +16,16 @@ apps/web/dev-dist/
 analysis/analysis_results_meds_notes.json
 .venv/
 .claude/settings.local.json
+
+# Private: the family's raw diary and the real-names redaction list never go in git (share them out-of-band).
+apps/api/data/*.xlsx
+apps/api/data/redact_names.json
+
+# Local Claude Code config stays on each machine.
+.claude/
+
+# Android build output and machine-specific SDK paths.
+apps/web/android/local.properties
+apps/web/android/.gradle/
+apps/web/android/app/build/
+apps/web/android/build/
