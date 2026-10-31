@@ -842,7 +842,7 @@
    "after_severe_per_week": 1.62,
    "p_value": 0.0147,
    "window_days": 56,
-   "verdict": "no clear change"
+   "verdict": "probable rise"
   },
   {
    "date": "2019-09-17",
@@ -894,7 +894,7 @@
    "after_severe_per_week": 2.12,
    "p_value": 0.0139,
    "window_days": 56,
-   "verdict": "no clear change"
+   "verdict": "probable rise"
   },
   {
    "date": "2020-06-20",
@@ -1167,7 +1167,7 @@
    "after_severe_per_week": 2.0,
    "p_value": 0.0356,
    "window_days": 56,
-   "verdict": "within usual range"
+   "verdict": "probable rise"
   },
   {
    "date": "2024-03-29",
@@ -1284,7 +1284,7 @@
    "after_severe_per_week": 2.75,
    "p_value": 0.011,
    "window_days": 56,
-   "verdict": "within usual range"
+   "verdict": "probable rise"
   }
  ]
 }

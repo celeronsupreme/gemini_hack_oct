@@ -353,7 +353,7 @@
     "after_severe_per_week": 1.62,
     "p_value": 0.0147,
     "window_days": 56,
-    "verdict": "no clear change"
+    "verdict": "probable rise"
    },
    {
     "date": "2019-09-17",
@@ -405,7 +405,7 @@
     "after_severe_per_week": 2.12,
     "p_value": 0.0139,
     "window_days": 56,
-    "verdict": "no clear change"
+    "verdict": "probable rise"
    },
    {
     "date": "2020-06-20",
@@ -678,7 +678,7 @@
     "after_severe_per_week": 2.0,
     "p_value": 0.0356,
     "window_days": 56,
-    "verdict": "within usual range"
+    "verdict": "probable rise"
    },
    {
     "date": "2024-03-29",
@@ -795,7 +795,7 @@
     "after_severe_per_week": 2.75,
     "p_value": 0.011,
     "window_days": 56,
-    "verdict": "within usual range"
+    "verdict": "probable rise"
    }
   ],
   "adherence_pct": null,
@@ -980,10 +980,10 @@
    "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
    "plain_text": "Of 51 seizures whose notes mention hot shower or bath, 53% were severe, 1.8\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
    "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
-   "computed_at": "2026-10-31T13:36:01.331062Z",
+   "computed_at": "2026-10-31T13:47:17.736746Z",
    "history": [
     {
-     "at": "2026-10-31T13:36:01.331062Z",
+     "at": "2026-10-31T13:47:17.736746Z",
      "rung": "emerging"
     }
    ]
@@ -1011,10 +1011,10 @@
    "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
    "plain_text": "Of 126 seizures whose notes mention exercise, 49% were severe, 1.7\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
    "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
-   "computed_at": "2026-10-31T13:36:01.375145Z",
+   "computed_at": "2026-10-31T13:47:17.763908Z",
    "history": [
     {
-     "at": "2026-10-31T13:36:01.375145Z",
+     "at": "2026-10-31T13:47:17.763908Z",
      "rung": "emerging"
     }
    ]
@@ -1042,10 +1042,10 @@
    "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
    "plain_text": "Of 34 seizures whose notes mention travel, 50% were severe, 1.7\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
    "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
-   "computed_at": "2026-10-31T13:36:01.361111Z",
+   "computed_at": "2026-10-31T13:47:17.755839Z",
    "history": [
     {
-     "at": "2026-10-31T13:36:01.361111Z",
+     "at": "2026-10-31T13:47:17.755839Z",
      "rung": "emerging"
     }
    ]
@@ -1073,10 +1073,10 @@
    "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
    "plain_text": "Of 49 seizures whose notes mention period, 49% were severe, 1.6\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
    "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
-   "computed_at": "2026-10-31T13:36:01.346227Z",
+   "computed_at": "2026-10-31T13:47:17.746753Z",
    "history": [
     {
-     "at": "2026-10-31T13:36:01.346227Z",
+     "at": "2026-10-31T13:47:17.746753Z",
      "rung": "emerging"
     }
    ]
@@ -1104,10 +1104,10 @@
    "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
    "plain_text": "Of 66 seizures whose notes mention being upset, 44% were severe, 1.5\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
    "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
-   "computed_at": "2026-10-31T13:36:01.391835Z",
+   "computed_at": "2026-10-31T13:47:17.773697Z",
    "history": [
     {
-     "at": "2026-10-31T13:36:01.391835Z",
+     "at": "2026-10-31T13:47:17.773697Z",
      "rung": "emerging"
     }
    ]

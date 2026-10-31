@@ -1,3 +1,4 @@
+import _paths  # noqa: F401
 """Deterministic analysis engine. Pure functions over EngineData; no I/O, no network."""
 from .data import EngineData, default_profile, ensure_tz, half_life_for  # noqa: F401
 from .risk import compute_risk, score_grid, thresholds  # noqa: F401

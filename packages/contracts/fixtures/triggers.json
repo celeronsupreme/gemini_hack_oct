@@ -22,10 +22,10 @@
   "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
   "plain_text": "Of 51 seizures whose notes mention hot shower or bath, 53% were severe, 1.8\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
   "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
-  "computed_at": "2026-10-31T13:36:01.331062Z",
+  "computed_at": "2026-10-31T13:47:17.736746Z",
   "history": [
    {
-    "at": "2026-10-31T13:36:01.331062Z",
+    "at": "2026-10-31T13:47:17.736746Z",
     "rung": "emerging"
    }
   ]
@@ -53,10 +53,10 @@
   "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
   "plain_text": "Of 126 seizures whose notes mention exercise, 49% were severe, 1.7\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
   "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
-  "computed_at": "2026-10-31T13:36:01.375145Z",
+  "computed_at": "2026-10-31T13:47:17.763908Z",
   "history": [
    {
-    "at": "2026-10-31T13:36:01.375145Z",
+    "at": "2026-10-31T13:47:17.763908Z",
     "rung": "emerging"
    }
   ]
@@ -84,10 +84,10 @@
   "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
   "plain_text": "Of 34 seizures whose notes mention travel, 50% were severe, 1.7\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
   "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
-  "computed_at": "2026-10-31T13:36:01.361111Z",
+  "computed_at": "2026-10-31T13:47:17.755839Z",
   "history": [
    {
-    "at": "2026-10-31T13:36:01.361111Z",
+    "at": "2026-10-31T13:47:17.755839Z",
     "rung": "emerging"
    }
   ]
@@ -115,10 +115,10 @@
   "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
   "plain_text": "Of 49 seizures whose notes mention period, 49% were severe, 1.6\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
   "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
-  "computed_at": "2026-10-31T13:36:01.346227Z",
+  "computed_at": "2026-10-31T13:47:17.746753Z",
   "history": [
    {
-    "at": "2026-10-31T13:36:01.346227Z",
+    "at": "2026-10-31T13:47:17.746753Z",
     "rung": "emerging"
    }
   ]
@@ -146,10 +146,10 @@
   "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
   "plain_text": "Of 66 seizures whose notes mention being upset, 44% were severe, 1.5\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
   "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
-  "computed_at": "2026-10-31T13:36:01.391835Z",
+  "computed_at": "2026-10-31T13:47:17.773697Z",
   "history": [
    {
-    "at": "2026-10-31T13:36:01.391835Z",
+    "at": "2026-10-31T13:47:17.773697Z",
     "rung": "emerging"
    }
   ]
@@ -177,10 +177,10 @@
   "next_step": "Keep logging screens; I will ask about it at check-in.",
   "plain_text": "No sign of an effect yet (0.7\u00d7 within 6 h across 10 exposures), but 10 more exposures are needed before that means anything.",
   "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
-  "computed_at": "2026-10-31T13:36:01.406786Z",
+  "computed_at": "2026-10-31T13:47:17.782357Z",
   "history": [
    {
-    "at": "2026-10-31T13:36:01.406786Z",
+    "at": "2026-10-31T13:47:17.782357Z",
     "rung": "watching"
    }
   ]
@@ -208,10 +208,10 @@
   "next_step": "Keep logging swimming; I will ask about it at check-in.",
   "plain_text": "Logged. 0 days so far; not enough to compare yet. 10 more days and I can start comparing.",
   "method": "daily factor: no check-ins yet",
-  "computed_at": "2026-10-31T13:36:01.419996Z",
+  "computed_at": "2026-10-31T13:47:17.790066Z",
   "history": [
    {
-    "at": "2026-10-31T13:36:01.419996Z",
+    "at": "2026-10-31T13:47:17.790066Z",
     "rung": "watching"
    }
   ]
@@ -239,10 +239,10 @@
   "next_step": "Keep logging stress; I will ask about it at check-in.",
   "plain_text": "Logged. 0 days so far; not enough to compare yet. 10 more days and I can start comparing.",
   "method": "daily factor: no check-ins yet",
-  "computed_at": "2026-10-31T13:36:01.420070Z",
+  "computed_at": "2026-10-31T13:47:17.790112Z",
   "history": [
    {
-    "at": "2026-10-31T13:36:01.420070Z",
+    "at": "2026-10-31T13:47:17.790112Z",
     "rung": "watching"
    }
   ]

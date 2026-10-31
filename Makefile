@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-PY := PYTHONPATH=packages/contracts/py:apps/api python3 -W ignore
+PY := python3 -W ignore
 
 .PHONY: setup contracts seed api web dev test demo-check clean
 
@@ -18,7 +18,7 @@ fixtures:         ## rewrite fixtures from whatever is in the database
 	cd apps/api && $(PY) scripts/seed.py --fixtures
 
 api:              ## run the API on :8000
-	cd apps/api && PYTHONPATH=../../packages/contracts/py:. python3 -W ignore -m uvicorn app.main:app --reload --port 8000
+	cd apps/api && python3 -W ignore -m uvicorn app.main:app --reload --port 8000
 
 web:              ## run the web app on :5173 (proxies /api -> :8000)
 	pnpm --filter @seizure/web dev
