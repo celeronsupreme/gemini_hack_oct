@@ -20,6 +20,7 @@ EVENT_COLUMNS = [
     "id", "start_time", "duration_s", "duration_estimated", "type", "severity", "awareness",
     "asleep_at_onset", "recovered_at", "injury", "rescue_drug", "rescue_dose_mg", "warning_before",
     "context_tags", "notes", "original_label", "who_logged", "confidence", "possibly_non_epileptic", "source",
+    "factors", "recovery_text", "synthetic",
 ]
 DOSE_COLUMNS = ["id", "drug", "dose_mg", "scheduled_time", "taken_time", "skipped", "reason", "source"]
 CHECKIN_COLUMNS = [
@@ -85,6 +86,7 @@ class EngineData:
                 "who_logged": str(e.who_logged.value if hasattr(e.who_logged, "value") else e.who_logged),
                 "confidence": str(e.confidence.value if hasattr(e.confidence, "value") else e.confidence),
                 "possibly_non_epileptic": bool(e.possibly_non_epileptic), "source": str(e.source.value if hasattr(e.source, "value") else e.source),
+                "factors": [str(f).strip() for f in (e.factors or []) if str(f).strip()], "recovery_text": e.recovery_text, "synthetic": bool(e.synthetic),
             })
         ev = pd.DataFrame(ev_rows, columns=EVENT_COLUMNS)
         if len(ev):
@@ -141,6 +143,21 @@ class EngineData:
 
     def now(self) -> pd.Timestamp:
         return pd.Timestamp.now(tz=self.tz)
+
+
+def factor_matches(name: str, factors) -> bool:
+    """True when a free-text factor list names this trigger: equal ignoring case, or the trigger name appears as whole
+    words inside a factor ("skipped meal" matches "Skipped meal at lunch")."""
+    import re
+    key = " ".join(str(name).lower().split())
+    if not key:
+        return False
+    pat = re.compile(rf"(?<!\w){re.escape(key)}(?!\w)")
+    for f in factors or []:
+        fl = " ".join(str(f).lower().split())
+        if fl == key or pat.search(fl):
+            return True
+    return False
 
 
 def to_ns(idx) -> "np.ndarray":

@@ -73,7 +73,10 @@
         "confidence": {"$ref": "#/$defs/Confidence"},
         "possibly_non_epileptic": {"type": "boolean", "default": false},
         "source": {"$ref": "#/$defs/Source"},
-        "transcript_hash": {"type": ["string", "null"]}
+        "transcript_hash": {"type": ["string", "null"]},
+        "factors": {"type": "array", "items": {"type": "string"}, "default": [], "description": "Free-text factors before the seizure, in the carer's words (e.g. Missed dose, Poor sleep, Skipped meal). Separate from context_tags."},
+        "recovery_text": {"type": ["string", "null"], "default": null, "description": "Free-text recovery, e.g. 'Sleepy for an hour'."},
+        "synthetic": {"type": "boolean", "default": false, "description": "True only for generated demo rows (scripts/backfill_demo.py)."}
       },
       "required": ["start_time", "type", "severity", "who_logged", "confidence", "source"],
       "additionalProperties": false
@@ -403,7 +406,8 @@
         "menstruating": {"type": ["boolean", "null"]},
         "sleep_window": {"type": "object", "properties": {"start": {"type": "string"}, "end": {"type": "string"}}, "required": ["start", "end"], "additionalProperties": false},
         "custom_vocabulary": {"type": "array", "items": {"type": "string"}},
-        "consent": {"type": "object", "properties": {"gemini_processing": {"type": "boolean"}, "accepted_at": {"type": ["string", "null"], "format": "date-time"}}, "required": ["gemini_processing"], "additionalProperties": false}
+        "consent": {"type": "object", "properties": {"gemini_processing": {"type": "boolean"}, "accepted_at": {"type": ["string", "null"], "format": "date-time"}}, "required": ["gemini_processing"], "additionalProperties": false},
+        "last_appointment": {"type": ["string", "null"], "format": "date", "default": null, "description": "Date of the last clinic appointment; the report's 'since last visit' window starts here."}
       },
       "required": ["display_name", "role", "medications", "rescue_plan", "sleep_window", "custom_vocabulary", "consent"],
       "additionalProperties": false

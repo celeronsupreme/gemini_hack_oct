@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 
 from contracts import TriggerDefinition, TriggerTest
-from .data import EngineData, to_ns
+from .data import EngineData, factor_matches, to_ns
 
 MIN_UNITS_VERDICT = 10
 MIN_UNITS_NEGATIVE = 20
@@ -190,9 +190,20 @@ def _daily_factor_test(data: EngineData, defn: TriggerDefinition) -> dict:
     return dict(units=n1, unexposed_units=n2, k1=k1, k2=k2, rate1=k1 / n1 if n1 else 0.0, rate2=k2 / n2 if n2 else 0.0, ratio=ratio, ci_low=lo, ci_high=hi, p=p, ratio_bands=None, method=f"daily factor: seizures per day on days with {defn.name} vs days with a check-in and without it; permutation test ({PERMUTATIONS} shuffles)")
 
 
-def _tag_only_test(data: EngineData, tag: str) -> dict:
+def _factor_mask(data: EngineData, name: str) -> pd.Series:
+    """Seizure rows whose free-text factors name this trigger (case-insensitive)."""
     ev = data.events
-    has = ev["context_tags"].apply(lambda t: tag in (t or []))
+    if not len(ev) or "factors" not in ev.columns:
+        return pd.Series(False, index=ev.index, dtype=bool)
+    return ev["factors"].apply(lambda f: factor_matches(name, f)).astype(bool)
+
+
+def _tag_only_test(data: EngineData, tag: str | None, name: str | None = None) -> dict:
+    """Seizure-row evidence only: rows carrying the context tag, or a free-text factor equal to / containing the name."""
+    ev = data.events
+    has = ev["context_tags"].apply(lambda t: bool(tag) and tag in (t or [])).astype(bool) if len(ev) else pd.Series(dtype=bool)
+    if name:
+        has = has | _factor_mask(data, name)
     n1 = int(has.sum()); n2 = int((~has).sum())
     k1 = int((ev.loc[has, "severity"] == "severe").sum()); k2 = int((ev.loc[~has, "severity"] == "severe").sum())
     ratio, lo, hi = _rate_ratio_ci(k1, n1, k2, n2)
@@ -204,7 +215,7 @@ def _tag_only_test(data: EngineData, tag: str) -> dict:
             if sev[pick].sum() >= k1:
                 ge += 1
         p = (ge + 1) / (PERMUTATIONS + 1)
-    return dict(units=n1, unexposed_units=n2, k1=k1, k2=k2, rate1=k1 / n1 if n1 else 0.0, rate2=k2 / n2 if n2 else 0.0, ratio=ratio, ci_low=lo, ci_high=hi, p=p, ratio_bands=None, method="notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging")
+    return dict(units=n1, unexposed_units=n2, k1=k1, k2=k2, rate1=k1 / n1 if n1 else 0.0, rate2=k2 / n2 if n2 else 0.0, ratio=ratio, ci_low=lo, ci_high=hi, p=p, ratio_bands=None, method="notes only: share of severe seizures among seizures whose note, tag or factors mention this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging")
 
 
 def test_trigger(data: EngineData, defn: TriggerDefinition, as_of: pd.Timestamp | None = None, history: list[dict] | None = None) -> TriggerTest:
@@ -214,6 +225,9 @@ def test_trigger(data: EngineData, defn: TriggerDefinition, as_of: pd.Timestamp 
     cap = False
     if kind == "daily_factor":
         res = _daily_factor_test(data, defn)
+        if res["units"] == 0 and _factor_mask(data, defn.name).any():
+            # no check-in evidence yet, but seizures carry it as a factor: same notes-only path as tags, capped
+            res = _tag_only_test(data, tag, defn.name); cap = True
     elif kind == "symptom":
         sy = data.symptoms
         starts = pd.DatetimeIndex(sy[sy["text"].str.lower().str.contains(defn.name.lower()) | (sy["text"].str.len() > 0)]["time"]) if len(sy) else pd.DatetimeIndex([])
@@ -223,8 +237,8 @@ def test_trigger(data: EngineData, defn: TriggerDefinition, as_of: pd.Timestamp 
         sel = ex[(ex["name"].str.lower() == defn.name.lower()) | (ex["name"].str.lower() == (tag or "").lower())] if len(ex) else ex
         if len(sel):
             res = _timed_exposure_test(data, defn.name, pd.DatetimeIndex(sel["end"]), defn.window_hours or 6, "exposure")
-        elif tag:
-            res = _tag_only_test(data, tag); cap = True
+        elif tag or _factor_mask(data, defn.name).any():
+            res = _tag_only_test(data, tag, defn.name); cap = True
         else:
             res = dict(units=0, unexposed_units=0, k1=0, k2=0, rate1=0.0, rate2=0.0, ratio=None, ci_low=None, ci_high=None, p=None, ratio_bands=None, method="exposure: nothing logged yet")
     confounded = res["ratio_bands"] is not None and res["ratio"] is not None and res["ratio_bands"] < res["ratio"] * (2 / 3)

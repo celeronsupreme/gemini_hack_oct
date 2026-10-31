@@ -86,6 +86,18 @@ export interface SeizureEvent {
   possibly_non_epileptic?: boolean;
   source: Source;
   transcript_hash?: string | null;
+  /**
+   * Free-text factors before the seizure, in the carer's words (e.g. Missed dose, Poor sleep, Skipped meal). Separate from context_tags.
+   */
+  factors?: string[];
+  /**
+   * Free-text recovery, e.g. 'Sleepy for an hour'.
+   */
+  recovery_text?: string | null;
+  /**
+   * True only for generated demo rows (scripts/backfill_demo.py).
+   */
+  synthetic?: boolean;
 }
 export interface RescueMed {
   drug: string;
@@ -381,6 +393,10 @@ export interface Profile {
     gemini_processing: boolean;
     accepted_at?: string | null;
   };
+  /**
+   * Date of the last clinic appointment; the report's 'since last visit' window starts here.
+   */
+  last_appointment?: string | null;
 }
 export interface MedicationSchedule {
   drug: string;

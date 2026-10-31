@@ -1,29 +1,29 @@
 {
  "tier": "high",
- "score": 4.0,
- "computed_at": "2026-08-24T18:30:00+01:00",
+ "score": 4.2,
+ "computed_at": "2026-10-31T18:30:00Z",
  "horizon_hours": 3,
  "reasons": [
   {
    "factor": "hour_band",
    "points": 3.1,
-   "text": "18:00 to 21:00 is your busiest stretch: 39% of your seizures start in these hours"
+   "text": "6 pm\u20139 pm is her busiest stretch"
+  },
+  {
+   "factor": "week_vs_baseline",
+   "points": 0.5,
+   "text": "1 in a week, a bit above usual"
   },
   {
    "factor": "today_count",
-   "points": 0.6,
-   "text": "2 seizures already today"
-  },
-  {
-   "factor": "recent_gap",
    "points": 0.3,
-   "text": "last seizure 2.6 h ago; a second one within 6 h is common for you"
+   "text": "One already today"
   }
  ],
  "learning_mode": false,
  "overnight_no_data": false,
  "thresholds": {
-  "medium": 1.8,
+  "medium": 1.6,
   "high": 3.1
  },
  "disclaimer": "A pattern from your own diary over the next few hours, not a prediction. Low never means safe. Research prototype."

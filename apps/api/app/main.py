@@ -94,6 +94,15 @@ def patch_event(event_id: str, patch: dict = Body(...)):
     return updated
 
 
+@app.delete("/events/{event_id}")
+def delete_event(event_id: str):
+    """Discard a seizure (the timer's Discard, the details sheet's Delete)."""
+    if not store.delete_event(event_id):
+        raise HTTPException(404, "event not found")
+    service.invalidate()
+    return {"ok": True}
+
+
 @app.post("/doses", response_model=Dose)
 def post_dose(d: Dose):
     saved = store.add_doses([d])[0]; service.invalidate()
@@ -176,7 +185,7 @@ def archive_trigger(trigger_id: str):
 
 # ---------- report ----------
 @app.get("/report/clinic", response_model=ClinicReport)
-def report_clinic(mock: int = 0, window: int = 90, at: str | None = None):
+def report_clinic(mock: int = 0, window: int = Query(90, ge=1, le=400, description="days; the UI sends 90, 365 or days since Profile.last_appointment"), at: str | None = None):
     return fixture("report_clinic") if mock else service.clinic_report(window_days=window, at=at)
 
 

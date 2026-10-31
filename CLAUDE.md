@@ -68,18 +68,27 @@ seizures and their carers. Hackathon build; the architecture below is settled, e
 Work here is either **UI changes in `apps/web`** or **improving a claude.ai artifact**. Don't edit `apps/api` or the
 contracts from this seat; if the UI needs a field, write it under "UI" in PROGRESS.md for the backend owner.
 
-- Routes: `/` Home (tap button + timer, risk tile, this-week baseline, today's list, Emergency link), `/log` (Live voice,
-  or a typed transcript → `/transcripts/extract` → editable record → confirm → commit or PATCH the tapped event),
-  `/timeline` "Patterns" (hour histogram, monthly bars with medication markers, replay scrubber → `setRiskAt`),
-  `/triggers` (add trigger, rung chips, expandable numbers, archive, "Ask the diary"), `/report` (print stylesheet = PDF),
-  `/emergency`, `/import` (not in the nav).
-- Data flow: pages read the zustand store (`state/store.ts`) or call `api` (`api/client.ts`) directly. `VITE_USE_MOCK=1`
-  appends `?mock=1`, so reads are served from fixtures while writes still hit the real API. Types come only from
-  `@seizure/contracts` (`packages/contracts/ts/contracts.ts`).
-- Styling: every colour/size is a token in `styles/app.css` (`--low/--medium/--high/--nodata`, `--emergency`, `--tap: 56px`).
-  Charts are hand-rolled SVG in `components/Charts.tsx`. Dark tokens exist but are below the line.
-- Known UI gaps: there is no emergency link on screens other than Home/TapButton (the spec says one tap from **every** screen); there are no
-  provenance captions on some numbers; `/import` is unreachable from the nav; Nav uses emoji icons.
+- **The UI follows the Home v5 design reference** in `references/` (`DESIGN_HANDOFF.md` + `seizure-app-design.zip` →
+  `design/Main.dc.html`; build only the final variants: glow risk card, "timeline" details, "room" assistant). Ask the
+  user before deviating from it. The plan and the decisions made with the user are in `docs/ui_redesign_plan.md`.
+- Shape: no routes and no tab bar. A screen stack lives in the store (`screen`: home | trends | account | timer | talk;
+  `sheet`: detail | export | emergency | medicines | privacy). `App.tsx` mounts everything inside one phone-width `.stage`.
+  - `screens/Home.tsx` (risk card + Today card + Seizure bar; fits 390×844, no scroll)
+  - `Timer.tsx` (blue fill, emergency card from 5:00)
+  - `Talk.tsx` ("blue room": Live session, `note` chips, Track X? cards, Save to diary)
+  - `Details.tsx` (Lead-up sheet)
+  - `Trends.tsx`, `Account.tsx` (+ Emergency/Medicines/Privacy sheets), `Export.tsx` (PDF via `report/PrintReport.tsx` + `window.print()`, CSV built client-side)
+- Voice flow: the Seizure bar writes the tap event in the background and starts the timer. "Tell me about it" opens the
+  Live session with that event id (the server puts the timed start and duration into the locked prompt). The agent only has
+  `note` (answered in the browser, SILENT) and `get_todays_meds`. **Save to diary** runs `/transcripts/extract`, applies
+  the chips the carer kept (removed chips are removed facts) and PATCHes the tapped event. Confirmed "Track X?" cards
+  become `POST /triggers`.
+- Shared UI code: `ui/icons.tsx` (the design's `IC` stroke paths; no emoji), `ui/catalogue.ts` (trigger catalogue →
+  context_tags or `factors`, rung captions), `ui/format.ts`. Every colour is a token in `styles/app.css` (exact handoff values).
+- Deep links for demos and screenshots: `?screen=trends|account`, `?sheet=export|csv|emergency|medicines|privacy|latest`,
+  `?frame=1` (pins a 390×844 stage left). Headless Chrome can't go narrower than ~500px, so use `?frame=1` for shots.
+- Demo data: the real diary ends 24 Aug 2026 and the app runs on the real clock. `make demo-data` fills the gap with
+  synthetic rows (`synthetic: true`, shown as "Demo data"); `make demo-data-clear` removes them.
 - Checks before done: `pnpm --filter @seizure/web build` (runs `tsc -b`), then look at the screen at phone width.
 
 ### Specs and artifacts

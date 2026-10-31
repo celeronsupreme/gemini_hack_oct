@@ -49,10 +49,37 @@ Works end to end, verified by `make test` (10 tests) and `scripts/demo_check.sh`
     committing a duplicate. `liveClient` opens the mic on tap and buffers audio until setupComplete.
   - Verified headless: the timed path never asks time/duration and saves once after yes, with the id; the untimed path
     asks start time first; merge keeps the timer values (scratch DB). Build ok, `make test` 10/10. Not yet tried by voice in the browser.
+- 31 Oct ~15:35, Backend (UI redesign):
+  - Contracts: `SeizureEvent.factors: string[]` (free text, separate from `context_tags`), `SeizureEvent.recovery_text`,
+    `SeizureEvent.synthetic`, `Profile.last_appointment` (date). `make contracts` regenerated both sides; `make seed` rewrote fixtures.
+  - `DELETE /events/{id}` (404 if missing, `{"ok": true}`, invalidates the cache); `store.delete_event(s)`. PATCH takes the new fields.
+  - `/report/clinic?window=` is any int 1–400 (422 outside).
+  - Risk `reasons[].text` is now a short third-person value ("6 pm–9 pm is her busiest stretch", "Two already today",
+    "Last one 2.6 h ago"; "your" when role=self). Scores, weights, thresholds, chosen reasons and `factor` keys unchanged.
+  - Trigger lab: exposure triggers (and daily factors with no check-in evidence) also match seizures whose `factors`
+    equal or contain the trigger name, case-insensitive, via the notes-only path (capped at emerging). `POST /triggers
+    {"name":"Skipped meal","kind":"exposure"}` → watching.
+  - `scripts/backfill_demo.py` + `make demo-data` (`SEED=n`) / `make demo-data-clear`: synthetic seizures from 25 Aug to
+    now from her own rate/hours/types/tags/factors, all `synthetic: true`; idempotent. Not run on app.db.
+  - `tests/test_redesign.py` (6 tests); `test_api.py` live-token check now follows `gemini.live.TOOL_DECLARATIONS`
+    (the `note` tool change). `make test` 16/16.
 
 ## UI
 - 31 Oct, UI seat (Windows): ingested the skeleton; `make demo-check` passes (10 tests, 13 endpoints 200, web build) and
   `make dev` serves the web app on :5173 with the API proxied, in mock-Gemini mode. Makefile + demo_check.sh got a
   Windows branch; the rollup pin and esbuild allow are in pnpm-workspace.yaml; the lockfile was re-resolved (see CLAUDE.md).
-- UI gaps to pick up: emergency link from every screen (only Home has one), provenance captions on numbers, Import
-  reachable from the nav, Nav icons.
+- ~16:00, **UI rebuilt to the Home v5 design reference** (`references/`, plan in `docs/ui_redesign_plan.md`):
+  - Removed the tab bar and the old pages (Log, Timeline, Triggers, Report, Import, Emergency).
+  - Added Home, Timer, Assistant "blue room", Lead-up details sheet, Trends, Account, Export (PDF + CSV), plus the Emergency, Medicines and Privacy sheets.
+  - Live agent: offered only `note` + `get_todays_meds` (`gemini/live.py`). Nothing saves until "Save to diary".
+  - Verified: web build, `make test` 16/16, API live with the new routes; screenshots of Home, Trends, Account, Export and Details at 390×844 match the reference.
+  - Not yet clicked through in a real browser: the timer → talk → save flow with a mic, PDF printing, the CSV downloads.
+  - The replay scrubber and "Ask the diary" (Argon) have no place in the reference, so they are gone from the UI (the endpoints remain).
+  - Overnight (00:00–07:00) the risk card correctly shows "No data".
+- 31 Oct ~16:00, **Android APK** (Capacitor 8.6, `apps/web/capacitor.config.json`, `apps/web/android/`):
+  - Built with `bash apps/web/scripts/build-apk.sh http://<pc-lan-ip>:8000`. The API base is baked in, so rebuild when the IP changes.
+  - The bundle is served from `http://localhost` (androidScheme http), so the mic counts as a secure context and cleartext calls to the PC work.
+  - RECORD_AUDIO and MODIFY_AUDIO_SETTINGS are in the manifest. `CAP_BUILD=1` turns off the PWA service worker for this build.
+  - Toolchain is portable under `%LOCALAPPDATA%\AndroidBuild` (JDK 21 + SDK 36). `sdkmanager.bat` fails on the space in "Arthur Clark", so call it via `C:\Users\ARTHUR~1\...`.
+  - The phone needs the API bound to the LAN (`uvicorn ... --host 0.0.0.0`) and port 8000 open in Windows Firewall.
+  - Built and checked with aapt2 (package, permissions, bundled assets). **Not yet run on a device.** Uses the default Capacitor icon.

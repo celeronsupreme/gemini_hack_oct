@@ -1,31 +1,6 @@
 [
  {
-  "id": "30c97fc4-c9b9-4028-93d9-3f92cfe407a4",
-  "start_time": "2026-04-02T18:31:00+01:00",
-  "duration_s": 143,
-  "duration_estimated": false,
-  "still_going": false,
-  "type": "aware",
-  "severity": "mild",
-  "awareness": "kept",
-  "asleep_at_onset": null,
-  "recovered_at": null,
-  "injury": null,
-  "incontinence": null,
-  "rescue_med": null,
-  "warning_before": null,
-  "warning_text": null,
-  "context_tags": [],
-  "notes": null,
-  "original_label": "Quiet and aware",
-  "who_logged": "carer",
-  "confidence": "probable",
-  "possibly_non_epileptic": false,
-  "source": "import",
-  "transcript_hash": null
- },
- {
-  "id": "eaf73ef7-72d6-4ed4-bf28-dbf7a90e9ca6",
+  "id": "8f957742-3752-4d03-bf72-0183d363bef6",
   "start_time": "2026-04-02T20:08:00+01:00",
   "duration_s": 11,
   "duration_estimated": false,
@@ -47,10 +22,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "36153c74-de19-48ea-8aca-e93a5c23cb35",
+  "id": "f4cd62d8-bad3-43bb-a9c7-140fe0124bb1",
   "start_time": "2026-04-03T15:29:00+01:00",
   "duration_s": 111,
   "duration_estimated": false,
@@ -72,10 +50,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "32c6798a-0f0b-42cf-8da6-3fb075094dcc",
+  "id": "edbe3766-cead-4109-9a67-f38901faa2c1",
   "start_time": "2026-04-03T18:25:00+01:00",
   "duration_s": 21,
   "duration_estimated": false,
@@ -97,10 +78,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "70a4b3e4-4cee-4629-813c-a39cfe260bca",
+  "id": "6f6ee668-89d8-411a-829b-e29bab719467",
   "start_time": "2026-04-04T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -124,10 +108,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "99b09221-6c5c-4163-a426-cd9ccff3d411",
+  "id": "9c2d4c0c-6d17-4d0b-8634-280d7d419272",
   "start_time": "2026-04-04T15:35:00+01:00",
   "duration_s": 20,
   "duration_estimated": false,
@@ -149,10 +136,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "fcad108c-4ba9-4b4a-9b1b-2ccf8b20a1c6",
+  "id": "3126e715-c840-41fd-a130-23745e3656d3",
   "start_time": "2026-04-05T15:31:00+01:00",
   "duration_s": 37,
   "duration_estimated": false,
@@ -174,10 +164,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "34bf0f30-5cc1-43f6-a287-2bb674bdb5ee",
+  "id": "07a71b61-196d-4138-8119-86c7965a1443",
   "start_time": "2026-04-05T20:10:00+01:00",
   "duration_s": 36,
   "duration_estimated": false,
@@ -199,10 +192,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "01c8d299-8a52-4b9e-9f94-8ad0e5663280",
+  "id": "ac36152e-73e8-49a0-8dab-0a5219dbc3bf",
   "start_time": "2026-04-07T19:04:00+01:00",
   "duration_s": 36,
   "duration_estimated": false,
@@ -224,10 +220,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "f9e992e7-be68-4cd0-b0ba-e4c7d666dc75",
+  "id": "55c76ebf-a8f2-474e-9110-ccf2df0b45aa",
   "start_time": "2026-04-09T08:50:00+01:00",
   "duration_s": 13,
   "duration_estimated": false,
@@ -249,10 +248,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "b3b1bbdc-80f9-4068-9329-b3a075ebdead",
+  "id": "5dcd4281-74a2-4fd5-b265-c1ba1ad60fbd",
   "start_time": "2026-04-09T12:59:00+01:00",
   "duration_s": 40,
   "duration_estimated": false,
@@ -274,10 +276,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "fe8b6fd5-849f-4ee8-abf1-427550a07b75",
+  "id": "ddb55dbe-e3fa-4cfb-9636-864697450c49",
   "start_time": "2026-04-09T14:02:00+01:00",
   "duration_s": 250,
   "duration_estimated": false,
@@ -299,10 +304,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "c20aefa3-d4c0-4971-938f-600c8ab2ba9f",
+  "id": "97616fbd-e879-4694-8db7-0d19c9734d9e",
   "start_time": "2026-04-10T13:49:00+01:00",
   "duration_s": 70,
   "duration_estimated": false,
@@ -324,10 +332,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "dba45b64-742c-48ab-ad04-f419081c2e1b",
+  "id": "f31076e1-2481-416b-9162-c1c8cfdd05f5",
   "start_time": "2026-04-10T18:56:00+01:00",
   "duration_s": 125,
   "duration_estimated": false,
@@ -349,10 +360,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "296694b8-d63b-403a-b0b8-05d34b1b9a3f",
+  "id": "0d8fd93d-d39f-49fe-b217-2af3b6a9d433",
   "start_time": "2026-04-11T15:01:00+01:00",
   "duration_s": 28,
   "duration_estimated": false,
@@ -374,10 +388,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "95261d87-1b54-42b7-9ad9-133e553d6db6",
+  "id": "ed15b241-560f-48d6-8c1c-5a5962c117e8",
   "start_time": "2026-04-11T15:11:00+01:00",
   "duration_s": 50,
   "duration_estimated": false,
@@ -399,10 +416,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "6b55ec62-7c02-4ed0-855a-6e4606e18ec4",
+  "id": "9cfa7386-eddd-4c9d-896d-8fb0997037c2",
   "start_time": "2026-04-11T19:19:00+01:00",
   "duration_s": 152,
   "duration_estimated": false,
@@ -424,10 +444,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "a59866c9-5894-42c2-b11c-abcc2357f49d",
+  "id": "1517017c-8fbb-4ad8-bf36-fb8f0f9ca21b",
   "start_time": "2026-04-11T21:59:00+01:00",
   "duration_s": 9,
   "duration_estimated": false,
@@ -449,10 +472,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "787052c6-dfa6-40f7-aebf-969b351eec35",
+  "id": "d38f2431-2780-4c27-8511-43bda97d57c2",
   "start_time": "2026-04-11T22:56:00+01:00",
   "duration_s": 8,
   "duration_estimated": false,
@@ -474,10 +500,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "e20c5c12-1dd9-4bea-9f86-48e2f3e87824",
+  "id": "c27b920e-314d-4cb6-b5d5-1130bc44799f",
   "start_time": "2026-04-12T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -503,10 +532,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "b1a554a1-dab9-4a9a-a451-cd3c9049fc4d",
+  "id": "2cd23c16-386c-4676-a74f-6628b50cbfec",
   "start_time": "2026-04-12T13:38:00+01:00",
   "duration_s": 9,
   "duration_estimated": false,
@@ -528,10 +560,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "d7de7dd1-d32b-41c7-8cb2-4b557e8dbcf5",
+  "id": "9bb09332-6cba-4873-9885-b966f7dc613d",
   "start_time": "2026-04-12T20:01:00+01:00",
   "duration_s": 15,
   "duration_estimated": false,
@@ -553,10 +588,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "23744ad9-e6c7-4905-a752-ea0d9f1fbdb5",
+  "id": "98a9791b-c9e6-40a8-a02b-1802199a835a",
   "start_time": "2026-04-15T19:42:00+01:00",
   "duration_s": 90,
   "duration_estimated": true,
@@ -578,10 +616,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "a3e31375-0b45-419a-bb4c-41b0e7e298fd",
+  "id": "882a3ce2-4e5b-42dc-af31-1e3f1551da21",
   "start_time": "2026-04-16T17:44:00+01:00",
   "duration_s": 109,
   "duration_estimated": false,
@@ -603,10 +644,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "9f2a3b63-14f1-4c4d-a57b-26fb65fff716",
+  "id": "7280242b-b1db-4dbe-92d1-eeec60c31571",
   "start_time": "2026-04-16T20:13:00+01:00",
   "duration_s": 20,
   "duration_estimated": false,
@@ -628,10 +672,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "03a88483-9d95-40ff-b569-e60a88bb05aa",
+  "id": "59ddcdff-467a-4eeb-b826-264827919a33",
   "start_time": "2026-04-16T20:32:00+01:00",
   "duration_s": 18,
   "duration_estimated": false,
@@ -653,10 +700,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "87de81e3-6f3a-4ef8-b78a-b7d2bd897d03",
+  "id": "19c8dd8c-d071-4cb9-979d-33abbcecbc26",
   "start_time": "2026-04-17T16:47:00+01:00",
   "duration_s": 24,
   "duration_estimated": false,
@@ -678,10 +728,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "6c00d4ed-45b9-45b4-8b4c-d7f7e271f39b",
+  "id": "2b1e564e-0c13-422e-8e37-9551dd1e2691",
   "start_time": "2026-04-17T17:09:00+01:00",
   "duration_s": 60,
   "duration_estimated": true,
@@ -703,10 +756,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "5e83acc6-12d8-4c54-8ead-5e431c76193b",
+  "id": "2195b0b4-c1d7-4abd-bd03-2031930b5469",
   "start_time": "2026-04-17T18:24:00+01:00",
   "duration_s": 90,
   "duration_estimated": true,
@@ -728,10 +784,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "9ff9088e-0017-4185-b239-f2a4f863d110",
+  "id": "a2e8e501-8cc4-46e0-a342-bc9ed577e7db",
   "start_time": "2026-04-18T19:35:00+01:00",
   "duration_s": 14,
   "duration_estimated": false,
@@ -753,10 +812,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "749911ba-a009-4225-88a1-c74aa7ced725",
+  "id": "41a4e2e5-465a-4cfa-8ee8-6e9d1b3c2866",
   "start_time": "2026-04-18T20:09:00+01:00",
   "duration_s": 20,
   "duration_estimated": false,
@@ -778,10 +840,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "05b7f81a-2e24-4859-937e-14206e3b17cb",
+  "id": "9e4ff52f-3524-4ece-aa3a-c588d477eac0",
   "start_time": "2026-04-20T13:21:00+01:00",
   "duration_s": 24,
   "duration_estimated": false,
@@ -803,10 +868,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "614d8e91-fc65-4da0-abf3-b149ea31b174",
+  "id": "85388ca6-7c85-4e2b-8643-5b2c036e7741",
   "start_time": "2026-04-20T16:35:00+01:00",
   "duration_s": 25,
   "duration_estimated": false,
@@ -828,10 +896,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "a8dff863-e326-4a74-afc3-af346a10bea4",
+  "id": "39c94d03-0d65-499c-9de1-e306bdcdc9bf",
   "start_time": "2026-04-20T20:48:00+01:00",
   "duration_s": 38,
   "duration_estimated": false,
@@ -853,10 +924,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "620c846d-07cf-4be1-ad10-abf69159858f",
+  "id": "88b017bb-236a-478a-a423-33ee4ae55d80",
   "start_time": "2026-04-21T16:32:00+01:00",
   "duration_s": 39,
   "duration_estimated": false,
@@ -878,10 +952,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "76d055fa-9c7d-45b6-9ef6-efa97ff4f142",
+  "id": "5be2a529-9b78-4293-8d25-80bab7c6a35e",
   "start_time": "2026-04-21T21:08:00+01:00",
   "duration_s": 46,
   "duration_estimated": false,
@@ -903,10 +980,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "f7d721c1-d70c-4b73-b6fc-d489f71e0eed",
+  "id": "e048a1cf-5f6e-43ee-839d-2de072308525",
   "start_time": "2026-04-22T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -932,10 +1012,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "9342faca-7bc0-4bf0-8bce-62037fbb6a55",
+  "id": "bed35705-0fea-49b4-88bd-81cd71fae466",
   "start_time": "2026-04-23T11:38:00+01:00",
   "duration_s": 20,
   "duration_estimated": false,
@@ -957,10 +1040,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "b8ec9b47-b784-4424-9634-8e8e3feeae75",
+  "id": "481b8ec4-5865-4958-a6e0-574632b93a13",
   "start_time": "2026-04-23T14:53:00+01:00",
   "duration_s": 14,
   "duration_estimated": false,
@@ -982,10 +1068,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "c17fafea-fb76-42be-85b2-ffea320f20b3",
+  "id": "243a8fb9-72a9-4f05-9ec9-b43365ef91c2",
   "start_time": "2026-04-24T14:33:00+01:00",
   "duration_s": 10,
   "duration_estimated": false,
@@ -1007,10 +1096,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "cc188554-ee62-4893-ab97-6dbfde047e7b",
+  "id": "34189850-6643-472a-b004-e1f843215c9e",
   "start_time": "2026-04-24T14:34:00+01:00",
   "duration_s": 15,
   "duration_estimated": false,
@@ -1032,10 +1124,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "2295e3a9-57be-44e1-b77b-115a54c7d9b6",
+  "id": "07f88d1e-f656-417c-9ac4-10a4104c3070",
   "start_time": "2026-04-24T16:44:00+01:00",
   "duration_s": 12,
   "duration_estimated": false,
@@ -1057,10 +1152,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "cda8b420-86fd-4a54-b844-49d756202bc8",
+  "id": "fb99dec1-2364-4cdf-a53f-ae4485c0e3a3",
   "start_time": "2026-04-24T19:18:00+01:00",
   "duration_s": 20,
   "duration_estimated": false,
@@ -1082,10 +1180,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "c1f4e751-04cb-4127-8fde-212e968cda04",
+  "id": "16ce1b9e-9d6b-4008-8497-c9f1212878e2",
   "start_time": "2026-04-25T17:25:00+01:00",
   "duration_s": 20,
   "duration_estimated": false,
@@ -1107,10 +1208,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "96e96757-97fd-4a27-b8bc-6ac456a00ccd",
+  "id": "080b3077-027d-4a79-9160-0c357a3f2284",
   "start_time": "2026-04-25T17:42:00+01:00",
   "duration_s": 86,
   "duration_estimated": false,
@@ -1132,10 +1236,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "aeae6d25-8af5-4486-84f1-043f5c2226d9",
+  "id": "ab7285a4-84ce-48b6-8e18-91f58de4e27b",
   "start_time": "2026-04-25T20:34:00+01:00",
   "duration_s": 10,
   "duration_estimated": false,
@@ -1157,10 +1264,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "f1954aeb-9329-4122-8eac-f7408f4a519d",
+  "id": "421c89f9-7234-4b33-9ae1-6705da901e5a",
   "start_time": "2026-04-25T20:43:00+01:00",
   "duration_s": 60,
   "duration_estimated": true,
@@ -1182,10 +1292,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "8774ffc4-603f-410f-a57c-fa5218faaf1c",
+  "id": "19d11095-608a-40bc-be45-034ede1b26f3",
   "start_time": "2026-04-26T19:35:00+01:00",
   "duration_s": 17,
   "duration_estimated": false,
@@ -1207,10 +1320,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "a88e08af-9644-48e0-ac62-91c02580547d",
+  "id": "40293452-9e12-48d6-a284-4b8109c8b9c1",
   "start_time": "2026-04-26T22:10:00+01:00",
   "duration_s": 30,
   "duration_estimated": false,
@@ -1232,10 +1348,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "0a2892bc-78c0-4480-a596-0293504aeb6a",
+  "id": "1233e395-b2e5-4cbb-aa66-ca561adb52a8",
   "start_time": "2026-04-27T21:00:00+01:00",
   "duration_s": 121,
   "duration_estimated": false,
@@ -1257,10 +1376,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "98462a8b-015b-4abb-abd0-1ea227b3c086",
+  "id": "eeb7ace4-203e-41d9-aeca-1fde0af86dcd",
   "start_time": "2026-04-28T18:21:00+01:00",
   "duration_s": 38,
   "duration_estimated": false,
@@ -1282,10 +1404,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "2057db2e-7549-4dba-b535-d8af9d039087",
+  "id": "4a721fcf-cfaa-4265-bba4-1857ad83f14b",
   "start_time": "2026-04-28T18:45:00+01:00",
   "duration_s": 168,
   "duration_estimated": false,
@@ -1307,10 +1432,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "162aa3d9-b108-494d-9940-c7c02dcb5f3a",
+  "id": "f1d5174f-7258-40ee-884e-03195158f709",
   "start_time": "2026-04-29T13:49:00+01:00",
   "duration_s": 16,
   "duration_estimated": false,
@@ -1332,10 +1460,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "e3407f0c-e44b-4171-af0d-9d250283c541",
+  "id": "9844b2e8-0c68-4929-a1e9-597d710640b5",
   "start_time": "2026-04-30T19:14:00+01:00",
   "duration_s": 8,
   "duration_estimated": false,
@@ -1357,10 +1488,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "24d32d4b-9d7f-4d9c-8719-01f067ce0371",
+  "id": "18b4cf78-9dae-4b52-a103-17ac1d68e50a",
   "start_time": "2026-04-30T20:07:00+01:00",
   "duration_s": 13,
   "duration_estimated": false,
@@ -1382,10 +1516,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "5a38237b-feac-4cb0-8b68-cd04d5d34999",
+  "id": "0ad1339b-cadc-4aee-bab6-c426a284ae9f",
   "start_time": "2026-05-01T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -1409,10 +1546,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "aed34047-6d81-4331-b1ed-90b65dc19f33",
+  "id": "abeda5ab-f7c1-4ea4-977a-e322bbe3cca9",
   "start_time": "2026-05-03T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -1438,10 +1578,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "a11fed5d-0c98-4823-b52f-d2b985176bbf",
+  "id": "b8ad803e-0b23-4e8a-87bb-0e0acd924a71",
   "start_time": "2026-05-03T18:39:00+01:00",
   "duration_s": 120,
   "duration_estimated": true,
@@ -1463,10 +1606,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "cc7bdb3d-4ae7-42ae-a5e1-37545ab486c4",
+  "id": "9b88c6e0-4456-4b06-b255-3ff2f0f1f7a9",
   "start_time": "2026-05-03T19:26:00+01:00",
   "duration_s": 22,
   "duration_estimated": false,
@@ -1488,10 +1634,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "2811b2af-6948-4fc1-87cf-d4dabfe1f8e8",
+  "id": "901c1689-1ccf-49a8-9d6e-5249bb315dd1",
   "start_time": "2026-05-03T19:44:00+01:00",
   "duration_s": 18,
   "duration_estimated": false,
@@ -1513,10 +1662,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "ecec87e2-2db7-4ae1-bb43-3ffbecb83e53",
+  "id": "39f1d780-4be4-41cf-b12d-fd664a24834e",
   "start_time": "2026-05-04T17:13:00+01:00",
   "duration_s": 25,
   "duration_estimated": false,
@@ -1538,10 +1690,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "78834721-7f30-4098-8620-bf0a244c6221",
+  "id": "0aabac90-9f1e-4443-b10a-9c90e149384b",
   "start_time": "2026-05-04T20:46:00+01:00",
   "duration_s": 46,
   "duration_estimated": false,
@@ -1563,10 +1718,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "1a85d1c6-bec8-4017-b73d-93620373f319",
+  "id": "e4302e85-c74a-4488-9900-25ac2827a390",
   "start_time": "2026-05-05T14:25:00+01:00",
   "duration_s": 15,
   "duration_estimated": false,
@@ -1588,10 +1746,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "28ff8f81-d18f-45a8-96ab-9b208f88b3dd",
+  "id": "98b0ce6d-d48f-4728-b735-3c2115d93bba",
   "start_time": "2026-05-05T14:39:00+01:00",
   "duration_s": 120,
   "duration_estimated": true,
@@ -1613,10 +1774,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "50bea38c-712b-44bf-882e-1a6c1444f867",
+  "id": "3d67bcaa-d408-4040-a3cc-7468194ebcc4",
   "start_time": "2026-05-05T19:33:00+01:00",
   "duration_s": 180,
   "duration_estimated": true,
@@ -1638,10 +1802,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "da3f58e7-5002-41c3-afa4-ab82a73c0187",
+  "id": "9b50f6a1-e3a0-4b80-ab59-69e9c82e279f",
   "start_time": "2026-05-06T12:08:00+01:00",
   "duration_s": 21,
   "duration_estimated": false,
@@ -1663,10 +1830,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "1b4ba28f-893f-48c1-97b7-5a9637c49974",
+  "id": "907380fd-1fb6-49cb-b11d-edd682088d63",
   "start_time": "2026-05-06T13:02:00+01:00",
   "duration_s": 20,
   "duration_estimated": false,
@@ -1688,10 +1858,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "55dabab7-b88c-4803-8a30-8b93f85cb8a1",
+  "id": "387273a7-3a6e-4816-b3b1-b6afa4316f6f",
   "start_time": "2026-05-06T21:25:00+01:00",
   "duration_s": 43,
   "duration_estimated": false,
@@ -1713,10 +1886,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "139ec940-6c9c-4231-9207-39e1b7f6816c",
+  "id": "73abc250-e050-4fb5-8bdd-5247b6f850f5",
   "start_time": "2026-05-07T15:14:00+01:00",
   "duration_s": 31,
   "duration_estimated": false,
@@ -1738,10 +1914,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "e2d5e613-8b94-4e45-ae2b-6cb3447b7b8d",
+  "id": "220f58e6-7b63-4550-967d-83fb417155b8",
   "start_time": "2026-05-09T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -1767,10 +1946,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "d7fcd99d-d6be-450b-b492-d8e3ba3cfe2d",
+  "id": "72d1b947-8ce5-4967-a4ad-f9ef9a666a8c",
   "start_time": "2026-05-11T11:53:00+01:00",
   "duration_s": 72,
   "duration_estimated": false,
@@ -1792,10 +1974,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "80ce2bdf-c5ac-4c09-b4af-143abd34a182",
+  "id": "21e6d891-3b48-4fcf-8422-0123706c6043",
   "start_time": "2026-05-11T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -1821,10 +2006,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "2c5e12e9-4ea2-402a-9afc-ad66f1d874ef",
+  "id": "5d5908e8-0467-4d02-b411-fda8e6a8949b",
   "start_time": "2026-05-11T15:08:00+01:00",
   "duration_s": 26,
   "duration_estimated": false,
@@ -1846,10 +2034,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "9b682657-47c0-46d6-946a-98c89de2527c",
+  "id": "81f11037-8a2d-462e-9ac4-e9d63a3f6240",
   "start_time": "2026-05-11T16:07:00+01:00",
   "duration_s": 60,
   "duration_estimated": true,
@@ -1871,10 +2062,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "ebc08e73-4ab3-4854-96ff-95e8cb3efac1",
+  "id": "61fa42f0-d867-48f5-b245-7ecb41747439",
   "start_time": "2026-05-11T17:37:00+01:00",
   "duration_s": 601,
   "duration_estimated": false,
@@ -1896,10 +2090,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "34849f0b-d411-4c13-9548-0fa0c785f5c7",
+  "id": "3b18ab53-2125-4307-9873-6593b214469a",
   "start_time": "2026-05-12T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -1925,10 +2122,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "abc8331e-754d-4e73-9a15-60db7a9a6d7e",
+  "id": "00e6c17e-68db-4e89-8f29-d91b9518e257",
   "start_time": "2026-05-12T20:20:00+01:00",
   "duration_s": 34,
   "duration_estimated": false,
@@ -1950,10 +2150,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "dbb734ab-fa25-44b7-bb66-492a681f34f0",
+  "id": "15455746-8032-4650-9db3-8e905ff03fd7",
   "start_time": "2026-05-13T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -1979,10 +2182,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "809c5cc2-7962-442b-81f8-26799ebffa37",
+  "id": "8741024f-a4ba-4456-8516-d26a7c66a802",
   "start_time": "2026-05-14T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -2008,10 +2214,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "9b539b41-0369-4e18-9b2f-0b68d9698d18",
+  "id": "a0303022-5e47-45c9-b0cb-c9400c1a8bb6",
   "start_time": "2026-05-15T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -2037,10 +2246,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "6119c6fa-7d53-45bc-8d9d-3c19fff64785",
+  "id": "742590c4-c440-4696-bfe8-8c4bf803fcb0",
   "start_time": "2026-05-16T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -2066,10 +2278,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "1f1d1a0d-f20c-49f3-9f39-090da35911ed",
+  "id": "2c466308-4ddb-41e4-b6b1-e6e8bd4478b3",
   "start_time": "2026-05-17T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -2095,10 +2310,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "63b30387-1679-4d35-b7cc-82dbe8035637",
+  "id": "f99198f2-fabb-4aee-a519-070a5c7fdc46",
   "start_time": "2026-05-17T19:05:00+01:00",
   "duration_s": 83,
   "duration_estimated": false,
@@ -2120,10 +2338,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "d15f411d-059b-491a-b9cb-446008d6f383",
+  "id": "ee767fbe-32d2-438d-81c0-cb76c7931fce",
   "start_time": "2026-05-20T16:44:00+01:00",
   "duration_s": 9,
   "duration_estimated": false,
@@ -2145,10 +2366,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "b9d09e74-6ac7-47f8-a67e-0f4cb6ed8650",
+  "id": "4cd43a04-0465-4606-aa8a-8630384d35f5",
   "start_time": "2026-05-22T21:05:00+01:00",
   "duration_s": 20,
   "duration_estimated": false,
@@ -2170,10 +2394,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "867d8d38-5f16-4d60-ba66-ff76e6f4a69c",
+  "id": "8faa7cf9-fb15-414c-bbba-94302cd92b28",
   "start_time": "2026-05-24T20:01:00+01:00",
   "duration_s": 18,
   "duration_estimated": false,
@@ -2195,10 +2422,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "249ec396-6cb4-42d5-9122-e2a4cf066cbf",
+  "id": "a50b2a12-c458-4a52-8ec8-1055fd6d66d0",
   "start_time": "2026-05-24T22:32:00+01:00",
   "duration_s": 70,
   "duration_estimated": false,
@@ -2220,10 +2450,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "a7ace34c-c378-4739-9f63-dbd050783a00",
+  "id": "c00c2b70-8dab-483a-9748-48761dc1a71b",
   "start_time": "2026-05-25T18:47:00+01:00",
   "duration_s": 33,
   "duration_estimated": false,
@@ -2245,10 +2478,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "27b2992b-75a4-43c6-985b-b5adbf165663",
+  "id": "d40889ef-384e-4cb1-8fee-fabc2443cca6",
   "start_time": "2026-05-27T19:52:00+01:00",
   "duration_s": 25,
   "duration_estimated": false,
@@ -2270,10 +2506,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "9b35ecf6-374f-4346-bd96-35330a0b2e26",
+  "id": "71b95736-1314-4482-acba-8f284437eef4",
   "start_time": "2026-05-29T21:19:00+01:00",
   "duration_s": 18,
   "duration_estimated": false,
@@ -2295,10 +2534,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "fc74272a-f199-4e0e-8ec2-1909b907e903",
+  "id": "1d6d863f-7ede-4edd-867d-758c9bd33908",
   "start_time": "2026-05-30T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -2324,10 +2566,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "44c3e217-7f7a-4db0-9edc-ddfd5308c735",
+  "id": "6211af42-6040-4643-b79a-ab5d74bbe2ea",
   "start_time": "2026-05-31T19:16:00+01:00",
   "duration_s": 119,
   "duration_estimated": false,
@@ -2349,10 +2594,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "b198bc79-afa7-48b2-81bc-20b41527721b",
+  "id": "dd0c3a9d-e4d1-4454-a9b5-54fd8b6f5dc6",
   "start_time": "2026-06-01T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -2378,10 +2626,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "7ef22bd5-773c-42b5-b1b5-19e26139b7e2",
+  "id": "e4d43ce1-ab58-4470-b455-fd47ba127a89",
   "start_time": "2026-06-04T19:19:00+01:00",
   "duration_s": 22,
   "duration_estimated": false,
@@ -2403,10 +2654,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "887d5c93-0ce4-42a3-a4d9-3af7438795a2",
+  "id": "abcd21b1-b73d-44fd-9cdf-f8af4a874f87",
   "start_time": "2026-06-04T21:17:00+01:00",
   "duration_s": 59,
   "duration_estimated": false,
@@ -2428,10 +2682,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "f9556658-c9ad-4045-ab41-807716c033e0",
+  "id": "b073dad4-4b0c-4566-8ea9-49c19f7ffc3a",
   "start_time": "2026-06-05T13:55:00+01:00",
   "duration_s": 81,
   "duration_estimated": false,
@@ -2453,10 +2710,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "1aef537a-d7e7-4c0e-b62a-2f9bb95cb87e",
+  "id": "729017c3-cfc5-4c9e-8e66-23de26b4a396",
   "start_time": "2026-06-06T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -2482,10 +2742,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "29913a5a-b724-43ab-b47e-826cc93df6c5",
+  "id": "51072aa2-456a-4aef-bdbc-f624ea1eba39",
   "start_time": "2026-06-06T19:22:00+01:00",
   "duration_s": 15,
   "duration_estimated": false,
@@ -2507,10 +2770,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "73b2f76f-528c-4c7f-bbcd-19ccd5b35607",
+  "id": "6c169895-fd64-4fb8-89fe-2f514a69ade9",
   "start_time": "2026-06-08T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -2536,10 +2802,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "ac5c88b5-32d6-492a-bfbf-d3ae4883a172",
+  "id": "0ccb62ce-896b-424e-922e-e828fdfd0b5e",
   "start_time": "2026-06-08T13:10:00+01:00",
   "duration_s": 10,
   "duration_estimated": false,
@@ -2561,10 +2830,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "f97e6405-5a84-4ffb-a665-66a083d38ed4",
+  "id": "98051b38-1bb1-4b11-8678-41f6c30a8b31",
   "start_time": "2026-06-09T21:00:00+01:00",
   "duration_s": 30,
   "duration_estimated": false,
@@ -2590,10 +2862,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "830e9fa6-aeeb-445d-b07f-0f2fc0552478",
+  "id": "f9f0e161-c9c3-4509-a871-1eb9f1330809",
   "start_time": "2026-06-10T13:15:00+01:00",
   "duration_s": 210,
   "duration_estimated": true,
@@ -2615,10 +2890,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "f4acb2e0-5553-4a37-b56a-53474fa91b29",
+  "id": "d7af5236-0770-42f7-b799-317b22e9cf9a",
   "start_time": "2026-06-10T19:41:00+01:00",
   "duration_s": 60,
   "duration_estimated": true,
@@ -2640,10 +2918,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "0e361e1f-08fb-425b-b7d8-af8b0ff4d96a",
+  "id": "f08ebb42-f8a9-4c88-a77c-44e21e5b19fe",
   "start_time": "2026-06-11T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -2669,10 +2950,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "32a9a816-7d8c-4e2b-9722-8e88ccc7152c",
+  "id": "5b5e95d3-407f-45a9-a450-098dd3b1865c",
   "start_time": "2026-06-12T15:38:00+01:00",
   "duration_s": 12,
   "duration_estimated": false,
@@ -2694,10 +2978,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "aa16db43-af35-4e04-ae51-23828c4aeb43",
+  "id": "a04dd8c6-05bc-41ff-b912-28989597318e",
   "start_time": "2026-06-12T18:26:00+01:00",
   "duration_s": 40,
   "duration_estimated": false,
@@ -2719,10 +3006,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "0a3c641a-12bf-430a-bcd4-f8e3a6133234",
+  "id": "88c89050-b2f6-4e8b-ad68-a01b2a5a7f0e",
   "start_time": "2026-06-12T20:56:00+01:00",
   "duration_s": 39,
   "duration_estimated": false,
@@ -2744,10 +3034,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "cc22b76e-02dd-4e49-907e-6886619bb585",
+  "id": "6a126d0c-6d87-43aa-96dd-6b6379f548e9",
   "start_time": "2026-06-13T18:15:00+01:00",
   "duration_s": 48,
   "duration_estimated": false,
@@ -2769,10 +3062,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "09b2ebc2-5d8e-45db-90bb-dcbc8f48ee67",
+  "id": "065fe34b-c1ea-4592-a396-915d7c7eaf8c",
   "start_time": "2026-06-15T11:54:00+01:00",
   "duration_s": 20,
   "duration_estimated": false,
@@ -2794,10 +3090,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "d106f9aa-6a64-47dd-a14a-08dbcbd1d244",
+  "id": "f0c89026-ef58-4370-9213-0476e9fdfc11",
   "start_time": "2026-06-15T12:48:00+01:00",
   "duration_s": 10,
   "duration_estimated": false,
@@ -2819,10 +3118,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "e44c43d2-564a-4eb6-a0e1-6a6a4bb51a0a",
+  "id": "1daf5361-77f1-4f08-9293-04f87e21a843",
   "start_time": "2026-06-16T14:20:00+01:00",
   "duration_s": 55,
   "duration_estimated": false,
@@ -2844,10 +3146,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "b092dca8-8671-4f29-b6de-e506b064468d",
+  "id": "0d7f53c8-a62c-462b-a31e-65c905e0d3cb",
   "start_time": "2026-06-16T21:04:00+01:00",
   "duration_s": 20,
   "duration_estimated": false,
@@ -2869,10 +3174,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "6ded6138-ecdc-4388-b83b-96aa86a963a9",
+  "id": "c48a5169-9dee-470b-bd75-8d1793553d72",
   "start_time": "2026-06-17T11:20:00+01:00",
   "duration_s": 20,
   "duration_estimated": false,
@@ -2898,10 +3206,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "b17a422e-2898-44af-a1f5-42d6920777c0",
+  "id": "3e5beaa1-1b6d-49b6-ae4b-b69d66604846",
   "start_time": "2026-06-17T12:00:00+01:00",
   "duration_s": 30,
   "duration_estimated": false,
@@ -2923,10 +3234,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "b2124d55-acbd-4816-82b6-9bca3a0e98c7",
+  "id": "139749b0-7322-46ea-856d-bb265d7f092a",
   "start_time": "2026-06-17T12:33:00+01:00",
   "duration_s": 26,
   "duration_estimated": false,
@@ -2948,10 +3262,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "28dec7e0-aba4-472f-8ce1-9077155dfa2f",
+  "id": "8aafbf89-aed2-4883-99f9-49aeb2cc894b",
   "start_time": "2026-06-17T20:04:00+01:00",
   "duration_s": 16,
   "duration_estimated": false,
@@ -2973,10 +3290,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "ae7e51c0-23b1-40f3-969a-b33ef9372462",
+  "id": "18aecb6a-6078-4d90-babb-e7bcf3d9a40c",
   "start_time": "2026-06-18T21:17:00+01:00",
   "duration_s": 20,
   "duration_estimated": false,
@@ -2998,10 +3318,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "a7bd4f76-7743-4a70-afba-e6b23596f9b4",
+  "id": "664f0ea2-5e76-4665-b764-6a90b3bf97d0",
   "start_time": "2026-06-21T18:14:00+01:00",
   "duration_s": 209,
   "duration_estimated": false,
@@ -3023,10 +3346,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "7263b2a8-40f3-4fee-ac4e-6216254e5fd9",
+  "id": "5cee52cd-fdef-4a49-85f3-9b13ff773359",
   "start_time": "2026-06-21T20:40:00+01:00",
   "duration_s": 10,
   "duration_estimated": false,
@@ -3048,10 +3374,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "6be1776f-bf79-44ca-b06a-0fd45d121719",
+  "id": "123c2da4-f4fc-47f3-882a-6f85e363e6cf",
   "start_time": "2026-06-22T11:15:00+01:00",
   "duration_s": 15,
   "duration_estimated": false,
@@ -3073,10 +3402,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "0e1556e4-6934-498f-b323-4ada818ac1eb",
+  "id": "2b51b861-11c8-4e08-8231-7e9775e93735",
   "start_time": "2026-06-22T20:20:00+01:00",
   "duration_s": 15,
   "duration_estimated": false,
@@ -3102,10 +3434,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "0fad3982-520b-4af6-a6f3-b5ee4628d123",
+  "id": "3745f2b8-537d-41fd-88f3-286364b2fe41",
   "start_time": "2026-06-23T14:42:00+01:00",
   "duration_s": 15,
   "duration_estimated": false,
@@ -3127,10 +3462,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "8edd3b4c-22e4-4a81-b19f-a855f4e00716",
+  "id": "d8c2f48f-c7ea-47e2-9cea-15e04ad48253",
   "start_time": "2026-06-25T20:07:00+01:00",
   "duration_s": 40,
   "duration_estimated": false,
@@ -3152,10 +3490,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "23e2ba33-418f-4127-a6d1-c9deae472c95",
+  "id": "9cfe8faa-eb55-4fab-bb0c-94692f503be1",
   "start_time": "2026-06-26T12:47:00+01:00",
   "duration_s": 15,
   "duration_estimated": false,
@@ -3177,10 +3518,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "7f51d4e5-3d89-4cb1-a3ef-ed89a3f63434",
+  "id": "9db79387-e521-4651-a6ee-0ed41c4af5ad",
   "start_time": "2026-06-27T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -3204,10 +3548,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "b9d69220-bf58-455b-8be0-852e46ffd6ac",
+  "id": "ab94c4c9-e887-4269-9951-7b79009cf29a",
   "start_time": "2026-06-27T19:03:00+01:00",
   "duration_s": 177,
   "duration_estimated": false,
@@ -3229,10 +3576,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "e35279ac-9734-4ab8-9e13-a75025b26520",
+  "id": "2f4e177f-bccd-47f1-bb96-d5c46d80c9f1",
   "start_time": "2026-06-29T14:38:00+01:00",
   "duration_s": 60,
   "duration_estimated": true,
@@ -3254,10 +3604,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "1307ca30-f551-4ee7-adca-de9894f4845d",
+  "id": "10586ff7-a048-4e77-a963-c3c25877e741",
   "start_time": "2026-06-29T22:45:00+01:00",
   "duration_s": 50,
   "duration_estimated": false,
@@ -3279,10 +3632,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "17be4ed9-3aaa-4952-9a38-013d67019ec1",
+  "id": "c9264547-05d5-4dae-84b7-0ebb04e1b922",
   "start_time": "2026-07-01T20:40:00+01:00",
   "duration_s": 194,
   "duration_estimated": false,
@@ -3304,10 +3660,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "2850f198-2cbe-408c-806c-0b6e5e86e38b",
+  "id": "691e346b-9624-42fc-bc2a-b928ae28eff2",
   "start_time": "2026-07-02T21:17:00+01:00",
   "duration_s": 103,
   "duration_estimated": false,
@@ -3329,10 +3688,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "6a26f1af-827e-4ed9-8e6b-b67218c32736",
+  "id": "828f6e24-b98d-431a-8749-67be28fee64c",
   "start_time": "2026-07-03T16:23:00+01:00",
   "duration_s": 150,
   "duration_estimated": true,
@@ -3354,10 +3716,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "92c2378a-c2bb-4ca1-b141-42f0f6272e13",
+  "id": "9ebb768b-6897-4dbb-be30-622d6848983e",
   "start_time": "2026-07-03T18:37:00+01:00",
   "duration_s": 132,
   "duration_estimated": false,
@@ -3379,10 +3744,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "767238c2-8727-4008-9f2c-715153d477b4",
+  "id": "47e79aae-48b6-4a20-bc81-7c3cfdba271b",
   "start_time": "2026-07-04T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -3408,10 +3776,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "a2d89685-f337-4923-8976-67d6cffe5ad3",
+  "id": "b519082b-75ff-4c0c-a24e-32c6f282b555",
   "start_time": "2026-07-05T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -3439,10 +3810,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "1dda0f64-e58f-4905-91ea-4de1d97ef42e",
+  "id": "b2ac20bc-6d5e-4630-bd41-82d289b684aa",
   "start_time": "2026-07-06T11:22:00+01:00",
   "duration_s": 15,
   "duration_estimated": false,
@@ -3464,10 +3838,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "27bc291c-f796-46b9-a32c-8e3a5ca390f7",
+  "id": "06da3bde-501f-46ec-8939-647260b64077",
   "start_time": "2026-07-06T21:35:00+01:00",
   "duration_s": 104,
   "duration_estimated": false,
@@ -3489,10 +3866,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "e49b2bc4-8cbd-4569-b211-fec852400a0b",
+  "id": "4abde053-062b-4efb-9ebd-f30422daf608",
   "start_time": "2026-07-07T20:13:00+01:00",
   "duration_s": 15,
   "duration_estimated": false,
@@ -3514,10 +3894,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "14b82224-5eff-497e-b28d-08e3a0a86027",
+  "id": "951d5a0a-cb45-40f8-ad0a-aa7db5a1fa2e",
   "start_time": "2026-07-07T20:22:00+01:00",
   "duration_s": 30,
   "duration_estimated": false,
@@ -3539,10 +3922,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "58fe0b76-837b-4542-9f07-313dac9b91d3",
+  "id": "8390c0e3-bfcc-4a3a-a06a-00b88836230f",
   "start_time": "2026-07-09T18:39:00+01:00",
   "duration_s": 13,
   "duration_estimated": false,
@@ -3564,10 +3950,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "6a7eff7a-ffd3-4663-b9ce-d441ac25a2dc",
+  "id": "8b1b2584-7460-40c0-aecf-231e42ed1132",
   "start_time": "2026-07-09T21:30:00+01:00",
   "duration_s": 11,
   "duration_estimated": false,
@@ -3589,10 +3978,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "c1140fae-85a0-4707-99e8-bf02b917ba34",
+  "id": "1be13166-22c5-4e1c-8a60-2db194f12ed2",
   "start_time": "2026-07-10T12:14:00+01:00",
   "duration_s": 9,
   "duration_estimated": false,
@@ -3614,10 +4006,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "aadfab7c-8397-4248-bffd-c874d1f6add7",
+  "id": "df05139e-34a9-4c8d-9aeb-942d7c9e3354",
   "start_time": "2026-07-10T19:39:00+01:00",
   "duration_s": 10,
   "duration_estimated": false,
@@ -3639,10 +4034,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "b8d354b6-efb6-40b0-9c1d-3cf3ed02b997",
+  "id": "bbac738c-6956-4e5d-b410-27c51b6621ef",
   "start_time": "2026-07-10T19:50:00+01:00",
   "duration_s": 8,
   "duration_estimated": false,
@@ -3664,10 +4062,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "125bc651-5410-4d52-bb49-e8dcd5526977",
+  "id": "5f6248d9-8441-436f-83b8-54e08f4718ab",
   "start_time": "2026-07-11T16:42:00+01:00",
   "duration_s": 210,
   "duration_estimated": true,
@@ -3687,16 +4088,19 @@
   "warning_before": null,
   "warning_text": null,
   "context_tags": [],
-  "notes": "Rada graduation",
+  "notes": "drama school graduation",
   "original_label": "Head strongly to side, lots of saliva, cannot speak",
   "who_logged": "carer",
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "1a6e885d-fb92-45d8-9b7a-7d4c91cf9046",
+  "id": "5bfe240a-d31a-47bf-900d-489c04338b85",
   "start_time": "2026-07-12T16:09:00+01:00",
   "duration_s": 20,
   "duration_estimated": false,
@@ -3718,10 +4122,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "f4595ab3-664d-40de-a3e0-cd530f21ffa0",
+  "id": "8fe91b00-cbd7-4869-b295-5f7f416ab4e8",
   "start_time": "2026-07-12T19:37:00+01:00",
   "duration_s": 18,
   "duration_estimated": false,
@@ -3743,10 +4150,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "8c4b8e97-90b5-46a6-a2c9-4a197d37b48d",
+  "id": "e348d66c-d55c-4599-8993-d486284db607",
   "start_time": "2026-07-12T20:18:00+01:00",
   "duration_s": 14,
   "duration_estimated": false,
@@ -3768,10 +4178,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "05046269-bb7c-4532-b7f6-cf1f75daf03d",
+  "id": "2c870035-7232-47ec-bdcf-0e0d2ef0e87a",
   "start_time": "2026-07-14T16:29:00+01:00",
   "duration_s": 117,
   "duration_estimated": false,
@@ -3793,10 +4206,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "fb16fff7-0438-45cb-9f5c-7ebb8f7fc226",
+  "id": "32408e6a-b01c-4a13-916e-e91feb44028f",
   "start_time": "2026-07-15T15:30:00+01:00",
   "duration_s": 32,
   "duration_estimated": false,
@@ -3818,10 +4234,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "7a80dc39-26f7-4a61-acb3-8ea23db33954",
+  "id": "24e9d3e6-4c66-4954-a0e4-282c4c80a1af",
   "start_time": "2026-07-16T16:04:00+01:00",
   "duration_s": 9,
   "duration_estimated": false,
@@ -3843,10 +4262,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "74d2696e-d615-41ea-a825-a6469e3e76e7",
+  "id": "3087eb5a-dd20-44ae-b9e5-0cd22f316396",
   "start_time": "2026-07-16T18:43:00+01:00",
   "duration_s": 120,
   "duration_estimated": true,
@@ -3868,10 +4290,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "00f943ee-9c6b-42d2-b6db-73ed5e76e18d",
+  "id": "7c18c13b-3ddd-41f9-a8d7-0eb21291233d",
   "start_time": "2026-07-17T15:38:00+01:00",
   "duration_s": 32,
   "duration_estimated": false,
@@ -3893,10 +4318,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "d95cc03f-2f71-4ef1-b5b4-68f4a2d5c900",
+  "id": "da34e996-f144-4917-bd26-5c75c7c715dc",
   "start_time": "2026-07-17T19:20:00+01:00",
   "duration_s": 10,
   "duration_estimated": false,
@@ -3918,10 +4346,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "d84f3875-9cc1-40fe-a35f-73de8c15ff83",
+  "id": "fad6c292-39c1-4e48-bc09-dc9cfae964c4",
   "start_time": "2026-07-17T19:28:00+01:00",
   "duration_s": 45,
   "duration_estimated": false,
@@ -3943,10 +4374,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "5f52dfd0-e41e-4d68-b998-3aeb3b865148",
+  "id": "3bed1076-6f0b-4e72-87e9-22886f7f62fe",
   "start_time": "2026-07-17T22:12:00+01:00",
   "duration_s": 20,
   "duration_estimated": false,
@@ -3968,10 +4402,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "4eec8927-6cc3-44f4-b503-707f93796eba",
+  "id": "4260b6b6-a345-4012-8545-5ef6a35143b1",
   "start_time": "2026-07-18T19:53:00+01:00",
   "duration_s": 21,
   "duration_estimated": false,
@@ -3993,10 +4430,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "4d264d9e-0b45-427a-9240-5e013d6b3ed2",
+  "id": "57818b59-33b0-4a99-b679-07675da72b89",
   "start_time": "2026-07-18T20:05:00+01:00",
   "duration_s": 7,
   "duration_estimated": false,
@@ -4018,10 +4458,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "bfa542ee-7e7e-4e32-aee1-6991a1fe86bd",
+  "id": "9fd54fe9-3405-4514-a1dd-8f349b9de55e",
   "start_time": "2026-07-19T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -4047,10 +4490,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "0c0afc45-56ce-439b-b57a-c5e657ba1596",
+  "id": "6b84a0f8-c310-4624-9cda-7b16e8e85048",
   "start_time": "2026-07-21T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -4076,10 +4522,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "aa172d49-8503-4d36-8a52-42e881c86d8b",
+  "id": "e5993a94-dc96-4c01-966f-cf48b0403713",
   "start_time": "2026-07-22T20:08:00+01:00",
   "duration_s": 35,
   "duration_estimated": false,
@@ -4101,10 +4550,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "35eb7c7d-1a02-45ed-a13c-15f59ec3f35b",
+  "id": "2227f376-d280-45cc-9746-d05ef08b0ab2",
   "start_time": "2026-07-24T14:34:00+01:00",
   "duration_s": 21,
   "duration_estimated": false,
@@ -4128,10 +4580,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "b34fe4dc-a6d5-4a8c-8343-2e25aca46a36",
+  "id": "9c69ce37-047d-4f68-8e10-4339ecfce827",
   "start_time": "2026-07-25T19:41:00+01:00",
   "duration_s": 28,
   "duration_estimated": false,
@@ -4153,10 +4608,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "98dcf342-b067-42d2-8923-704560977a12",
+  "id": "d305d25f-264b-4e2c-9ac2-16bc1035896d",
   "start_time": "2026-07-25T20:41:00+01:00",
   "duration_s": 26,
   "duration_estimated": false,
@@ -4178,10 +4636,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "dcc9edf1-535a-4d75-b716-1264ab9800eb",
+  "id": "a685bfaf-84bb-43bf-8b85-8cb63af77a78",
   "start_time": "2026-07-26T19:00:00+01:00",
   "duration_s": 15,
   "duration_estimated": false,
@@ -4203,10 +4664,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "466bc74c-89bd-41a7-adfc-b46c80592a7a",
+  "id": "74a7c943-6de6-4b95-8428-5b8adb7eb147",
   "start_time": "2026-07-26T19:44:00+01:00",
   "duration_s": 12,
   "duration_estimated": false,
@@ -4228,10 +4692,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "a81d8f73-9e73-46d5-8122-be737a7d2f8a",
+  "id": "041cae38-12a0-4eaa-870e-839d84df86fc",
   "start_time": "2026-07-27T12:00:00+01:00",
   "duration_s": 0,
   "duration_estimated": true,
@@ -4257,10 +4724,13 @@
   "confidence": "guess",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "3a95cde3-3044-4dd2-9673-283b70ea0a6c",
+  "id": "1342336d-a84c-40c7-9b75-e9c4ce62283e",
   "start_time": "2026-07-28T20:28:00+01:00",
   "duration_s": 81,
   "duration_estimated": false,
@@ -4282,10 +4752,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "1b0ce147-4780-42ed-bc73-cd887e823df9",
+  "id": "cbf0e4c6-7ed6-4ec9-b0de-7cef08edeac3",
   "start_time": "2026-07-29T19:47:00+01:00",
   "duration_s": 12,
   "duration_estimated": false,
@@ -4307,10 +4780,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "2bac01be-06c6-4af2-b8f0-3e8982670dd2",
+  "id": "7744cbee-a8b5-48b9-b0ef-95b6d6b8b0cb",
   "start_time": "2026-07-30T19:17:00+01:00",
   "duration_s": 188,
   "duration_estimated": false,
@@ -4332,10 +4808,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "f6ca5cdf-e232-49c7-903e-1bd510b1da10",
+  "id": "d0e9e7e4-13ee-4e09-bec6-41ec0657e7ac",
   "start_time": "2026-07-31T19:22:00+01:00",
   "duration_s": 10,
   "duration_estimated": false,
@@ -4357,10 +4836,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "0ea2d75f-d7b8-4905-a9bb-a1698f30bbba",
+  "id": "0997b734-a10a-40ac-bad4-df9c69394693",
   "start_time": "2026-08-03T20:06:00+01:00",
   "duration_s": 199,
   "duration_estimated": false,
@@ -4382,10 +4864,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "3bddfb8b-8453-4047-b61d-3c9d7f1356ac",
+  "id": "4088e1d5-281b-4aa7-aa38-9d6ecf0f60a6",
   "start_time": "2026-08-04T14:59:00+01:00",
   "duration_s": 152,
   "duration_estimated": false,
@@ -4407,10 +4892,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "c883055c-99b4-4525-9278-18705caab2e3",
+  "id": "81e0563c-bb5c-4473-8cb7-2ebb4a2f665a",
   "start_time": "2026-08-04T18:42:00+01:00",
   "duration_s": 206,
   "duration_estimated": false,
@@ -4432,10 +4920,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "18fd80a0-452d-4587-93a1-70edba85f8b3",
+  "id": "b5795b20-3b16-4a2c-956b-6858d64ddeae",
   "start_time": "2026-08-05T18:24:00+01:00",
   "duration_s": 24,
   "duration_estimated": false,
@@ -4457,10 +4948,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "bf32648f-309a-4d05-bdf0-b33ea1fea67b",
+  "id": "ec7a4bdd-8f2a-4c99-92ff-83dc44c23b5a",
   "start_time": "2026-08-07T15:32:00+01:00",
   "duration_s": 10,
   "duration_estimated": false,
@@ -4486,10 +4980,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "8f5fef2e-8b06-4743-88a3-43b783c1d81d",
+  "id": "6d06f27a-dac6-419c-ae5d-a673d8af348f",
   "start_time": "2026-08-09T14:33:00+01:00",
   "duration_s": 131,
   "duration_estimated": false,
@@ -4511,10 +5008,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "245cdde6-e585-4ea2-b9b4-3053ec3221b7",
+  "id": "7c9711a8-7732-4e4e-bfe6-1b2238b6eae7",
   "start_time": "2026-08-09T18:26:00+01:00",
   "duration_s": 21,
   "duration_estimated": false,
@@ -4536,10 +5036,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "12c30107-1fec-40db-908e-6690920b7187",
+  "id": "bfb5405d-d5ba-45fc-b426-b5635a60200c",
   "start_time": "2026-08-10T12:32:00+01:00",
   "duration_s": 14,
   "duration_estimated": false,
@@ -4561,10 +5064,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "cff7a550-76e1-49d0-9995-5ce712b323a4",
+  "id": "5d95977e-cd33-4c48-a8f7-c69f460742ff",
   "start_time": "2026-08-10T19:50:00+01:00",
   "duration_s": 26,
   "duration_estimated": false,
@@ -4586,10 +5092,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "435463f0-6ac9-4570-b68c-995dfa93ee7d",
+  "id": "45191b13-da18-43e9-9807-4ffd1b2aef12",
   "start_time": "2026-08-10T20:04:00+01:00",
   "duration_s": 44,
   "duration_estimated": false,
@@ -4611,10 +5120,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "ddcbf7ea-6285-4428-a0ec-ec7fea4caaca",
+  "id": "7ca03e89-c531-46be-b089-48fa757c0b40",
   "start_time": "2026-08-11T19:56:00+01:00",
   "duration_s": 20,
   "duration_estimated": false,
@@ -4636,10 +5148,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "cd372dd2-0b31-4223-bce7-c99903eda71e",
+  "id": "89f2911a-3a37-431a-8d06-31f1110882de",
   "start_time": "2026-08-12T19:35:00+01:00",
   "duration_s": 37,
   "duration_estimated": false,
@@ -4661,10 +5176,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "2cfc15f1-5fe0-4ced-b9d7-637a4f76d333",
+  "id": "435b1f35-62d1-4fe1-99c6-bc50ec79e899",
   "start_time": "2026-08-12T19:44:00+01:00",
   "duration_s": 17,
   "duration_estimated": false,
@@ -4686,10 +5204,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "14c799d8-2a6d-4727-bc5d-2e00e077a9a9",
+  "id": "cf87fab3-1772-4fe3-876b-d58d72963996",
   "start_time": "2026-08-13T13:25:00+01:00",
   "duration_s": 15,
   "duration_estimated": false,
@@ -4715,10 +5236,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "1b5f130c-a24b-4eb8-810c-6ceb5e2a7362",
+  "id": "66003660-dfcc-4551-8ebe-8d1e11eff966",
   "start_time": "2026-08-13T20:03:00+01:00",
   "duration_s": 15,
   "duration_estimated": false,
@@ -4740,10 +5264,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "91c06278-6214-4804-9856-743c619e0c3c",
+  "id": "e6ccfb71-9558-45d9-bd1d-3d81e9df0388",
   "start_time": "2026-08-13T21:01:00+01:00",
   "duration_s": 92,
   "duration_estimated": false,
@@ -4765,10 +5292,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "10b99424-8be0-450d-8fab-51e9faa2fbd2",
+  "id": "f474f01a-c749-4138-b986-dbfa3506bc1b",
   "start_time": "2026-08-14T19:07:00+01:00",
   "duration_s": 25,
   "duration_estimated": false,
@@ -4790,10 +5320,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "23b1e7b0-0736-469c-8a80-474d015f0780",
+  "id": "79c69025-1856-49bb-af18-0c31b3a42c73",
   "start_time": "2026-08-14T19:13:00+01:00",
   "duration_s": 16,
   "duration_estimated": false,
@@ -4815,10 +5348,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "ad3a976b-d68b-495d-acaa-dd4382855a98",
+  "id": "e13df250-6b65-47a8-8a24-63ee6fc68f44",
   "start_time": "2026-08-15T19:01:00+01:00",
   "duration_s": 135,
   "duration_estimated": false,
@@ -4840,10 +5376,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "9120b94e-edff-4609-b54d-8685dbe25cb7",
+  "id": "f64e1b5a-5888-43bb-8289-bd913bc61042",
   "start_time": "2026-08-16T19:55:00+01:00",
   "duration_s": 50,
   "duration_estimated": false,
@@ -4865,10 +5404,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "ee97c526-d1f5-4d93-8721-e47676f2e18c",
+  "id": "18a8a5ad-f16f-46e1-a4cb-d29f5a6b9d8a",
   "start_time": "2026-08-17T18:26:00+01:00",
   "duration_s": 25,
   "duration_estimated": false,
@@ -4890,10 +5432,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "28e54f8b-5274-4354-b752-2d434446b0f8",
+  "id": "faa797aa-c813-43ac-87dc-fb859e97a056",
   "start_time": "2026-08-17T19:49:00+01:00",
   "duration_s": 42,
   "duration_estimated": false,
@@ -4915,10 +5460,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "f0ab27a0-860c-48a3-8fcd-59eb72647dcc",
+  "id": "972b1570-b0a7-4d87-9221-00e019a36768",
   "start_time": "2026-08-18T16:32:00+01:00",
   "duration_s": 10,
   "duration_estimated": false,
@@ -4940,10 +5488,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "f06ad787-e3a9-4101-b615-d744f5823950",
+  "id": "e208858f-7e70-467a-abef-8196b59b830a",
   "start_time": "2026-08-18T19:33:00+01:00",
   "duration_s": 35,
   "duration_estimated": false,
@@ -4965,10 +5516,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "0ee1cb4e-b9c8-4834-8a8d-7ee7668758f2",
+  "id": "eb6be875-0f3a-4bae-9d6f-7f07656a12b2",
   "start_time": "2026-08-19T16:04:00+01:00",
   "duration_s": 28,
   "duration_estimated": false,
@@ -4990,10 +5544,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "665d8b0f-bd97-462b-b4af-80ced8208513",
+  "id": "d6052a52-25ed-4b0b-b0fc-ef76100be1df",
   "start_time": "2026-08-21T17:22:00+01:00",
   "duration_s": 120,
   "duration_estimated": true,
@@ -5015,10 +5572,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "2cea1c8a-d84f-43fe-896e-96d577eeba86",
+  "id": "95ee63d8-421e-4860-b3b0-2716f5225e0a",
   "start_time": "2026-08-21T20:59:00+01:00",
   "duration_s": 33,
   "duration_estimated": false,
@@ -5040,10 +5600,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "d7d98782-d440-4f55-bafe-975f5a94c0a1",
+  "id": "43f6bb0e-ca60-45fa-b23a-a52821701a9a",
   "start_time": "2026-08-22T18:33:00+01:00",
   "duration_s": 27,
   "duration_estimated": false,
@@ -5065,10 +5628,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "86ef745d-571a-40d6-abc9-d9b063d2c13c",
+  "id": "953b1fe5-d16f-43d1-ac72-89d5176374e4",
   "start_time": "2026-08-24T15:21:00+01:00",
   "duration_s": 23,
   "duration_estimated": false,
@@ -5090,10 +5656,13 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
  },
  {
-  "id": "ae04979c-b6d8-4c9a-8530-9fe541e1b91c",
+  "id": "bd271baa-a876-4edf-97a4-df83fb46a71c",
   "start_time": "2026-08-24T15:51:00+01:00",
   "duration_s": 18,
   "duration_estimated": false,
@@ -5115,6 +5684,45 @@
   "confidence": "probable",
   "possibly_non_epileptic": false,
   "source": "import",
-  "transcript_hash": null
+  "transcript_hash": null,
+  "factors": [],
+  "recovery_text": null,
+  "synthetic": false
+ },
+ {
+  "id": "36a06f2f-cca1-44cd-8df2-8dd60cdaaf44",
+  "start_time": "2026-10-31T15:41:13.114096Z",
+  "duration_s": 2,
+  "duration_estimated": false,
+  "still_going": false,
+  "type": "convulsive",
+  "severity": "severe",
+  "awareness": "impaired",
+  "asleep_at_onset": null,
+  "recovered_at": "2026-10-31T15:41:15.531000Z",
+  "injury": null,
+  "incontinence": null,
+  "rescue_med": null,
+  "warning_before": true,
+  "warning_text": null,
+  "context_tags": [
+   "exercise",
+   "hot",
+   "unwell"
+  ],
+  "notes": "",
+  "original_label": "Tonic-clonic",
+  "who_logged": "carer",
+  "confidence": "certain",
+  "possibly_non_epileptic": false,
+  "source": "voice",
+  "transcript_hash": null,
+  "factors": [
+   "Stress",
+   "Exercise",
+   "Feeling hot"
+  ],
+  "recovery_text": null,
+  "synthetic": false
  }
 ]

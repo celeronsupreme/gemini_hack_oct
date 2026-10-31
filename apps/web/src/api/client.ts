@@ -30,6 +30,9 @@ export const api = {
   events: (from?: string, to?: string, limit = 500) => req<SeizureEvent[]>(`/events${qs({ from, to, limit })}`),
   tap: () => req<SeizureEvent>('/events/tap', { method: 'POST', body: '{}' }),
   patchEvent: (id: string, patch: Partial<SeizureEvent>) => req<SeizureEvent>(`/events/${id}`, { method: 'PATCH', body: JSON.stringify(patch) }),
+  deleteEvent: (id: string) => req<{ ok: boolean }>(`/events/${id}`, { method: 'DELETE' }),
+  doses: (from?: string, to?: string) => req<Dose[]>(`/doses${qs({ from, to })}`),
+  checkins: (from?: string, to?: string) => req<CheckIn[]>(`/checkins${qs({ from, to })}`),
   addDose: (d: Dose) => req<Dose>('/doses', { method: 'POST', body: JSON.stringify(d) }),
   addCheckIn: (c: CheckIn) => req<CheckIn>('/checkins', { method: 'POST', body: JSON.stringify(c) }),
 

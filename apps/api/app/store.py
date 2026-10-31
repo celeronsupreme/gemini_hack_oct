@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 from typing import Iterable, TypeVar
 
 import pandas as pd
-from sqlalchemy import text
+from sqlalchemy import delete as sa_delete, text
 from sqlmodel import Field, Session, SQLModel, create_engine, select
 
 from contracts import CheckIn, Dose, MedicationChange, Profile, SeizureEvent, TriggerDefinition, TriggerTest
@@ -126,6 +126,30 @@ def add_events(events: Iterable[SeizureEvent]) -> list[SeizureEvent]:
         s.commit()
     bump_version()
     return out
+
+
+def delete_event(event_id: str) -> bool:
+    """Remove one seizure. Returns False if no such row."""
+    with session() as s:
+        row = s.get(EventRow, event_id)
+        if row is None:
+            return False
+        s.delete(row); s.commit()
+    bump_version()
+    return True
+
+
+def delete_events(event_ids: Iterable[str]) -> int:
+    """Remove many seizures by id (used by scripts/backfill_demo.py --remove). Returns the number deleted."""
+    ids = list(event_ids)
+    n = 0
+    with session() as s:
+        for i in range(0, len(ids), 500):
+            n += s.exec(sa_delete(EventRow).where(EventRow.id.in_(ids[i:i + 500]))).rowcount  # type: ignore[attr-defined]
+        s.commit()
+    if ids:
+        bump_version()
+    return n
 
 
 def add_doses(doses: Iterable[Dose]) -> list[Dose]:

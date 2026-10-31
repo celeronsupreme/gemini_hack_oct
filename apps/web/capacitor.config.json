@@ -1,0 +1,12 @@
+{
+  "appId": "app.seizurediary.demo",
+  "appName": "Seizure Diary",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  },
+  "android": {
+    "backgroundColor": "#F2F2F7"
+  }
+}

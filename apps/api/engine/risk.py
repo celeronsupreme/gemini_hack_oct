@@ -157,30 +157,58 @@ def thresholds(data: EngineData, as_of: pd.Timestamp, trigger_rungs: dict[str, s
     return medium, high, g
 
 
+def _clock_words(h: int) -> str:
+    """12-hour clock words for an hour: 0 -> midnight, 12 -> noon, 19 -> 7 pm."""
+    h %= 24
+    if h == 0:
+        return "midnight"
+    if h == 12:
+        return "noon"
+    return f"{h % 12} {'am' if h < 12 else 'pm'}"
+
+
+def _pronouns(data: EngineData) -> tuple[str, str]:
+    """(possessive, object): 'her'/'her' when a carer keeps the diary, 'your'/'you' when the person does."""
+    role = getattr(data.profile, "role", None)
+    role = str(role.value if hasattr(role, "value") else role)
+    return ("her", "her") if role == "carer" else ("your", "you")
+
+
+REASON_MAX_CHARS = 34
+_COUNT_WORDS = {1: "One", 2: "Two"}
+
+
 def _reason_text(component: str, pts: float, row: pd.Series, data: EngineData, hist: np.ndarray, n_hist: int) -> str:
+    """Short third-person value for a key/value row (the UI supplies the key from `factor`). Keep under ~34 chars."""
     h = int(row["hour"])
+    poss, obj = _pronouns(data)
     if component == "hour_band":
-        share = sum(hist[(h + k) % 24] for k in range(HORIZON_HOURS)) / n_hist * 100 if n_hist else 0
         if pts >= 2:
-            return f"{h:02d}:00 to {(h + HORIZON_HOURS) % 24:02d}:00 is your busiest stretch: {share:.0f}% of your seizures start in these hours"
-        level = "above" if pts > 1.2 else ("around" if pts >= 0.8 else "below")
-        return f"{share:.0f}% of your seizures start between {h:02d}:00 and {(h + HORIZON_HOURS) % 24:02d}:00, {level} your average"
+            text = f"{_clock_words(h)}–{_clock_words(h + HORIZON_HOURS)} is {poss} busiest stretch"
+            return text if len(text) <= REASON_MAX_CHARS else f"{poss.capitalize()} busiest hours"
+        if pts > 1.2:
+            return f"A busier time of day for {obj}"
+        if pts >= 0.8:
+            return "An average time of day"
+        return "A quieter time of day"
     if component == "today_count":
-        n = int(row["today_count_n"]); return f"{n} seizure{'s' if n != 1 else ''} already today"
+        n = int(row["today_count_n"]); return f"{_COUNT_WORDS.get(n, str(n))} already today"
     if component == "recent_gap":
-        return f"last seizure {row['hours_since_last_n']:.1f} h ago; a second one within 6 h is common for you"
+        hrs = float(row["hours_since_last_n"])
+        return f"Last one {max(1, round(hrs * 60))} min ago" if hrs < 1 else f"Last one {hrs:.1f} h ago"
     if component == "week_vs_baseline":
-        return f"{int(row['last7_n'])} seizures in the last 7 days, above your usual week" if pts >= 1 else f"{int(row['last7_n'])} seizures in the last 7 days, a little above your usual week"
+        n = int(row["last7_n"])
+        return f"{n} in a week, above {poss} usual" if pts >= 1 else f"{n} in a week, a bit above usual"
     if component == "dose_overdue":
-        return "a scheduled dose is overdue"
+        return "A dose is overdue"
     if component == "dose_skipped":
-        return "a dose was skipped today"
+        return "A dose was skipped today"
     if component == "feeling_off":
-        return "feeling off or a warning symptom was logged in the last 6 h"
+        return "Warning signs in the last 6 h"
     if component == "stress":
-        return "high stress today, and stress has shown up as a factor for you"
+        return "High stress today"
     if component == "short_sleep":
-        return "last night was shorter than your usual sleep"
+        return "Short sleep last night"
     return component
 
 
@@ -204,7 +232,7 @@ def compute_risk(data: EngineData, at: pd.Timestamp | None = None, trigger_rungs
             reasons.append(RiskReason(factor=c, points=pts, text=_reason_text(c, pts, row, data, hist, n_hist)))
     reasons.sort(key=lambda r: -r.points)
     if not reasons:
-        reasons.append(RiskReason(factor="quiet", points=0.0, text="nothing today so far and a quiet stretch" if not learning else "still learning your pattern: fewer than 30 seizures logged"))
+        reasons.append(RiskReason(factor="quiet", points=0.0, text="Quiet so far today" if not learning else f"Still learning {_pronouns(data)[0]} pattern"))
     return RiskNow(
         tier=tier, score=round(score, 2), computed_at=at.to_pydatetime(), horizon_hours=3, reasons=reasons[:3],
         learning_mode=learning, overnight_no_data=bool(row["overnight"]),

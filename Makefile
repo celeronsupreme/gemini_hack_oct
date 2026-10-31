@@ -13,7 +13,7 @@ SETUP_PY := pip install --break-system-packages -q -e apps/api[dev] 2>/dev/null 
 endif
 export PY
 
-.PHONY: setup contracts seed api web dev test demo-check clean
+.PHONY: setup contracts seed fixtures demo-data demo-data-clear api web dev test demo-check clean
 
 setup:            ## install everything (python deps + pnpm workspace)
 	$(SETUP_PY)
@@ -25,6 +25,12 @@ contracts:        ## regenerate Pydantic + TypeScript from packages/contracts/sc
 
 seed:             ## import the demo diary and write fixtures from real numbers
 	cd apps/api && $(PY) scripts/seed.py
+
+demo-data:        ## synthetic seizures from her own patterns, end of the real diary -> now (SEED=42; replaces old ones)
+	cd apps/api && $(PY) scripts/backfill_demo.py --seed $(or $(SEED),42)
+
+demo-data-clear:  ## delete every synthetic (demo) seizure
+	cd apps/api && $(PY) scripts/backfill_demo.py --remove
 
 fixtures:         ## rewrite fixtures from whatever is in the database
 	cd apps/api && $(PY) scripts/seed.py --fixtures

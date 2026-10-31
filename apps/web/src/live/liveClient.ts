@@ -21,7 +21,13 @@ export type LiveEvent =
   | { type: 'model_text'; text: string }
   | { type: 'tool'; name: string; args: Record<string, unknown>; response: Record<string, unknown> }
   | { type: 'turn_complete' }
+  | { type: 'speaking'; on: boolean }
+  | { type: 'mock' }
   | { type: 'error'; text: string };
+
+// Tools answered in the browser without a backend round trip. `note` only feeds the on-screen chips (it writes
+// nothing), so it is answered instantly and SILENT so the model does not stop to talk about it.
+const LOCAL_TOOLS = new Set(['note']);
 
 const ENDPOINT = 'wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContentConstrained';
 
@@ -34,6 +40,7 @@ export class LiveSession {
   // Mic audio captured before the server sends setupComplete; flushed once it does, so early words are not lost.
   private pending: string[] = [];
   private ready = false;
+  private muted = false;
   transcript: { role: 'user' | 'model'; text: string }[] = [];
   onEvent: (e: LiveEvent) => void = () => {};
 
@@ -46,6 +53,7 @@ export class LiveSession {
     this.token = await api.liveToken(eventId);
     if (this.token.mock) {
       this.mic?.stop(); this.mic = null;
+      this.onEvent({ type: 'mock' });
       this.onEvent({ type: 'status', text: 'Gemini is not configured on the server (mock token). Type or paste what happened instead.' });
       return;
     }
@@ -90,22 +98,23 @@ export class LiveSession {
     }
     const sc = msg.serverContent as Record<string, unknown> | undefined;
     if (sc) {
-      if (sc.interrupted) this.player.clear();
+      if (sc.interrupted) { this.player.clear(); this.onEvent({ type: 'speaking', on: false }); }
       const turn = sc.modelTurn as { parts?: { inlineData?: { data: string; mimeType: string } }[] } | undefined;
-      turn?.parts?.forEach((p) => { if (p.inlineData?.data) this.player.enqueue(p.inlineData.data); });
+      turn?.parts?.forEach((p) => { if (p.inlineData?.data) { this.player.enqueue(p.inlineData.data); this.onEvent({ type: 'speaking', on: true }); } });
       const it = sc.inputTranscription as { text?: string } | undefined;
       if (it?.text) { this.pushTranscript('user', it.text); this.onEvent({ type: 'user_text', text: it.text }); }
       const ot = sc.outputTranscription as { text?: string } | undefined;
       if (ot?.text) { this.pushTranscript('model', ot.text); this.onEvent({ type: 'model_text', text: ot.text }); }
-      if (sc.turnComplete) this.onEvent({ type: 'turn_complete' });
+      if (sc.turnComplete) { this.onEvent({ type: 'turn_complete' }); this.onEvent({ type: 'speaking', on: false }); }
     }
     const tc = msg.toolCall as { functionCalls?: { id: string; name: string; args: Record<string, unknown> }[] } | undefined;
     if (tc?.functionCalls?.length) {
       const responses = [];
       for (const call of tc.functionCalls) {
-        const res = await api.liveTool({ id: call.id, name: call.name, args: call.args || {} });
-        this.onEvent({ type: 'tool', name: call.name, args: call.args || {}, response: res.response });
-        responses.push({ id: call.id, name: call.name, response: res.response, scheduling: 'WHEN_IDLE' });
+        const local = LOCAL_TOOLS.has(call.name);
+        const response = local ? { status: 'shown' } : (await api.liveTool({ id: call.id, name: call.name, args: call.args || {} })).response;
+        this.onEvent({ type: 'tool', name: call.name, args: call.args || {}, response });
+        responses.push({ id: call.id, name: call.name, response, scheduling: local ? 'SILENT' : 'WHEN_IDLE' });
       }
       this.ws?.send(JSON.stringify({ toolResponse: { functionResponses: responses } }));
     }
@@ -121,6 +130,7 @@ export class LiveSession {
 
   private async startMic() {
     this.mic = new MicCapture(16000, (base64) => {
+      if (this.muted) return;
       if (this.ready && this.ws?.readyState === WebSocket.OPEN) this.sendAudio(base64);
       else if (this.pending.length < 1500) this.pending.push(base64); // cap the pre-connect buffer (~30 s at 20 ms chunks)
     });
@@ -129,6 +139,12 @@ export class LiveSession {
 
   private sendAudio(base64: string) {
     this.ws?.send(JSON.stringify({ realtimeInput: { audio: { data: base64, mimeType: 'audio/pcm;rate=16000' } } }));
+  }
+
+  /** Pause or resume listening; the session stays open. */
+  setMuted(m: boolean) {
+    this.muted = m;
+    if (m && this.ready && this.ws?.readyState === WebSocket.OPEN) this.ws.send(JSON.stringify({ realtimeInput: { audioStreamEnd: true } }));
   }
 
   sendText(text: string) {

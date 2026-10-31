@@ -2,7 +2,7 @@
  "seizures": [
   {
    "id": null,
-   "start_time": "2026-08-24T18:20:00+01:00",
+   "start_time": "2026-10-31T18:20:00Z",
    "duration_s": 90,
    "duration_estimated": true,
    "still_going": false,
@@ -25,7 +25,10 @@
    "confidence": "guess",
    "possibly_non_epileptic": false,
    "source": "voice",
-   "transcript_hash": "b11f46d5f69daa5b"
+   "transcript_hash": "b11f46d5f69daa5b",
+   "factors": [],
+   "recovery_text": null,
+   "synthetic": false
   }
  ],
  "doses": [],

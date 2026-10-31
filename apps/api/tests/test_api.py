@@ -18,7 +18,8 @@ def test_live_endpoints_run_on_seeded_db(tmp_path):
     assert c.get("/health").json()["counts"]["events"] == 2598
     r = c.get("/risk/now", params={"at": "2026-08-21T18:30:00"}).json(); assert r["tier"] == "high"
     tap = c.post("/events/tap", json={}).json(); assert tap["source"] == "tap"
-    tok = c.post("/live/token").json(); assert tok["mock"] is True and len(tok["tool_declarations"]) == 4
+    from gemini.live import TOOL_DECLARATIONS
+    tok = c.post("/live/token").json(); assert tok["mock"] is True and [t["name"] for t in tok["tool_declarations"]] == [t["name"] for t in TOOL_DECLARATIONS]
     res = c.post("/live/tool", json={"id": "1", "name": "log_seizure", "args": {"start_time": "2026-08-24T19:15:00+01:00", "duration_s": 90, "type": "impaired_awareness", "confidence": "probable", "context_tags": ["shower_bath"]}}).json()
     assert res["response"]["status"] == "saved"
     ex = c.post("/transcripts/extract", json={"transcript": "She had one about quarter past seven, maybe a minute and a half, her head went to the side, just out of the shower."}).json()

@@ -21,7 +21,7 @@
  ],
  "preview_rows": [
   {
-   "id": "40ebdbcf-7205-4c63-b55a-58fadb5276ab",
+   "id": "be185da9-bd29-448e-afc8-a3b05669dd56",
    "start_time": "2018-07-25T21:15:00+01:00",
    "duration_s": 240,
    "duration_estimated": true,
@@ -43,10 +43,13 @@
    "confidence": "probable",
    "possibly_non_epileptic": false,
    "source": "import",
-   "transcript_hash": null
+   "transcript_hash": null,
+   "factors": [],
+   "recovery_text": null,
+   "synthetic": false
   },
   {
-   "id": "519d2c98-d2a4-4058-b4d9-69a97954197b",
+   "id": "f0d6e201-6de7-47f3-bb3d-c8a33d027da4",
    "start_time": "2018-08-02T17:45:00+01:00",
    "duration_s": 120,
    "duration_estimated": true,
@@ -68,10 +71,13 @@
    "confidence": "probable",
    "possibly_non_epileptic": false,
    "source": "import",
-   "transcript_hash": null
+   "transcript_hash": null,
+   "factors": [],
+   "recovery_text": null,
+   "synthetic": false
   },
   {
-   "id": "cca3cd19-dd6e-41b8-8514-6ae2936f5d39",
+   "id": "2ec683c4-c4bd-4bac-b19f-66bfc56ea582",
    "start_time": "2018-08-15T08:12:00+01:00",
    "duration_s": 65,
    "duration_estimated": false,
@@ -93,10 +99,13 @@
    "confidence": "probable",
    "possibly_non_epileptic": false,
    "source": "import",
-   "transcript_hash": null
+   "transcript_hash": null,
+   "factors": [],
+   "recovery_text": null,
+   "synthetic": false
   },
   {
-   "id": "93c3b548-a293-4731-a91a-c76b7517e4f4",
+   "id": "2458a896-99e9-4770-bde3-669bc858aa3d",
    "start_time": "2018-08-21T17:41:00+01:00",
    "duration_s": 100,
    "duration_estimated": false,
@@ -118,10 +127,13 @@
    "confidence": "probable",
    "possibly_non_epileptic": false,
    "source": "import",
-   "transcript_hash": null
+   "transcript_hash": null,
+   "factors": [],
+   "recovery_text": null,
+   "synthetic": false
   },
   {
-   "id": "125a834c-49c7-458c-ab54-7e332dc485c9",
+   "id": "39899b2e-98e7-4575-92c5-208b83a4f800",
    "start_time": "2018-08-28T14:29:00+01:00",
    "duration_s": 240,
    "duration_estimated": true,
@@ -143,10 +155,13 @@
    "confidence": "probable",
    "possibly_non_epileptic": false,
    "source": "import",
-   "transcript_hash": null
+   "transcript_hash": null,
+   "factors": [],
+   "recovery_text": null,
+   "synthetic": false
   },
   {
-   "id": "85db2d17-f57c-4f70-b06d-9be3dca79b9a",
+   "id": "c5edf96c-dc31-41d9-9a0f-ccb3fe039493",
    "start_time": "2018-09-05T07:55:00+01:00",
    "duration_s": 93,
    "duration_estimated": false,
@@ -168,10 +183,13 @@
    "confidence": "probable",
    "possibly_non_epileptic": false,
    "source": "import",
-   "transcript_hash": null
+   "transcript_hash": null,
+   "factors": [],
+   "recovery_text": null,
+   "synthetic": false
   },
   {
-   "id": "dd1021a0-c290-4238-87a8-d96625ddc89a",
+   "id": "91a311db-caf1-4850-834b-36ef73410117",
    "start_time": "2018-09-11T13:55:00+01:00",
    "duration_s": 30,
    "duration_estimated": false,
@@ -193,10 +211,13 @@
    "confidence": "probable",
    "possibly_non_epileptic": false,
    "source": "import",
-   "transcript_hash": null
+   "transcript_hash": null,
+   "factors": [],
+   "recovery_text": null,
+   "synthetic": false
   },
   {
-   "id": "2c8bea1e-b75e-4eb5-8164-57858c5a8375",
+   "id": "71be083b-8fbe-4bae-b69d-31bb988163cd",
    "start_time": "2018-09-18T06:28:00+01:00",
    "duration_s": 80,
    "duration_estimated": false,
@@ -218,10 +239,13 @@
    "confidence": "probable",
    "possibly_non_epileptic": false,
    "source": "import",
-   "transcript_hash": null
+   "transcript_hash": null,
+   "factors": [],
+   "recovery_text": null,
+   "synthetic": false
   },
   {
-   "id": "bb988bbb-87a8-44f2-a3be-bdc5d4e9eac4",
+   "id": "e70edb3c-2034-4ce1-9e52-c7971d7da5cd",
    "start_time": "2018-09-22T06:58:00+01:00",
    "duration_s": 20,
    "duration_estimated": false,
@@ -243,10 +267,13 @@
    "confidence": "probable",
    "possibly_non_epileptic": false,
    "source": "import",
-   "transcript_hash": null
+   "transcript_hash": null,
+   "factors": [],
+   "recovery_text": null,
+   "synthetic": false
   },
   {
-   "id": "c3f3a0a9-e56d-4ab3-a041-437b218cc607",
+   "id": "f7a4c8b8-8f84-4403-95b0-487da0d939b7",
    "start_time": "2018-09-29T20:44:00+01:00",
    "duration_s": 60,
    "duration_estimated": true,
@@ -268,10 +295,13 @@
    "confidence": "probable",
    "possibly_non_epileptic": false,
    "source": "import",
-   "transcript_hash": null
+   "transcript_hash": null,
+   "factors": [],
+   "recovery_text": null,
+   "synthetic": false
   }
  ],
- "total_rows": 2598,
+ "total_rows": 2599,
  "label_mapping": {
   "Quiet and aware": "aware",
   "Head strongly to side, lots of saliva, cannot speak": "impaired_awareness",

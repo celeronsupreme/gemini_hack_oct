@@ -685,6 +685,13 @@
    "severe": 5,
    "days_with_seizure": 18,
    "median_duration_s": 26.5
+  },
+  {
+   "month": "2026-10",
+   "all": 1,
+   "severe": 1,
+   "days_with_seizure": 1,
+   "median_duration_s": 2.0
   }
  ],
  "medication_changes": [

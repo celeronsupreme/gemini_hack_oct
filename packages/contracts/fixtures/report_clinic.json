@@ -1,29 +1,29 @@
 {
- "generated_at": "2026-08-24T18:30:00+01:00",
- "window_start": "2026-05-26",
- "window_end": "2026-08-24",
- "prior_window_start": "2026-02-25",
- "prior_window_end": "2026-05-26",
+ "generated_at": "2026-10-31T18:30:00Z",
+ "window_start": "2026-08-02",
+ "window_end": "2026-10-31",
+ "prior_window_start": "2026-05-04",
+ "prior_window_end": "2026-08-02",
  "completeness": {
-  "days_with_any_entry": 70,
+  "days_with_any_entry": 19,
   "days_in_window": 91,
   "pct_events_logged_within_24h": null,
   "logged_by": {
-   "carer": 112
+   "carer": 31
   }
  },
  "headline": {
-  "total": 112,
-  "per_28_days": 34.8,
-  "prior_per_28_days": 47.9,
-  "pct_change": -27.3,
-  "seizure_days": 70,
-  "days_since_last_convulsive": 2237,
-  "longest_seizure_free_run_days": 2,
+  "total": 31,
+  "per_28_days": 9.6,
+  "prior_per_28_days": 33.9,
+  "pct_change": -71.7,
+  "seizure_days": 19,
+  "days_since_last_convulsive": 0,
+  "longest_seizure_free_run_days": 67,
   "last_seizure_by_type": {
    "aware": "2026-08-24",
-   "impaired_awareness": "2026-08-21",
-   "unsure": "2026-07-27"
+   "convulsive": "2026-10-31",
+   "impaired_awareness": "2026-08-21"
   }
  },
  "by_type": [
@@ -31,10 +31,10 @@
    "type": "aware",
    "ilae_name": "focal aware",
    "patient_label": "Quiet and aware",
-   "count": 81,
-   "per_28_days": 25.2,
-   "prior_count": 110,
-   "median_duration_s": 20.0,
+   "count": 25,
+   "per_28_days": 7.8,
+   "prior_count": 71,
+   "median_duration_s": 25.0,
    "max_duration_s": 131.0,
    "pct_asleep": null,
    "pct_witnessed": 100.0,
@@ -45,111 +45,41 @@
    "type": "impaired_awareness",
    "ilae_name": "focal impaired awareness",
    "patient_label": "Head strongly to side, lots of saliva, cannot speak",
-   "count": 20,
-   "per_28_days": 6.2,
-   "prior_count": 25,
-   "median_duration_s": 142.5,
-   "max_duration_s": 210.0,
+   "count": 5,
+   "per_28_days": 1.6,
+   "prior_count": 19,
+   "median_duration_s": 152.0,
+   "max_duration_s": 206.0,
    "pct_asleep": null,
    "pct_witnessed": 100.0,
    "count_ge_5min": 0,
    "last_seen": "2026-08-21"
   },
   {
-   "type": "unsure",
-   "ilae_name": "unknown onset, possible seizure",
-   "patient_label": null,
-   "count": 11,
-   "per_28_days": 3.4,
-   "prior_count": 19,
-   "median_duration_s": 0.0,
-   "max_duration_s": 0.0,
+   "type": "convulsive",
+   "ilae_name": "focal to bilateral or generalised tonic-clonic",
+   "patient_label": "Tonic-clonic",
+   "count": 1,
+   "per_28_days": 0.3,
+   "prior_count": 0,
+   "median_duration_s": 2.0,
+   "max_duration_s": 2.0,
    "pct_asleep": null,
    "pct_witnessed": 100.0,
    "count_ge_5min": 0,
-   "last_seen": "2026-07-27"
+   "last_seen": "2026-10-31"
   }
  ],
  "cluster_definition": "3 or more seizures in a calendar day, or more than the person's own 90th percentile day",
- "cluster_days": 7,
+ "cluster_days": 2,
  "events_ge_5min": 0,
  "nocturnal_count_30d": 0,
- "convulsive_count_12m": 0,
+ "convulsive_count_12m": 1,
  "weekly_by_type": [
-  {
-   "week_start": "2026-05-26",
-   "counts": {
-    "aware": 2,
-    "unsure": 2,
-    "impaired_awareness": 1
-   }
-  },
-  {
-   "week_start": "2026-06-02",
-   "counts": {
-    "aware": 4,
-    "unsure": 2,
-    "impaired_awareness": 1
-   }
-  },
-  {
-   "week_start": "2026-06-09",
-   "counts": {
-    "aware": 7,
-    "impaired_awareness": 2,
-    "unsure": 1
-   }
-  },
-  {
-   "week_start": "2026-06-16",
-   "counts": {
-    "aware": 10,
-    "impaired_awareness": 1
-   }
-  },
-  {
-   "week_start": "2026-06-23",
-   "counts": {
-    "aware": 5,
-    "unsure": 1,
-    "impaired_awareness": 1
-   }
-  },
-  {
-   "week_start": "2026-06-30",
-   "counts": {
-    "impaired_awareness": 5,
-    "unsure": 2,
-    "aware": 1
-   }
-  },
-  {
-   "week_start": "2026-07-07",
-   "counts": {
-    "aware": 10,
-    "impaired_awareness": 1
-   }
-  },
-  {
-   "week_start": "2026-07-14",
-   "counts": {
-    "aware": 8,
-    "impaired_awareness": 2,
-    "unsure": 1
-   }
-  },
-  {
-   "week_start": "2026-07-21",
-   "counts": {
-    "aware": 6,
-    "unsure": 2
-   }
-  },
   {
    "week_start": "2026-07-28",
    "counts": {
-    "aware": 3,
-    "impaired_awareness": 2
+    "impaired_awareness": 1
    }
   },
   {
@@ -171,6 +101,12 @@
    "counts": {
     "aware": 7,
     "impaired_awareness": 1
+   }
+  },
+  {
+   "week_start": "2026-10-27",
+   "counts": {
+    "convulsive": 1
    }
   }
  ],
@@ -802,104 +738,6 @@
   "missed_doses": 0,
   "rescue_uses": [
    {
-    "date": "2026-05-30",
-    "drug": "clobazam",
-    "dose_mg": 5.0,
-    "seizures_that_day": 1,
-    "seizures_next_3_days": 2
-   },
-   {
-    "date": "2026-06-01",
-    "drug": "clobazam",
-    "dose_mg": 2.5,
-    "seizures_that_day": 1,
-    "seizures_next_3_days": 2
-   },
-   {
-    "date": "2026-06-06",
-    "drug": "clobazam",
-    "dose_mg": 2.5,
-    "seizures_that_day": 2,
-    "seizures_next_3_days": 3
-   },
-   {
-    "date": "2026-06-08",
-    "drug": "clobazam",
-    "dose_mg": 2.5,
-    "seizures_that_day": 2,
-    "seizures_next_3_days": 4
-   },
-   {
-    "date": "2026-06-09",
-    "drug": "clobazam",
-    "dose_mg": 2.5,
-    "seizures_that_day": 1,
-    "seizures_next_3_days": 6
-   },
-   {
-    "date": "2026-06-11",
-    "drug": "clobazam",
-    "dose_mg": 5.0,
-    "seizures_that_day": 1,
-    "seizures_next_3_days": 4
-   },
-   {
-    "date": "2026-06-17",
-    "drug": "clobazam",
-    "dose_mg": 5.0,
-    "seizures_that_day": 4,
-    "seizures_next_3_days": 1
-   },
-   {
-    "date": "2026-06-22",
-    "drug": "clobazam",
-    "dose_mg": 5.0,
-    "seizures_that_day": 2,
-    "seizures_next_3_days": 2
-   },
-   {
-    "date": "2026-07-04",
-    "drug": "clobazam",
-    "dose_mg": 5.0,
-    "seizures_that_day": 1,
-    "seizures_next_3_days": 5
-   },
-   {
-    "date": "2026-07-05",
-    "drug": "clobazam",
-    "dose_mg": 5.0,
-    "seizures_that_day": 1,
-    "seizures_next_3_days": 4
-   },
-   {
-    "date": "2026-07-11",
-    "drug": "clobazam",
-    "dose_mg": 5.0,
-    "seizures_that_day": 1,
-    "seizures_next_3_days": 4
-   },
-   {
-    "date": "2026-07-19",
-    "drug": "clobazam",
-    "dose_mg": 5.0,
-    "seizures_that_day": 1,
-    "seizures_next_3_days": 2
-   },
-   {
-    "date": "2026-07-21",
-    "drug": "clobazam",
-    "dose_mg": 5.0,
-    "seizures_that_day": 1,
-    "seizures_next_3_days": 2
-   },
-   {
-    "date": "2026-07-27",
-    "drug": "clobazam",
-    "dose_mg": 5.0,
-    "seizures_that_day": 1,
-    "seizures_next_3_days": 3
-   },
-   {
     "date": "2026-08-07",
     "drug": "clobazam",
     "dose_mg": 5.0,
@@ -927,8 +765,8 @@
  "risk_factors": [
   {
    "factor": "Tonic-clonic seizures in window",
-   "present": false,
-   "detail": "0 in window; 0 in the last 12 months"
+   "present": true,
+   "detail": "1 in window; 1 in the last 12 months"
   },
   {
    "factor": "Seizures during sleep",
@@ -953,7 +791,7 @@
   {
    "factor": "Frequency up more than 25% vs prior window",
    "present": false,
-   "detail": "34.8 vs 47.9 per 28 days"
+   "detail": "9.6 vs 33.9 per 28 days"
   }
  ],
  "triggers": [
@@ -963,27 +801,27 @@
    "kind": "exposure",
    "rung": "emerging",
    "exposure_units": 51,
-   "unexposed_units": 2547,
+   "unexposed_units": 2548,
    "seizures_exposed": 27,
-   "seizures_unexposed": 764,
+   "seizures_unexposed": 765,
    "rate_exposed": 0.5294,
-   "rate_unexposed": 0.3,
+   "rate_unexposed": 0.3002,
    "ratio": 1.76,
    "ci_low": 1.2,
    "ci_high": 2.59,
-   "p_value": 0.001,
-   "p_adjusted": 0.003,
+   "p_value": 0.002,
+   "p_adjusted": 0.006,
    "tests_corrected_for": 6,
    "confounder_note": "From seizure notes only: no days without the trigger are recorded, so this cannot rise above emerging until daily check-ins exist.",
    "ratio_within_time_bands": null,
    "units_to_next_verdict": null,
    "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
    "plain_text": "Of 51 seizures whose notes mention hot shower or bath, 53% were severe, 1.8\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
-   "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
-   "computed_at": "2026-10-31T13:47:17.736746Z",
+   "method": "notes only: share of severe seizures among seizures whose note, tag or factors mention this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
+   "computed_at": "2026-10-31T15:42:20.616941Z",
    "history": [
     {
-     "at": "2026-10-31T13:47:17.736746Z",
+     "at": "2026-10-31T15:32:44.756471Z",
      "rung": "emerging"
     }
    ]
@@ -993,28 +831,28 @@
    "trigger": "exercise",
    "kind": "exposure",
    "rung": "emerging",
-   "exposure_units": 126,
+   "exposure_units": 127,
    "unexposed_units": 2472,
-   "seizures_exposed": 62,
+   "seizures_exposed": 63,
    "seizures_unexposed": 729,
-   "rate_exposed": 0.4921,
+   "rate_exposed": 0.4961,
    "rate_unexposed": 0.2949,
-   "ratio": 1.67,
-   "ci_low": 1.29,
-   "ci_high": 2.16,
+   "ratio": 1.68,
+   "ci_low": 1.3,
+   "ci_high": 2.18,
    "p_value": 0.001,
-   "p_adjusted": 0.003,
+   "p_adjusted": 0.006,
    "tests_corrected_for": 6,
    "confounder_note": "From seizure notes only: no days without the trigger are recorded, so this cannot rise above emerging until daily check-ins exist.",
    "ratio_within_time_bands": null,
    "units_to_next_verdict": null,
    "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
-   "plain_text": "Of 126 seizures whose notes mention exercise, 49% were severe, 1.7\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
-   "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
-   "computed_at": "2026-10-31T13:47:17.763908Z",
+   "plain_text": "Of 127 seizures whose notes mention exercise, 50% were severe, 1.7\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
+   "method": "notes only: share of severe seizures among seizures whose note, tag or factors mention this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
+   "computed_at": "2026-10-31T15:42:20.671926Z",
    "history": [
     {
-     "at": "2026-10-31T13:47:17.763908Z",
+     "at": "2026-10-31T15:32:44.806701Z",
      "rung": "emerging"
     }
    ]
@@ -1025,27 +863,27 @@
    "kind": "exposure",
    "rung": "emerging",
    "exposure_units": 34,
-   "unexposed_units": 2564,
+   "unexposed_units": 2565,
    "seizures_exposed": 17,
-   "seizures_unexposed": 774,
+   "seizures_unexposed": 775,
    "rate_exposed": 0.5,
-   "rate_unexposed": 0.3019,
-   "ratio": 1.66,
+   "rate_unexposed": 0.3021,
+   "ratio": 1.65,
    "ci_low": 1.02,
    "ci_high": 2.68,
-   "p_value": 0.012,
+   "p_value": 0.013,
    "p_adjusted": 0.018,
    "tests_corrected_for": 6,
    "confounder_note": "From seizure notes only: no days without the trigger are recorded, so this cannot rise above emerging until daily check-ins exist.",
    "ratio_within_time_bands": null,
    "units_to_next_verdict": null,
    "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
-   "plain_text": "Of 34 seizures whose notes mention travel, 50% were severe, 1.7\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
-   "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
-   "computed_at": "2026-10-31T13:47:17.755839Z",
+   "plain_text": "Of 34 seizures whose notes mention travel, 50% were severe, 1.6\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
+   "method": "notes only: share of severe seizures among seizures whose note, tag or factors mention this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
+   "computed_at": "2026-10-31T15:42:20.654668Z",
    "history": [
     {
-     "at": "2026-10-31T13:47:17.755839Z",
+     "at": "2026-10-31T15:32:44.791204Z",
      "rung": "emerging"
     }
    ]
@@ -1056,27 +894,27 @@
    "kind": "exposure",
    "rung": "emerging",
    "exposure_units": 49,
-   "unexposed_units": 2549,
+   "unexposed_units": 2550,
    "seizures_exposed": 24,
-   "seizures_unexposed": 767,
+   "seizures_unexposed": 768,
    "rate_exposed": 0.4898,
-   "rate_unexposed": 0.3009,
+   "rate_unexposed": 0.3012,
    "ratio": 1.63,
    "ci_low": 1.08,
    "ci_high": 2.44,
-   "p_value": 0.007,
-   "p_adjusted": 0.014,
+   "p_value": 0.006,
+   "p_adjusted": 0.012,
    "tests_corrected_for": 6,
    "confounder_note": "From seizure notes only: no days without the trigger are recorded, so this cannot rise above emerging until daily check-ins exist.",
    "ratio_within_time_bands": null,
    "units_to_next_verdict": null,
    "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
    "plain_text": "Of 49 seizures whose notes mention period, 49% were severe, 1.6\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
-   "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
-   "computed_at": "2026-10-31T13:47:17.746753Z",
+   "method": "notes only: share of severe seizures among seizures whose note, tag or factors mention this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
+   "computed_at": "2026-10-31T15:42:20.637660Z",
    "history": [
     {
-     "at": "2026-10-31T13:47:17.746753Z",
+     "at": "2026-10-31T15:32:44.775326Z",
      "rung": "emerging"
     }
    ]
@@ -1087,27 +925,27 @@
    "kind": "exposure",
    "rung": "emerging",
    "exposure_units": 66,
-   "unexposed_units": 2532,
+   "unexposed_units": 2533,
    "seizures_exposed": 29,
-   "seizures_unexposed": 762,
+   "seizures_unexposed": 763,
    "rate_exposed": 0.4394,
-   "rate_unexposed": 0.3009,
+   "rate_unexposed": 0.3012,
    "ratio": 1.46,
    "ci_low": 1.01,
-   "ci_high": 2.12,
-   "p_value": 0.018,
-   "p_adjusted": 0.0216,
+   "ci_high": 2.11,
+   "p_value": 0.015,
+   "p_adjusted": 0.018,
    "tests_corrected_for": 6,
    "confounder_note": "From seizure notes only: no days without the trigger are recorded, so this cannot rise above emerging until daily check-ins exist.",
    "ratio_within_time_bands": null,
    "units_to_next_verdict": null,
    "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
    "plain_text": "Of 66 seizures whose notes mention being upset, 44% were severe, 1.5\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
-   "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
-   "computed_at": "2026-10-31T13:47:17.773697Z",
+   "method": "notes only: share of severe seizures among seizures whose note, tag or factors mention this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
+   "computed_at": "2026-10-31T15:42:20.691462Z",
    "history": [
     {
-     "at": "2026-10-31T13:47:17.773697Z",
+     "at": "2026-10-31T15:32:44.823948Z",
      "rung": "emerging"
     }
    ]
@@ -1115,7 +953,7 @@
  ],
  "questions_for_clinician": [],
  "sudep_last_discussed": null,
- "logging_effort_note": "70 of 91 days have at least one entry (77%). Days without entries are not seizure-free.",
+ "logging_effort_note": "19 of 91 days have at least one entry (21%). Days without entries are not seizure-free.",
  "wording_notes": [
   "Seizure types use ILAE 2017 names; the person's own label is shown in brackets.",
   "Unwitnessed or uncertain events are listed as unknown onset, possible seizure.",
