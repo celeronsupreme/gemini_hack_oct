@@ -8,3 +8,11 @@ __pycache__/
 apps/api/data/app.db*
 apps/api/data/test.db*
 apps/web/dev-dist/
+
+# UI-seat additions: personal health data at the repo root (see data/README.md), local venvs, local Claude settings.
+# Note: apps/api/data/family_diary.xlsx IS tracked (the seed needs it); notes are redacted on import, not in the file.
+/data/*
+!/data/README.md
+analysis/analysis_results_meds_notes.json
+.venv/
+.claude/settings.local.json

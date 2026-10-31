@@ -23,7 +23,7 @@ export function TapButton() {
       <div className={`timer ${warn ? 'warn' : ''}`}>{mm}:{ss}</div>
       {warn && <div className="error">Past {limitConv / 60} minutes. If convulsive, follow the emergency plan now. {secs >= limitOther ? `Past ${limitOther / 60} minutes for any type.` : ''}</div>}
       <div className="row">
-        <button className="btn primary grow" onClick={async () => { await stopTimer(); nav('/log'); }}>It's over — tell me about it</button>
+        <button className="btn primary grow" onClick={async () => { const ev = await stopTimer(); nav(ev?.id ? `/log?event=${ev.id}` : '/log'); }}>It's over — tell me about it</button>
         <button className="btn ghost" onClick={() => void stopTimer()}>Stop</button>
       </div>
       {warn && <button className="btn danger" onClick={() => nav('/emergency')}>Emergency plan</button>}

@@ -3,9 +3,10 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 export PYTHONPATH="$PWD/packages/contracts/py:$PWD/apps/api"
-echo "▶ tests"; (cd apps/api && python3 -W ignore -m pytest -q)
-echo "▶ seed + fixtures"; (cd apps/api && python3 -W ignore scripts/seed.py >/dev/null)
-echo "▶ api"; pushd apps/api >/dev/null; python3 -W ignore -m uvicorn app.main:app --port 8010 >/tmp/demo_api.log 2>&1 & API_PID=$!; popd >/dev/null; sleep 4
+PY="${1:-${PY:-python3 -W ignore}}"   # the Makefile passes the right interpreter (venv on Windows); run from apps/api
+echo "▶ tests"; (cd apps/api && $PY -m pytest -q)
+echo "▶ seed + fixtures"; (cd apps/api && $PY scripts/seed.py >/dev/null)
+echo "▶ api"; pushd apps/api >/dev/null; $PY -m uvicorn app.main:app --port 8010 >"${TMPDIR:-/tmp}/demo_api.log" 2>&1 & API_PID=$!; popd >/dev/null; sleep 6
 fail=0
 for p in "/health" "/risk/now" "/risk/now?at=2026-08-21T18:30:00" "/stats/hourly" "/stats/monthly" "/stats/baseline" "/triggers" "/report/clinic" "/profile" "/risk/now?mock=1" "/triggers?mock=1"; do
   code=$(curl -s -o /dev/null -w "%{http_code}" "http://localhost:8010$p"); printf "  %-40s %s\n" "$p" "$code"; [ "$code" = "200" ] || fail=1

@@ -31,12 +31,21 @@ export class LiveSession {
   private player = new PcmPlayer(24000);
   private resumeHandle: string | null = null;
   private token: LiveToken | null = null;
+  // Mic audio captured before the server sends setupComplete; flushed once it does, so early words are not lost.
+  private pending: string[] = [];
+  private ready = false;
   transcript: { role: 'user' | 'model'; text: string }[] = [];
   onEvent: (e: LiveEvent) => void = () => {};
 
-  async start(): Promise<void> {
-    this.token = await api.liveToken();
+  async start(eventId?: string): Promise<void> {
+    // Open the mic first (inside the user's tap, which also satisfies autoplay/permission rules) and buffer while the
+    // token is minted and the socket connects.
+    this.ready = false; this.pending = [];
+    this.onEvent({ type: 'status', text: 'Listening, go ahead (connecting…)' });
+    await this.startMic();
+    this.token = await api.liveToken(eventId);
     if (this.token.mock) {
+      this.mic?.stop(); this.mic = null;
       this.onEvent({ type: 'status', text: 'Gemini is not configured on the server (mock token). Type or paste what happened instead.' });
       return;
     }
@@ -48,21 +57,18 @@ export class LiveSession {
     this.ws.onclose = (e) => this.onEvent({ type: 'status', text: `Session closed (${e.code})` });
   }
 
-  private sendSetup(withVocabulary: boolean) {
+  private sendSetup(_withVocabulary: boolean) {
     if (!this.ws || !this.token) return;
+    // The token is LOCKED to the full session config on the server (system prompt, tools, transcription, compression,
+    // resumption) — see apps/api/gemini/live.py:session_config. The client therefore sends the minimal setup only;
+    // repeating the config here can conflict with the locked values and has no effect when it does not.
     const setup: Record<string, unknown> = {
       model: `models/${this.token.model}`,
       generationConfig: { responseModalities: ['AUDIO'] },
-      systemInstruction: { parts: [{ text: this.token.system_instruction }] },
-      tools: [{ functionDeclarations: this.token.tool_declarations }],
-      inputAudioTranscription: withVocabulary ? { customVocabulary: this.token.custom_vocabulary } : {},
-      outputAudioTranscription: {},
-      realtimeInputConfig: { automaticActivityDetection: { silenceDurationMs: 700 } },
-      contextWindowCompression: { slidingWindow: {} },
-      sessionResumption: this.resumeHandle ? { handle: this.resumeHandle } : {},
     };
+    if (this.resumeHandle) setup.sessionResumption = { handle: this.resumeHandle };
     this.ws.send(JSON.stringify({ setup }));
-    this.vocabularyTried = withVocabulary;
+    this.vocabularyTried = false;
   }
   private vocabularyTried = false;
 
@@ -71,8 +77,9 @@ export class LiveSession {
     let msg: Record<string, unknown>;
     try { msg = JSON.parse(text); } catch { return; }
     if (msg.setupComplete !== undefined) {
+      this.ready = true;
+      this.pending.forEach((chunk) => this.sendAudio(chunk)); this.pending = [];
       this.onEvent({ type: 'status', text: 'Listening' });
-      await this.startMic();
       return;
     }
     if (msg.error) {
@@ -114,9 +121,14 @@ export class LiveSession {
 
   private async startMic() {
     this.mic = new MicCapture(16000, (base64) => {
-      if (this.ws?.readyState === WebSocket.OPEN) this.ws.send(JSON.stringify({ realtimeInput: { audio: { data: base64, mimeType: 'audio/pcm;rate=16000' } } }));
+      if (this.ready && this.ws?.readyState === WebSocket.OPEN) this.sendAudio(base64);
+      else if (this.pending.length < 1500) this.pending.push(base64); // cap the pre-connect buffer (~30 s at 20 ms chunks)
     });
     await this.mic.start();
+  }
+
+  private sendAudio(base64: string) {
+    this.ws?.send(JSON.stringify({ realtimeInput: { audio: { data: base64, mimeType: 'audio/pcm;rate=16000' } } }));
   }
 
   sendText(text: string) {

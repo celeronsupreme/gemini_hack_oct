@@ -65,7 +65,9 @@ def extract(transcript: str, now: dt.datetime | None = None) -> DiaryEntryBatch:
     resp = client.models.generate_content(
         model=settings.extract_model,
         contents=PROMPT.format(offset=offset, today=now.strftime("%Y-%m-%d"), transcript=transcript),
-        config={"response_mime_type": "application/json", "response_schema": DiaryEntryBatch, "temperature": 0},
+        # response_json_schema passes the JSON Schema through untouched; response_schema rejects additionalProperties
+        # (used throughout the contracts) on the Developer API.
+        config={"response_mime_type": "application/json", "response_json_schema": DiaryEntryBatch.model_json_schema(), "temperature": 0},
     )
     batch = DiaryEntryBatch.model_validate_json(resp.text)
     h = _hash(transcript)

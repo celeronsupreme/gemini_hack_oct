@@ -46,7 +46,8 @@ export const api = {
   clinicReport: (window = 90, at?: string) => req<ClinicReport>(`/report/clinic${qs({ window, at })}`),
   saveQuestions: (questions: string[]) => req<{ ok: boolean }>('/report/questions', { method: 'PUT', body: JSON.stringify({ questions }) }),
 
-  liveToken: () => req<LiveToken>(`/live/token${qs({})}`, { method: 'POST', body: '{}' }),
+  // eventId = the seizure the one-tap timer logged; the server puts its time and duration into the agent's instructions.
+  liveToken: (eventId?: string) => req<LiveToken>(`/live/token${qs({})}`, { method: 'POST', body: JSON.stringify(eventId ? { event_id: eventId } : {}) }),
   liveTool: (call: { id: string; name: string; args: Record<string, unknown> }) => req<{ id: string; name: string; response: Record<string, unknown> }>('/live/tool', { method: 'POST', body: JSON.stringify(call) }),
   extract: (transcript: string) => req<DiaryEntryBatch>(`/transcripts/extract${qs({})}`, { method: 'POST', body: JSON.stringify({ transcript }) }),
   commit: (batch: DiaryEntryBatch) => req<SeizureEvent[]>('/transcripts/commit', { method: 'POST', body: JSON.stringify(batch) }),

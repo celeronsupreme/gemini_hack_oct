@@ -1,0 +1,16 @@
+[project]
+name = "seizure-analysis"
+version = "0.1.0"
+description = "Exploratory analysis pack for the seizure diary (reference only; the engine lives in apps/api)"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=2.0",
+    "scipy>=1.13",
+    "scikit-learn>=1.5",
+    "matplotlib>=3.9",
+    "openpyxl>=3.1",
+]
+
+[tool.uv]
+package = false

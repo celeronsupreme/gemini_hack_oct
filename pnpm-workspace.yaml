@@ -1,3 +1,15 @@
 packages:
   - "apps/web"
   - "packages/contracts"
+
+# rollup 4.67.2 was published <24h before setup and fails pnpm's minimumReleaseAge check; pin the previous release.
+minimumReleaseAgeExclude:
+  - electron-to-chromium@1.5.472
+  - node-releases@2.0.63
+
+overrides:
+  rollup: 4.66.0
+
+# esbuild (via vite) needs its postinstall to fetch the platform binary.
+allowBuilds:
+  esbuild: true

@@ -188,11 +188,13 @@ def put_questions(body: dict = Body(...)):
 
 # ---------- voice ----------
 @app.post("/live/token", response_model=LiveToken)
-def live_token(mock: int = 0):
+def live_token(body: dict = Body(default={}), mock: int = 0):
+    """Body may carry {event_id}: the seizure the one-tap timer logged, so the agent starts from its time and duration."""
     if mock:
         return fixture("live_token")
     watching = [t.trigger for t in service.list_trigger_tests() if str(t.rung.value if hasattr(t.rung, "value") else t.rung) in ("watching", "emerging")]
-    return gemini_live.create_live_token(store.get_profile(), watching)
+    timed = next((e for e in store.list_events() if e.id == body.get("event_id")), None) if body.get("event_id") else None
+    return gemini_live.create_live_token(store.get_profile(), watching, timed_event=timed)
 
 
 @app.post("/live/tool")

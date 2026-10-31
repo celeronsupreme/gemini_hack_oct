@@ -45,6 +45,15 @@ def log_seizure(args: dict[str, Any]) -> dict[str, Any]:
         context_tags=[t for t in (args.get("context_tags") or []) if isinstance(t, str)], notes=redact(args.get("notes")) or None,
         who_logged="carer" if store.get_profile().role == "carer" else "patient", confidence=args.get("confidence", "probable"), source="voice",
     )
+    existing = next((e for e in store.list_events() if e.id == ev.id), None) if args.get("id") else None
+    if existing is not None:
+        # Updating the event the one-tap timer created: keep everything it knows, and its timed start/duration win.
+        fresh = {k: v for k, v in ev.model_dump().items() if v not in (None, [], "")}
+        if str(existing.source) == "tap":
+            fresh.pop("start_time", None)
+            if existing.duration_s:
+                fresh.pop("duration_s", None); fresh.pop("duration_estimated", None)
+        ev = SeizureEvent.model_validate({**existing.model_dump(), **fresh, "still_going": False})
     store.add_events([ev]); service.invalidate()
     risk = service.risk_now()
     return {"status": "saved", "event_id": ev.id, "say": f"Saved. Risk now is {risk.tier}.", "risk_tier": risk.tier}
