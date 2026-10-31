@@ -1,0 +1,16 @@
+[project]
+name = "seizure-api"
+version = "0.1.0"
+description = "Seizure diary API: engine, storage and Gemini integration"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.115", "uvicorn[standard]>=0.30", "sqlmodel>=0.0.22", "pydantic>=2.7",
+  "pandas>=2.2", "numpy>=1.26", "scipy>=1.13", "scikit-learn>=1.5", "openpyxl>=3.1",
+  "google-genai>=1.0", "python-multipart>=0.0.9", "httpx>=0.27",
+]
+[project.optional-dependencies]
+dev = ["pytest>=8", "datamodel-code-generator>=0.26"]
+[tool.pytest.ini_options]
+pythonpath = [".", "../../packages/contracts/py"]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning"]

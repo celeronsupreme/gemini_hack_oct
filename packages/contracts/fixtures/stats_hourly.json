@@ -1,0 +1,183 @@
+{
+ "window_start": "2025-08-24",
+ "window_end": "2026-08-24",
+ "total": 515,
+ "by_hour": [
+  {
+   "hour": 0,
+   "all": 0,
+   "severe": 0,
+   "share_pct": 0.0,
+   "vs_flat": 0.0
+  },
+  {
+   "hour": 1,
+   "all": 0,
+   "severe": 0,
+   "share_pct": 0.0,
+   "vs_flat": 0.0
+  },
+  {
+   "hour": 2,
+   "all": 0,
+   "severe": 0,
+   "share_pct": 0.0,
+   "vs_flat": 0.0
+  },
+  {
+   "hour": 3,
+   "all": 0,
+   "severe": 0,
+   "share_pct": 0.0,
+   "vs_flat": 0.0
+  },
+  {
+   "hour": 4,
+   "all": 0,
+   "severe": 0,
+   "share_pct": 0.0,
+   "vs_flat": 0.0
+  },
+  {
+   "hour": 5,
+   "all": 0,
+   "severe": 0,
+   "share_pct": 0.0,
+   "vs_flat": 0.0
+  },
+  {
+   "hour": 6,
+   "all": 0,
+   "severe": 0,
+   "share_pct": 0.0,
+   "vs_flat": 0.0
+  },
+  {
+   "hour": 7,
+   "all": 0,
+   "severe": 0,
+   "share_pct": 0.0,
+   "vs_flat": 0.0
+  },
+  {
+   "hour": 8,
+   "all": 2,
+   "severe": 0,
+   "share_pct": 0.39,
+   "vs_flat": 0.09
+  },
+  {
+   "hour": 9,
+   "all": 1,
+   "severe": 0,
+   "share_pct": 0.19,
+   "vs_flat": 0.05
+  },
+  {
+   "hour": 10,
+   "all": 2,
+   "severe": 0,
+   "share_pct": 0.39,
+   "vs_flat": 0.09
+  },
+  {
+   "hour": 11,
+   "all": 12,
+   "severe": 2,
+   "share_pct": 2.33,
+   "vs_flat": 0.56
+  },
+  {
+   "hour": 12,
+   "all": 71,
+   "severe": 3,
+   "share_pct": 13.79,
+   "vs_flat": 3.31
+  },
+  {
+   "hour": 13,
+   "all": 24,
+   "severe": 4,
+   "share_pct": 4.66,
+   "vs_flat": 1.12
+  },
+  {
+   "hour": 14,
+   "all": 22,
+   "severe": 6,
+   "share_pct": 4.27,
+   "vs_flat": 1.03
+  },
+  {
+   "hour": 15,
+   "all": 38,
+   "severe": 8,
+   "share_pct": 7.38,
+   "vs_flat": 1.77
+  },
+  {
+   "hour": 16,
+   "all": 38,
+   "severe": 9,
+   "share_pct": 7.38,
+   "vs_flat": 1.77
+  },
+  {
+   "hour": 17,
+   "all": 32,
+   "severe": 14,
+   "share_pct": 6.21,
+   "vs_flat": 1.49
+  },
+  {
+   "hour": 18,
+   "all": 49,
+   "severe": 18,
+   "share_pct": 9.51,
+   "vs_flat": 2.28
+  },
+  {
+   "hour": 19,
+   "all": 81,
+   "severe": 21,
+   "share_pct": 15.73,
+   "vs_flat": 3.77
+  },
+  {
+   "hour": 20,
+   "all": 71,
+   "severe": 16,
+   "share_pct": 13.79,
+   "vs_flat": 3.31
+  },
+  {
+   "hour": 21,
+   "all": 59,
+   "severe": 7,
+   "share_pct": 11.46,
+   "vs_flat": 2.75
+  },
+  {
+   "hour": 22,
+   "all": 11,
+   "severe": 0,
+   "share_pct": 2.14,
+   "vs_flat": 0.51
+  },
+  {
+   "hour": 23,
+   "all": 2,
+   "severe": 0,
+   "share_pct": 0.39,
+   "vs_flat": 0.09
+  }
+ ],
+ "peak_hour": 19,
+ "share_12_22_pct": 94.2,
+ "share_00_08_pct": 0.0,
+ "scheduled_dose_times": [
+  "09:00",
+  "19:00",
+  "21:00"
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "display_name": "",
+ "role": "carer",
+ "seizure_type_labels": {
+  "Quiet and aware": "aware",
+  "Head strongly to side, lots of saliva, cannot speak": "impaired_awareness",
+  "Slack jaw, lose control of lips - dribbling": "impaired_awareness",
+  "Tonic-Clonic": "convulsive",
+  "Absence": "staring"
+ },
+ "medications": [
+  {
+   "drug": "brivaracetam",
+   "dose_mg": 100.0,
+   "times": [
+    "09:00"
+   ],
+   "half_life_hours": 9.0,
+   "as_needed": false
+  },
+  {
+   "drug": "brivaracetam",
+   "dose_mg": 150.0,
+   "times": [
+    "21:00"
+   ],
+   "half_life_hours": 9.0,
+   "as_needed": false
+  },
+  {
+   "drug": "cenobamate",
+   "dose_mg": 350.0,
+   "times": [
+    "19:00"
+   ],
+   "half_life_hours": 50.0,
+   "as_needed": false
+  },
+  {
+   "drug": "clobazam",
+   "dose_mg": 10.0,
+   "times": [],
+   "half_life_hours": 20.0,
+   "as_needed": true
+  }
+ ],
+ "rescue_plan": {
+  "rescue_drug": "clobazam",
+  "rescue_dose_mg": 10.0,
+  "emergency_minutes_convulsive": 5,
+  "emergency_minutes_other": 10,
+  "call": [
+   "999"
+  ],
+  "notes": "Clobazam 10 mg to break a cluster; VNS magnet swipe if available."
+ },
+ "sleeps_alone": false,
+ "photosensitive": false,
+ "menstruating": true,
+ "sleep_window": {
+  "start": "00:00",
+  "end": "07:00"
+ },
+ "custom_vocabulary": [
+  "brivaracetam",
+  "cenobamate",
+  "clobazam",
+  "VNS",
+  "quiet and aware",
+  "head to the side"
+ ],
+ "consent": {
+  "gemini_processing": true,
+  "accepted_at": "2026-10-31T12:00:00Z"
+ }
+}

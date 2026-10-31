@@ -1,0 +1,1290 @@
+{
+ "months": [
+  {
+   "month": "2018-07",
+   "all": 1,
+   "severe": 1,
+   "days_with_seizure": 1,
+   "median_duration_s": 240.0
+  },
+  {
+   "month": "2018-08",
+   "all": 4,
+   "severe": 4,
+   "days_with_seizure": 4,
+   "median_duration_s": 110.0
+  },
+  {
+   "month": "2018-09",
+   "all": 5,
+   "severe": 2,
+   "days_with_seizure": 5,
+   "median_duration_s": 60.0
+  },
+  {
+   "month": "2018-10",
+   "all": 6,
+   "severe": 2,
+   "days_with_seizure": 4,
+   "median_duration_s": 60.0
+  },
+  {
+   "month": "2018-11",
+   "all": 3,
+   "severe": 2,
+   "days_with_seizure": 2,
+   "median_duration_s": 160.0
+  },
+  {
+   "month": "2018-12",
+   "all": 2,
+   "severe": 2,
+   "days_with_seizure": 2,
+   "median_duration_s": 120.0
+  },
+  {
+   "month": "2019-01",
+   "all": 8,
+   "severe": 7,
+   "days_with_seizure": 6,
+   "median_duration_s": 115.0
+  },
+  {
+   "month": "2019-02",
+   "all": 6,
+   "severe": 2,
+   "days_with_seizure": 6,
+   "median_duration_s": 85.0
+  },
+  {
+   "month": "2019-03",
+   "all": 14,
+   "severe": 5,
+   "days_with_seizure": 10,
+   "median_duration_s": 128.5
+  },
+  {
+   "month": "2019-04",
+   "all": 18,
+   "severe": 10,
+   "days_with_seizure": 12,
+   "median_duration_s": 120.0
+  },
+  {
+   "month": "2019-05",
+   "all": 18,
+   "severe": 5,
+   "days_with_seizure": 11,
+   "median_duration_s": 105.0
+  },
+  {
+   "month": "2019-06",
+   "all": 11,
+   "severe": 2,
+   "days_with_seizure": 11,
+   "median_duration_s": 90.0
+  },
+  {
+   "month": "2019-07",
+   "all": 11,
+   "severe": 5,
+   "days_with_seizure": 9,
+   "median_duration_s": 45.0
+  },
+  {
+   "month": "2019-08",
+   "all": 26,
+   "severe": 11,
+   "days_with_seizure": 18,
+   "median_duration_s": 102.5
+  },
+  {
+   "month": "2019-09",
+   "all": 17,
+   "severe": 4,
+   "days_with_seizure": 11,
+   "median_duration_s": 60.0
+  },
+  {
+   "month": "2019-10",
+   "all": 31,
+   "severe": 7,
+   "days_with_seizure": 17,
+   "median_duration_s": 75.0
+  },
+  {
+   "month": "2019-11",
+   "all": 22,
+   "severe": 8,
+   "days_with_seizure": 15,
+   "median_duration_s": 48.0
+  },
+  {
+   "month": "2019-12",
+   "all": 16,
+   "severe": 6,
+   "days_with_seizure": 9,
+   "median_duration_s": 90.0
+  },
+  {
+   "month": "2020-01",
+   "all": 26,
+   "severe": 8,
+   "days_with_seizure": 18,
+   "median_duration_s": 55.5
+  },
+  {
+   "month": "2020-02",
+   "all": 15,
+   "severe": 2,
+   "days_with_seizure": 12,
+   "median_duration_s": 59.0
+  },
+  {
+   "month": "2020-03",
+   "all": 26,
+   "severe": 7,
+   "days_with_seizure": 18,
+   "median_duration_s": 60.0
+  },
+  {
+   "month": "2020-04",
+   "all": 20,
+   "severe": 6,
+   "days_with_seizure": 12,
+   "median_duration_s": 61.0
+  },
+  {
+   "month": "2020-05",
+   "all": 36,
+   "severe": 9,
+   "days_with_seizure": 19,
+   "median_duration_s": 55.5
+  },
+  {
+   "month": "2020-06",
+   "all": 42,
+   "severe": 11,
+   "days_with_seizure": 21,
+   "median_duration_s": 40.0
+  },
+  {
+   "month": "2020-07",
+   "all": 40,
+   "severe": 7,
+   "days_with_seizure": 20,
+   "median_duration_s": 60.0
+  },
+  {
+   "month": "2020-08",
+   "all": 29,
+   "severe": 8,
+   "days_with_seizure": 18,
+   "median_duration_s": 64.0
+  },
+  {
+   "month": "2020-09",
+   "all": 42,
+   "severe": 6,
+   "days_with_seizure": 23,
+   "median_duration_s": 42.5
+  },
+  {
+   "month": "2020-10",
+   "all": 29,
+   "severe": 3,
+   "days_with_seizure": 18,
+   "median_duration_s": 50.0
+  },
+  {
+   "month": "2020-11",
+   "all": 14,
+   "severe": 5,
+   "days_with_seizure": 12,
+   "median_duration_s": 60.0
+  },
+  {
+   "month": "2020-12",
+   "all": 30,
+   "severe": 7,
+   "days_with_seizure": 17,
+   "median_duration_s": 55.0
+  },
+  {
+   "month": "2021-01",
+   "all": 30,
+   "severe": 7,
+   "days_with_seizure": 19,
+   "median_duration_s": 42.5
+  },
+  {
+   "month": "2021-02",
+   "all": 36,
+   "severe": 9,
+   "days_with_seizure": 21,
+   "median_duration_s": 40.0
+  },
+  {
+   "month": "2021-03",
+   "all": 40,
+   "severe": 16,
+   "days_with_seizure": 23,
+   "median_duration_s": 31.0
+  },
+  {
+   "month": "2021-04",
+   "all": 30,
+   "severe": 16,
+   "days_with_seizure": 17,
+   "median_duration_s": 88.5
+  },
+  {
+   "month": "2021-05",
+   "all": 26,
+   "severe": 11,
+   "days_with_seizure": 17,
+   "median_duration_s": 50.0
+  },
+  {
+   "month": "2021-06",
+   "all": 33,
+   "severe": 12,
+   "days_with_seizure": 16,
+   "median_duration_s": 46.0
+  },
+  {
+   "month": "2021-07",
+   "all": 53,
+   "severe": 21,
+   "days_with_seizure": 23,
+   "median_duration_s": 30.0
+  },
+  {
+   "month": "2021-08",
+   "all": 22,
+   "severe": 17,
+   "days_with_seizure": 10,
+   "median_duration_s": 93.5
+  },
+  {
+   "month": "2021-09",
+   "all": 24,
+   "severe": 18,
+   "days_with_seizure": 17,
+   "median_duration_s": 118.5
+  },
+  {
+   "month": "2021-10",
+   "all": 32,
+   "severe": 10,
+   "days_with_seizure": 12,
+   "median_duration_s": 33.0
+  },
+  {
+   "month": "2021-11",
+   "all": 26,
+   "severe": 13,
+   "days_with_seizure": 15,
+   "median_duration_s": 52.0
+  },
+  {
+   "month": "2021-12",
+   "all": 31,
+   "severe": 8,
+   "days_with_seizure": 18,
+   "median_duration_s": 30.0
+  },
+  {
+   "month": "2022-01",
+   "all": 23,
+   "severe": 7,
+   "days_with_seizure": 17,
+   "median_duration_s": 25.0
+  },
+  {
+   "month": "2022-02",
+   "all": 22,
+   "severe": 7,
+   "days_with_seizure": 15,
+   "median_duration_s": 22.5
+  },
+  {
+   "month": "2022-03",
+   "all": 24,
+   "severe": 8,
+   "days_with_seizure": 14,
+   "median_duration_s": 31.0
+  },
+  {
+   "month": "2022-04",
+   "all": 31,
+   "severe": 9,
+   "days_with_seizure": 20,
+   "median_duration_s": 31.0
+  },
+  {
+   "month": "2022-05",
+   "all": 33,
+   "severe": 14,
+   "days_with_seizure": 21,
+   "median_duration_s": 30.0
+  },
+  {
+   "month": "2022-06",
+   "all": 24,
+   "severe": 11,
+   "days_with_seizure": 16,
+   "median_duration_s": 43.5
+  },
+  {
+   "month": "2022-07",
+   "all": 28,
+   "severe": 9,
+   "days_with_seizure": 19,
+   "median_duration_s": 30.0
+  },
+  {
+   "month": "2022-08",
+   "all": 32,
+   "severe": 13,
+   "days_with_seizure": 22,
+   "median_duration_s": 35.0
+  },
+  {
+   "month": "2022-09",
+   "all": 27,
+   "severe": 14,
+   "days_with_seizure": 15,
+   "median_duration_s": 36.0
+  },
+  {
+   "month": "2022-10",
+   "all": 31,
+   "severe": 11,
+   "days_with_seizure": 17,
+   "median_duration_s": 35.0
+  },
+  {
+   "month": "2022-11",
+   "all": 33,
+   "severe": 14,
+   "days_with_seizure": 21,
+   "median_duration_s": 40.0
+  },
+  {
+   "month": "2022-12",
+   "all": 27,
+   "severe": 7,
+   "days_with_seizure": 19,
+   "median_duration_s": 20.0
+  },
+  {
+   "month": "2023-01",
+   "all": 27,
+   "severe": 13,
+   "days_with_seizure": 15,
+   "median_duration_s": 63.0
+  },
+  {
+   "month": "2023-02",
+   "all": 19,
+   "severe": 10,
+   "days_with_seizure": 14,
+   "median_duration_s": 41.0
+  },
+  {
+   "month": "2023-03",
+   "all": 24,
+   "severe": 8,
+   "days_with_seizure": 14,
+   "median_duration_s": 36.5
+  },
+  {
+   "month": "2023-04",
+   "all": 21,
+   "severe": 8,
+   "days_with_seizure": 12,
+   "median_duration_s": 25.0
+  },
+  {
+   "month": "2023-05",
+   "all": 17,
+   "severe": 5,
+   "days_with_seizure": 11,
+   "median_duration_s": 30.0
+  },
+  {
+   "month": "2023-06",
+   "all": 20,
+   "severe": 5,
+   "days_with_seizure": 15,
+   "median_duration_s": 22.0
+  },
+  {
+   "month": "2023-07",
+   "all": 19,
+   "severe": 6,
+   "days_with_seizure": 13,
+   "median_duration_s": 17.0
+  },
+  {
+   "month": "2023-08",
+   "all": 30,
+   "severe": 9,
+   "days_with_seizure": 20,
+   "median_duration_s": 30.0
+  },
+  {
+   "month": "2023-09",
+   "all": 28,
+   "severe": 9,
+   "days_with_seizure": 19,
+   "median_duration_s": 22.0
+  },
+  {
+   "month": "2023-10",
+   "all": 26,
+   "severe": 5,
+   "days_with_seizure": 17,
+   "median_duration_s": 20.0
+  },
+  {
+   "month": "2023-11",
+   "all": 24,
+   "severe": 8,
+   "days_with_seizure": 17,
+   "median_duration_s": 20.5
+  },
+  {
+   "month": "2023-12",
+   "all": 20,
+   "severe": 5,
+   "days_with_seizure": 19,
+   "median_duration_s": 27.5
+  },
+  {
+   "month": "2024-01",
+   "all": 21,
+   "severe": 7,
+   "days_with_seizure": 15,
+   "median_duration_s": 31.0
+  },
+  {
+   "month": "2024-02",
+   "all": 28,
+   "severe": 7,
+   "days_with_seizure": 18,
+   "median_duration_s": 26.0
+  },
+  {
+   "month": "2024-03",
+   "all": 28,
+   "severe": 10,
+   "days_with_seizure": 22,
+   "median_duration_s": 42.0
+  },
+  {
+   "month": "2024-04",
+   "all": 23,
+   "severe": 7,
+   "days_with_seizure": 19,
+   "median_duration_s": 30.0
+  },
+  {
+   "month": "2024-05",
+   "all": 24,
+   "severe": 8,
+   "days_with_seizure": 19,
+   "median_duration_s": 38.0
+  },
+  {
+   "month": "2024-06",
+   "all": 25,
+   "severe": 4,
+   "days_with_seizure": 20,
+   "median_duration_s": 15.0
+  },
+  {
+   "month": "2024-07",
+   "all": 20,
+   "severe": 8,
+   "days_with_seizure": 15,
+   "median_duration_s": 27.0
+  },
+  {
+   "month": "2024-08",
+   "all": 25,
+   "severe": 7,
+   "days_with_seizure": 18,
+   "median_duration_s": 30.0
+  },
+  {
+   "month": "2024-09",
+   "all": 25,
+   "severe": 6,
+   "days_with_seizure": 20,
+   "median_duration_s": 24.0
+  },
+  {
+   "month": "2024-10",
+   "all": 28,
+   "severe": 9,
+   "days_with_seizure": 19,
+   "median_duration_s": 27.5
+  },
+  {
+   "month": "2024-11",
+   "all": 28,
+   "severe": 8,
+   "days_with_seizure": 20,
+   "median_duration_s": 27.5
+  },
+  {
+   "month": "2024-12",
+   "all": 26,
+   "severe": 9,
+   "days_with_seizure": 20,
+   "median_duration_s": 56.0
+  },
+  {
+   "month": "2025-01",
+   "all": 26,
+   "severe": 7,
+   "days_with_seizure": 18,
+   "median_duration_s": 25.5
+  },
+  {
+   "month": "2025-02",
+   "all": 31,
+   "severe": 7,
+   "days_with_seizure": 18,
+   "median_duration_s": 25.0
+  },
+  {
+   "month": "2025-03",
+   "all": 32,
+   "severe": 8,
+   "days_with_seizure": 22,
+   "median_duration_s": 27.5
+  },
+  {
+   "month": "2025-04",
+   "all": 25,
+   "severe": 10,
+   "days_with_seizure": 14,
+   "median_duration_s": 41.0
+  },
+  {
+   "month": "2025-05",
+   "all": 31,
+   "severe": 7,
+   "days_with_seizure": 23,
+   "median_duration_s": 21.0
+  },
+  {
+   "month": "2025-06",
+   "all": 32,
+   "severe": 5,
+   "days_with_seizure": 20,
+   "median_duration_s": 18.5
+  },
+  {
+   "month": "2025-07",
+   "all": 29,
+   "severe": 8,
+   "days_with_seizure": 20,
+   "median_duration_s": 24.0
+  },
+  {
+   "month": "2025-08",
+   "all": 22,
+   "severe": 7,
+   "days_with_seizure": 16,
+   "median_duration_s": 50.0
+  },
+  {
+   "month": "2025-09",
+   "all": 46,
+   "severe": 13,
+   "days_with_seizure": 26,
+   "median_duration_s": 24.5
+  },
+  {
+   "month": "2025-10",
+   "all": 42,
+   "severe": 13,
+   "days_with_seizure": 23,
+   "median_duration_s": 60.0
+  },
+  {
+   "month": "2025-11",
+   "all": 37,
+   "severe": 9,
+   "days_with_seizure": 21,
+   "median_duration_s": 25.0
+  },
+  {
+   "month": "2025-12",
+   "all": 41,
+   "severe": 8,
+   "days_with_seizure": 26,
+   "median_duration_s": 20.0
+  },
+  {
+   "month": "2026-01",
+   "all": 34,
+   "severe": 11,
+   "days_with_seizure": 21,
+   "median_duration_s": 31.5
+  },
+  {
+   "month": "2026-02",
+   "all": 47,
+   "severe": 6,
+   "days_with_seizure": 24,
+   "median_duration_s": 20.0
+  },
+  {
+   "month": "2026-03",
+   "all": 60,
+   "severe": 10,
+   "days_with_seizure": 27,
+   "median_duration_s": 20.0
+  },
+  {
+   "month": "2026-04",
+   "all": 56,
+   "severe": 10,
+   "days_with_seizure": 25,
+   "median_duration_s": 22.5
+  },
+  {
+   "month": "2026-05",
+   "all": 37,
+   "severe": 6,
+   "days_with_seizure": 22,
+   "median_duration_s": 21.0
+  },
+  {
+   "month": "2026-06",
+   "all": 36,
+   "severe": 5,
+   "days_with_seizure": 21,
+   "median_duration_s": 20.0
+  },
+  {
+   "month": "2026-07",
+   "all": 42,
+   "severe": 9,
+   "days_with_seizure": 27,
+   "median_duration_s": 19.0
+  },
+  {
+   "month": "2026-08",
+   "all": 30,
+   "severe": 5,
+   "days_with_seizure": 18,
+   "median_duration_s": 26.5
+  }
+ ],
+ "medication_changes": [
+  {
+   "date": "2018-07-23",
+   "drug": "Levetiracetam",
+   "action": "start",
+   "detail": "1200/1200 mg am/pm",
+   "before_per_week": null,
+   "after_per_week": null,
+   "before_severe_per_week": null,
+   "after_severe_per_week": null,
+   "p_value": null,
+   "window_days": 56,
+   "verdict": "too early to tell"
+  },
+  {
+   "date": "2018-07-26",
+   "drug": "Lamotrigine",
+   "action": "start",
+   "detail": "25 mg pm; titrated to 100/100 by 17 Sep",
+   "before_per_week": null,
+   "after_per_week": null,
+   "before_severe_per_week": null,
+   "after_severe_per_week": null,
+   "p_value": null,
+   "window_days": 56,
+   "verdict": "too early to tell"
+  },
+  {
+   "date": "2018-07-30",
+   "drug": "Lacosamide",
+   "action": "ongoing",
+   "detail": "200/200 mg since 30 Jul 2018",
+   "before_per_week": null,
+   "after_per_week": null,
+   "before_severe_per_week": null,
+   "after_severe_per_week": null,
+   "p_value": null,
+   "window_days": 56,
+   "verdict": "too early to tell"
+  },
+  {
+   "date": "2018-10-02",
+   "drug": "Carbamazepine",
+   "action": "start",
+   "detail": "200 mg pm; titrated to 400/600 by 30 Oct",
+   "before_per_week": 1.0,
+   "after_per_week": 1.12,
+   "before_severe_per_week": 0.62,
+   "after_severe_per_week": 0.5,
+   "p_value": 0.8371,
+   "window_days": 56,
+   "verdict": "no clear change"
+  },
+  {
+   "date": "2018-10-02",
+   "drug": "Lamotrigine",
+   "action": "taper",
+   "detail": "50/50 then 25/25; stopped 16 Oct 2018",
+   "before_per_week": 1.0,
+   "after_per_week": 1.12,
+   "before_severe_per_week": 0.62,
+   "after_severe_per_week": 0.5,
+   "p_value": 0.8371,
+   "window_days": 56,
+   "verdict": "no clear change"
+  },
+  {
+   "date": "2018-10-19",
+   "drug": "Clobazam",
+   "action": "start",
+   "detail": "2.5 mg; 5 mg from 22 Oct; 2.5 mg from 1 Nov (too sleepy)",
+   "before_per_week": 1.38,
+   "after_per_week": 0.75,
+   "before_severe_per_week": 0.5,
+   "after_severe_per_week": 0.62,
+   "p_value": 0.2391,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2018-11-14",
+   "drug": "Lacosamide",
+   "action": "taper",
+   "detail": "100/200; 100/100 from 16 Dec; stopped 27 Jan 2019",
+   "before_per_week": 1.12,
+   "after_per_week": 0.62,
+   "before_severe_per_week": 0.38,
+   "after_severe_per_week": 0.5,
+   "p_value": 0.3042,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2018-12-02",
+   "drug": "Clobazam",
+   "action": "increase",
+   "detail": "5 mg daily",
+   "before_per_week": 0.88,
+   "after_per_week": 0.62,
+   "before_severe_per_week": 0.5,
+   "after_severe_per_week": 0.62,
+   "p_value": 0.5971,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2018-12-11",
+   "drug": "Levetiracetam",
+   "action": "change",
+   "detail": "liquid to tablets 1000 + 1250 mg",
+   "before_per_week": 1.0,
+   "after_per_week": 1.0,
+   "before_severe_per_week": 0.62,
+   "after_severe_per_week": 0.88,
+   "p_value": 1.0,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2019-01-28",
+   "drug": "Clobazam",
+   "action": "taper",
+   "detail": "4 mg; cluster of 3 seizures next day; 3.5 mg 11 Feb; 3 mg 25 Feb",
+   "before_per_week": 0.5,
+   "after_per_week": 2.75,
+   "before_severe_per_week": 0.5,
+   "after_severe_per_week": 1.12,
+   "p_value": 0.0003,
+   "window_days": 56,
+   "verdict": "clear rise"
+  },
+  {
+   "date": "2019-03-08",
+   "drug": "Clobazam",
+   "action": "increase",
+   "detail": "back to 5 mg due to increased seizures",
+   "before_per_week": 2.38,
+   "after_per_week": 3.38,
+   "before_severe_per_week": 1.12,
+   "after_severe_per_week": 1.75,
+   "p_value": 0.2369,
+   "window_days": 56,
+   "verdict": "no clear change"
+  },
+  {
+   "date": "2019-08-07",
+   "drug": "Prednisolone",
+   "action": "ongoing",
+   "detail": "20 mg (weaning attempted, halted); stopped 2 Dec 2019",
+   "before_per_week": 2.62,
+   "after_per_week": 5.0,
+   "before_severe_per_week": 1.12,
+   "after_severe_per_week": 1.62,
+   "p_value": 0.0147,
+   "window_days": 56,
+   "verdict": "no clear change"
+  },
+  {
+   "date": "2019-09-17",
+   "drug": "Carbamazepine",
+   "action": "increase",
+   "detail": "600/600; reverted 26 Sep (increase was non-epileptic events)",
+   "before_per_week": 4.62,
+   "after_per_week": 6.25,
+   "before_severe_per_week": 1.75,
+   "after_severe_per_week": 2.12,
+   "p_value": 0.1658,
+   "window_days": 56,
+   "verdict": "no clear change"
+  },
+  {
+   "date": "2019-12-29",
+   "drug": "Oxcarbazepine",
+   "action": "start",
+   "detail": "replaces carbamazepine: 600/900 wk1, 750/900 wk2, 900/900 after",
+   "before_per_week": 4.62,
+   "after_per_week": 4.5,
+   "before_severe_per_week": 1.75,
+   "after_severe_per_week": 1.12,
+   "p_value": 0.9139,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2020-02-17",
+   "drug": "Clobazam",
+   "action": "stop",
+   "detail": "2.5 mg for a week then stopped (daily use ends; rescue use continues)",
+   "before_per_week": 4.0,
+   "after_per_week": 5.5,
+   "before_severe_per_week": 1.0,
+   "after_severe_per_week": 1.5,
+   "p_value": 0.1713,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2020-04-29",
+   "drug": "Levetiracetam",
+   "action": "taper",
+   "detail": "wean 250 mg/week planned; halted 12 May for keto start",
+   "before_per_week": 5.38,
+   "after_per_week": 8.62,
+   "before_severe_per_week": 1.62,
+   "after_severe_per_week": 2.12,
+   "p_value": 0.0139,
+   "window_days": 56,
+   "verdict": "no clear change"
+  },
+  {
+   "date": "2020-06-20",
+   "drug": "Ketogenic diet",
+   "action": "start",
+   "detail": "full keto; stopped around Aug 2021",
+   "before_per_week": 8.38,
+   "after_per_week": 8.12,
+   "before_severe_per_week": 1.88,
+   "after_severe_per_week": 1.88,
+   "p_value": 0.8609,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2020-10-05",
+   "drug": "Oxcarbazepine",
+   "action": "increase",
+   "detail": "1050/1050",
+   "before_per_week": 9.25,
+   "after_per_week": 4.38,
+   "before_severe_per_week": 1.5,
+   "after_severe_per_week": 0.88,
+   "p_value": 0.0002,
+   "window_days": 56,
+   "verdict": "clear fall"
+  },
+  {
+   "date": "2020-10-05",
+   "drug": "Levetiracetam",
+   "action": "decrease",
+   "detail": "1000/1000",
+   "before_per_week": 9.25,
+   "after_per_week": 4.38,
+   "before_severe_per_week": 1.5,
+   "after_severe_per_week": 0.88,
+   "p_value": 0.0002,
+   "window_days": 56,
+   "verdict": "clear fall"
+  },
+  {
+   "date": "2020-12-18",
+   "drug": "VNS",
+   "action": "surgery",
+   "detail": "vagus nerve stimulator implanted",
+   "before_per_week": 5.88,
+   "after_per_week": 5.12,
+   "before_severe_per_week": 1.25,
+   "after_severe_per_week": 1.75,
+   "p_value": 0.5267,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2021-01-11",
+   "drug": "Levetiracetam",
+   "action": "decrease",
+   "detail": "750/750",
+   "before_per_week": 6.5,
+   "after_per_week": 8.12,
+   "before_severe_per_week": 1.62,
+   "after_severe_per_week": 2.12,
+   "p_value": 0.2308,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2021-10-18",
+   "drug": "Oxcarbazepine",
+   "action": "increase",
+   "detail": "1200/1200",
+   "before_per_week": 5.88,
+   "after_per_week": 6.0,
+   "before_severe_per_week": 3.25,
+   "after_severe_per_week": 2.5,
+   "p_value": 0.9238,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2021-10-25",
+   "drug": "Levetiracetam",
+   "action": "decrease",
+   "detail": "750/1000 (while oxcarbazepine increased)",
+   "before_per_week": 6.25,
+   "after_per_week": 5.88,
+   "before_severe_per_week": 3.5,
+   "after_severe_per_week": 2.12,
+   "p_value": 0.7656,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2021-11-06",
+   "drug": "Oxcarbazepine",
+   "action": "change",
+   "detail": "750/750/900 at 07:00, 14:00, 21:00 to smooth levels (seizures around 21:00 noted)",
+   "before_per_week": 6.75,
+   "after_per_week": 6.5,
+   "before_severe_per_week": 3.25,
+   "after_severe_per_week": 2.25,
+   "p_value": 0.8508,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2021-12-12",
+   "drug": "Levetiracetam",
+   "action": "change",
+   "detail": "500/500/500 three times daily",
+   "before_per_week": 6.0,
+   "after_per_week": 6.12,
+   "before_severe_per_week": 2.5,
+   "after_severe_per_week": 1.75,
+   "p_value": 0.9245,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2022-11-29",
+   "drug": "Brivaracetam",
+   "action": "start",
+   "detail": "replaces levetiracetam: 50/50/50; 50/50/100 from 29 Dec; 100/50/100 from 29 Jan 2023",
+   "before_per_week": 7.62,
+   "after_per_week": 5.88,
+   "before_severe_per_week": 2.75,
+   "after_severe_per_week": 2.25,
+   "p_value": 0.18,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2023-02-17",
+   "drug": "Cenobamate",
+   "action": "start",
+   "detail": "12.5 mg; 25 mg 3 Mar; 50 mg 17 Mar; 100 mg 31 Mar; 150 mg 14 Apr; 200 mg 28 Apr",
+   "before_per_week": 5.75,
+   "after_per_week": 5.12,
+   "before_severe_per_week": 2.75,
+   "after_severe_per_week": 2.12,
+   "p_value": 0.5966,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2023-04-28",
+   "drug": "Oxcarbazepine",
+   "action": "decrease",
+   "detail": "750/750/750 (cenobamate magnifies side effects: double vision)",
+   "before_per_week": 5.38,
+   "after_per_week": 4.25,
+   "before_severe_per_week": 2.0,
+   "after_severe_per_week": 1.25,
+   "p_value": 0.3086,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2023-05-16",
+   "drug": "Cenobamate",
+   "action": "increase",
+   "detail": "250 mg",
+   "before_per_week": 4.38,
+   "after_per_week": 3.88,
+   "before_severe_per_week": 1.62,
+   "after_severe_per_week": 1.12,
+   "p_value": 0.6289,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2023-05-17",
+   "drug": "Oxcarbazepine",
+   "action": "decrease",
+   "detail": "600/600/750; 600/600/600 from 25 May",
+   "before_per_week": 4.38,
+   "after_per_week": 4.0,
+   "before_severe_per_week": 1.62,
+   "after_severe_per_week": 1.12,
+   "p_value": 0.7209,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2023-06-20",
+   "drug": "Cenobamate",
+   "action": "increase",
+   "detail": "300 mg",
+   "before_per_week": 3.75,
+   "after_per_week": 5.62,
+   "before_severe_per_week": 0.88,
+   "after_severe_per_week": 1.88,
+   "p_value": 0.0838,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2023-06-20",
+   "drug": "Oxcarbazepine",
+   "action": "decrease",
+   "detail": "450/600/600; then 450/450/600 (4 Jul), 450/450/450 (18 Jul), 300/450/450 (5 Aug), 300/300/450 (19 Aug), 300/300/300 (4 Sep)",
+   "before_per_week": 3.75,
+   "after_per_week": 5.62,
+   "before_severe_per_week": 0.88,
+   "after_severe_per_week": 1.88,
+   "p_value": 0.0838,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2023-09-20",
+   "drug": "Cenobamate",
+   "action": "change",
+   "detail": "dose time 20:00 to 19:00 for morning tiredness",
+   "before_per_week": 6.12,
+   "after_per_week": 5.5,
+   "before_severe_per_week": 1.75,
+   "after_severe_per_week": 1.62,
+   "p_value": 0.6086,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2023-10-25",
+   "drug": "Cenobamate",
+   "action": "increase",
+   "detail": "350 mg",
+   "before_per_week": 6.25,
+   "after_per_week": 5.0,
+   "before_severe_per_week": 1.62,
+   "after_severe_per_week": 1.5,
+   "p_value": 0.2941,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2023-12-07",
+   "drug": "Oxcarbazepine",
+   "action": "decrease",
+   "detail": "300/150/300; 300/0/300 from 23 Dec",
+   "before_per_week": 5.0,
+   "after_per_week": 4.88,
+   "before_severe_per_week": 1.5,
+   "after_severe_per_week": 1.38,
+   "p_value": 0.917,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2024-01-21",
+   "drug": "Cenobamate",
+   "action": "change",
+   "detail": "split 150/200 am/pm; reverted to single 350 mg on 26 Jan",
+   "before_per_week": 4.75,
+   "after_per_week": 6.12,
+   "before_severe_per_week": 1.38,
+   "after_severe_per_week": 1.5,
+   "p_value": 0.2402,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2024-01-27",
+   "drug": "Oxcarbazepine",
+   "action": "decrease",
+   "detail": "150/0/300; 150/0/150 from 23 Feb",
+   "before_per_week": 4.38,
+   "after_per_week": 6.88,
+   "before_severe_per_week": 1.25,
+   "after_severe_per_week": 2.0,
+   "p_value": 0.0356,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2024-03-29",
+   "drug": "Cenobamate",
+   "action": "increase",
+   "detail": "400 mg (seizures up after oxcarbazepine reduction)",
+   "before_per_week": 6.62,
+   "after_per_week": 5.0,
+   "before_severe_per_week": 2.0,
+   "after_severe_per_week": 1.62,
+   "p_value": 0.179,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2024-05-08",
+   "drug": "Oxcarbazepine",
+   "action": "decrease",
+   "detail": "0/0/150",
+   "before_per_week": 5.75,
+   "after_per_week": 5.88,
+   "before_severe_per_week": 2.0,
+   "after_severe_per_week": 1.5,
+   "p_value": 0.923,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2024-07-21",
+   "drug": "Oxcarbazepine",
+   "action": "stop",
+   "detail": "stopped",
+   "before_per_week": 5.25,
+   "after_per_week": 6.12,
+   "before_severe_per_week": 1.25,
+   "after_severe_per_week": 1.62,
+   "p_value": 0.4669,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2024-10-19",
+   "drug": "Cenobamate",
+   "action": "decrease",
+   "detail": "350 mg",
+   "before_per_week": 5.62,
+   "after_per_week": 7.12,
+   "before_severe_per_week": 1.5,
+   "after_severe_per_week": 2.25,
+   "p_value": 0.2371,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2025-03-05",
+   "drug": "Cenobamate",
+   "action": "decrease",
+   "detail": "300 mg to reduce exhaustion",
+   "before_per_week": 7.0,
+   "after_per_week": 6.88,
+   "before_severe_per_week": 1.75,
+   "after_severe_per_week": 2.25,
+   "p_value": 0.9291,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2025-03-16",
+   "drug": "Cenobamate",
+   "action": "increase",
+   "detail": "back to 350 mg as seizures increased",
+   "before_per_week": 7.25,
+   "after_per_week": 6.62,
+   "before_severe_per_week": 1.88,
+   "after_severe_per_week": 2.0,
+   "p_value": 0.639,
+   "window_days": 56,
+   "verdict": "within usual range"
+  },
+  {
+   "date": "2025-09-01",
+   "drug": "Brivaracetam",
+   "action": "change",
+   "detail": "100/100/50 (more daytime cover; seizures from ~14:00 onwards) [date corrected from Excel day/month swap; also first day of drama-school term]",
+   "before_per_week": 5.38,
+   "after_per_week": 10.5,
+   "before_severe_per_week": 1.5,
+   "after_severe_per_week": 3.25,
+   "p_value": 0.0003,
+   "window_days": 56,
+   "verdict": "clear rise"
+  },
+  {
+   "date": "2025-09-06",
+   "drug": "Brivaracetam",
+   "action": "change",
+   "detail": "back to 100/50/100 (tiredness worse)",
+   "before_per_week": 5.38,
+   "after_per_week": 10.38,
+   "before_severe_per_week": 1.62,
+   "after_severe_per_week": 3.0,
+   "p_value": 0.0003,
+   "window_days": 56,
+   "verdict": "clear rise"
+  },
+  {
+   "date": "2025-09-10",
+   "drug": "Brivaracetam",
+   "action": "change",
+   "detail": "100/0/150: afternoon dose moved to evening to reduce daytime fatigue",
+   "before_per_week": 5.88,
+   "after_per_week": 9.38,
+   "before_severe_per_week": 1.75,
+   "after_severe_per_week": 2.75,
+   "p_value": 0.011,
+   "window_days": 56,
+   "verdict": "within usual range"
+  }
+ ]
+}

@@ -1,0 +1,1127 @@
+{
+ "generated_at": "2026-08-24T18:30:00+01:00",
+ "window_start": "2026-05-26",
+ "window_end": "2026-08-24",
+ "prior_window_start": "2026-02-25",
+ "prior_window_end": "2026-05-26",
+ "completeness": {
+  "days_with_any_entry": 70,
+  "days_in_window": 91,
+  "pct_events_logged_within_24h": null,
+  "logged_by": {
+   "carer": 112
+  }
+ },
+ "headline": {
+  "total": 112,
+  "per_28_days": 34.8,
+  "prior_per_28_days": 47.9,
+  "pct_change": -27.3,
+  "seizure_days": 70,
+  "days_since_last_convulsive": 2237,
+  "longest_seizure_free_run_days": 2,
+  "last_seizure_by_type": {
+   "aware": "2026-08-24",
+   "impaired_awareness": "2026-08-21",
+   "unsure": "2026-07-27"
+  }
+ },
+ "by_type": [
+  {
+   "type": "aware",
+   "ilae_name": "focal aware",
+   "patient_label": "Quiet and aware",
+   "count": 81,
+   "per_28_days": 25.2,
+   "prior_count": 110,
+   "median_duration_s": 20.0,
+   "max_duration_s": 131.0,
+   "pct_asleep": null,
+   "pct_witnessed": 100.0,
+   "count_ge_5min": 0,
+   "last_seen": "2026-08-24"
+  },
+  {
+   "type": "impaired_awareness",
+   "ilae_name": "focal impaired awareness",
+   "patient_label": "Head strongly to side, lots of saliva, cannot speak",
+   "count": 20,
+   "per_28_days": 6.2,
+   "prior_count": 25,
+   "median_duration_s": 142.5,
+   "max_duration_s": 210.0,
+   "pct_asleep": null,
+   "pct_witnessed": 100.0,
+   "count_ge_5min": 0,
+   "last_seen": "2026-08-21"
+  },
+  {
+   "type": "unsure",
+   "ilae_name": "unknown onset, possible seizure",
+   "patient_label": null,
+   "count": 11,
+   "per_28_days": 3.4,
+   "prior_count": 19,
+   "median_duration_s": 0.0,
+   "max_duration_s": 0.0,
+   "pct_asleep": null,
+   "pct_witnessed": 100.0,
+   "count_ge_5min": 0,
+   "last_seen": "2026-07-27"
+  }
+ ],
+ "cluster_definition": "3 or more seizures in a calendar day, or more than the person's own 90th percentile day",
+ "cluster_days": 7,
+ "events_ge_5min": 0,
+ "nocturnal_count_30d": 0,
+ "convulsive_count_12m": 0,
+ "weekly_by_type": [
+  {
+   "week_start": "2026-05-26",
+   "counts": {
+    "aware": 2,
+    "unsure": 2,
+    "impaired_awareness": 1
+   }
+  },
+  {
+   "week_start": "2026-06-02",
+   "counts": {
+    "aware": 4,
+    "unsure": 2,
+    "impaired_awareness": 1
+   }
+  },
+  {
+   "week_start": "2026-06-09",
+   "counts": {
+    "aware": 7,
+    "impaired_awareness": 2,
+    "unsure": 1
+   }
+  },
+  {
+   "week_start": "2026-06-16",
+   "counts": {
+    "aware": 10,
+    "impaired_awareness": 1
+   }
+  },
+  {
+   "week_start": "2026-06-23",
+   "counts": {
+    "aware": 5,
+    "unsure": 1,
+    "impaired_awareness": 1
+   }
+  },
+  {
+   "week_start": "2026-06-30",
+   "counts": {
+    "impaired_awareness": 5,
+    "unsure": 2,
+    "aware": 1
+   }
+  },
+  {
+   "week_start": "2026-07-07",
+   "counts": {
+    "aware": 10,
+    "impaired_awareness": 1
+   }
+  },
+  {
+   "week_start": "2026-07-14",
+   "counts": {
+    "aware": 8,
+    "impaired_awareness": 2,
+    "unsure": 1
+   }
+  },
+  {
+   "week_start": "2026-07-21",
+   "counts": {
+    "aware": 6,
+    "unsure": 2
+   }
+  },
+  {
+   "week_start": "2026-07-28",
+   "counts": {
+    "aware": 3,
+    "impaired_awareness": 2
+   }
+  },
+  {
+   "week_start": "2026-08-04",
+   "counts": {
+    "aware": 7,
+    "impaired_awareness": 2
+   }
+  },
+  {
+   "week_start": "2026-08-11",
+   "counts": {
+    "aware": 11,
+    "impaired_awareness": 1
+   }
+  },
+  {
+   "week_start": "2026-08-18",
+   "counts": {
+    "aware": 7,
+    "impaired_awareness": 1
+   }
+  }
+ ],
+ "medication": {
+  "current": [
+   {
+    "drug": "brivaracetam",
+    "dose_mg": 100.0,
+    "times": [
+     "09:00"
+    ]
+   },
+   {
+    "drug": "brivaracetam",
+    "dose_mg": 150.0,
+    "times": [
+     "21:00"
+    ]
+   },
+   {
+    "drug": "cenobamate",
+    "dose_mg": 350.0,
+    "times": [
+     "19:00"
+    ]
+   }
+  ],
+  "changes": [
+   {
+    "date": "2018-07-23",
+    "drug": "Levetiracetam",
+    "action": "start",
+    "detail": "1200/1200 mg am/pm",
+    "before_per_week": null,
+    "after_per_week": null,
+    "before_severe_per_week": null,
+    "after_severe_per_week": null,
+    "p_value": null,
+    "window_days": 56,
+    "verdict": "too early to tell"
+   },
+   {
+    "date": "2018-07-26",
+    "drug": "Lamotrigine",
+    "action": "start",
+    "detail": "25 mg pm; titrated to 100/100 by 17 Sep",
+    "before_per_week": null,
+    "after_per_week": null,
+    "before_severe_per_week": null,
+    "after_severe_per_week": null,
+    "p_value": null,
+    "window_days": 56,
+    "verdict": "too early to tell"
+   },
+   {
+    "date": "2018-07-30",
+    "drug": "Lacosamide",
+    "action": "ongoing",
+    "detail": "200/200 mg since 30 Jul 2018",
+    "before_per_week": null,
+    "after_per_week": null,
+    "before_severe_per_week": null,
+    "after_severe_per_week": null,
+    "p_value": null,
+    "window_days": 56,
+    "verdict": "too early to tell"
+   },
+   {
+    "date": "2018-10-02",
+    "drug": "Carbamazepine",
+    "action": "start",
+    "detail": "200 mg pm; titrated to 400/600 by 30 Oct",
+    "before_per_week": 1.0,
+    "after_per_week": 1.12,
+    "before_severe_per_week": 0.62,
+    "after_severe_per_week": 0.5,
+    "p_value": 0.8371,
+    "window_days": 56,
+    "verdict": "no clear change"
+   },
+   {
+    "date": "2018-10-02",
+    "drug": "Lamotrigine",
+    "action": "taper",
+    "detail": "50/50 then 25/25; stopped 16 Oct 2018",
+    "before_per_week": 1.0,
+    "after_per_week": 1.12,
+    "before_severe_per_week": 0.62,
+    "after_severe_per_week": 0.5,
+    "p_value": 0.8371,
+    "window_days": 56,
+    "verdict": "no clear change"
+   },
+   {
+    "date": "2018-10-19",
+    "drug": "Clobazam",
+    "action": "start",
+    "detail": "2.5 mg; 5 mg from 22 Oct; 2.5 mg from 1 Nov (too sleepy)",
+    "before_per_week": 1.38,
+    "after_per_week": 0.75,
+    "before_severe_per_week": 0.5,
+    "after_severe_per_week": 0.62,
+    "p_value": 0.2391,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2018-11-14",
+    "drug": "Lacosamide",
+    "action": "taper",
+    "detail": "100/200; 100/100 from 16 Dec; stopped 27 Jan 2019",
+    "before_per_week": 1.12,
+    "after_per_week": 0.62,
+    "before_severe_per_week": 0.38,
+    "after_severe_per_week": 0.5,
+    "p_value": 0.3042,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2018-12-02",
+    "drug": "Clobazam",
+    "action": "increase",
+    "detail": "5 mg daily",
+    "before_per_week": 0.88,
+    "after_per_week": 0.62,
+    "before_severe_per_week": 0.5,
+    "after_severe_per_week": 0.62,
+    "p_value": 0.5971,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2018-12-11",
+    "drug": "Levetiracetam",
+    "action": "change",
+    "detail": "liquid to tablets 1000 + 1250 mg",
+    "before_per_week": 1.0,
+    "after_per_week": 1.0,
+    "before_severe_per_week": 0.62,
+    "after_severe_per_week": 0.88,
+    "p_value": 1.0,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2019-01-28",
+    "drug": "Clobazam",
+    "action": "taper",
+    "detail": "4 mg; cluster of 3 seizures next day; 3.5 mg 11 Feb; 3 mg 25 Feb",
+    "before_per_week": 0.5,
+    "after_per_week": 2.75,
+    "before_severe_per_week": 0.5,
+    "after_severe_per_week": 1.12,
+    "p_value": 0.0003,
+    "window_days": 56,
+    "verdict": "clear rise"
+   },
+   {
+    "date": "2019-03-08",
+    "drug": "Clobazam",
+    "action": "increase",
+    "detail": "back to 5 mg due to increased seizures",
+    "before_per_week": 2.38,
+    "after_per_week": 3.38,
+    "before_severe_per_week": 1.12,
+    "after_severe_per_week": 1.75,
+    "p_value": 0.2369,
+    "window_days": 56,
+    "verdict": "no clear change"
+   },
+   {
+    "date": "2019-08-07",
+    "drug": "Prednisolone",
+    "action": "ongoing",
+    "detail": "20 mg (weaning attempted, halted); stopped 2 Dec 2019",
+    "before_per_week": 2.62,
+    "after_per_week": 5.0,
+    "before_severe_per_week": 1.12,
+    "after_severe_per_week": 1.62,
+    "p_value": 0.0147,
+    "window_days": 56,
+    "verdict": "no clear change"
+   },
+   {
+    "date": "2019-09-17",
+    "drug": "Carbamazepine",
+    "action": "increase",
+    "detail": "600/600; reverted 26 Sep (increase was non-epileptic events)",
+    "before_per_week": 4.62,
+    "after_per_week": 6.25,
+    "before_severe_per_week": 1.75,
+    "after_severe_per_week": 2.12,
+    "p_value": 0.1658,
+    "window_days": 56,
+    "verdict": "no clear change"
+   },
+   {
+    "date": "2019-12-29",
+    "drug": "Oxcarbazepine",
+    "action": "start",
+    "detail": "replaces carbamazepine: 600/900 wk1, 750/900 wk2, 900/900 after",
+    "before_per_week": 4.62,
+    "after_per_week": 4.5,
+    "before_severe_per_week": 1.75,
+    "after_severe_per_week": 1.12,
+    "p_value": 0.9139,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2020-02-17",
+    "drug": "Clobazam",
+    "action": "stop",
+    "detail": "2.5 mg for a week then stopped (daily use ends; rescue use continues)",
+    "before_per_week": 4.0,
+    "after_per_week": 5.5,
+    "before_severe_per_week": 1.0,
+    "after_severe_per_week": 1.5,
+    "p_value": 0.1713,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2020-04-29",
+    "drug": "Levetiracetam",
+    "action": "taper",
+    "detail": "wean 250 mg/week planned; halted 12 May for keto start",
+    "before_per_week": 5.38,
+    "after_per_week": 8.62,
+    "before_severe_per_week": 1.62,
+    "after_severe_per_week": 2.12,
+    "p_value": 0.0139,
+    "window_days": 56,
+    "verdict": "no clear change"
+   },
+   {
+    "date": "2020-06-20",
+    "drug": "Ketogenic diet",
+    "action": "start",
+    "detail": "full keto; stopped around Aug 2021",
+    "before_per_week": 8.38,
+    "after_per_week": 8.12,
+    "before_severe_per_week": 1.88,
+    "after_severe_per_week": 1.88,
+    "p_value": 0.8609,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2020-10-05",
+    "drug": "Oxcarbazepine",
+    "action": "increase",
+    "detail": "1050/1050",
+    "before_per_week": 9.25,
+    "after_per_week": 4.38,
+    "before_severe_per_week": 1.5,
+    "after_severe_per_week": 0.88,
+    "p_value": 0.0002,
+    "window_days": 56,
+    "verdict": "clear fall"
+   },
+   {
+    "date": "2020-10-05",
+    "drug": "Levetiracetam",
+    "action": "decrease",
+    "detail": "1000/1000",
+    "before_per_week": 9.25,
+    "after_per_week": 4.38,
+    "before_severe_per_week": 1.5,
+    "after_severe_per_week": 0.88,
+    "p_value": 0.0002,
+    "window_days": 56,
+    "verdict": "clear fall"
+   },
+   {
+    "date": "2020-12-18",
+    "drug": "VNS",
+    "action": "surgery",
+    "detail": "vagus nerve stimulator implanted",
+    "before_per_week": 5.88,
+    "after_per_week": 5.12,
+    "before_severe_per_week": 1.25,
+    "after_severe_per_week": 1.75,
+    "p_value": 0.5267,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2021-01-11",
+    "drug": "Levetiracetam",
+    "action": "decrease",
+    "detail": "750/750",
+    "before_per_week": 6.5,
+    "after_per_week": 8.12,
+    "before_severe_per_week": 1.62,
+    "after_severe_per_week": 2.12,
+    "p_value": 0.2308,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2021-10-18",
+    "drug": "Oxcarbazepine",
+    "action": "increase",
+    "detail": "1200/1200",
+    "before_per_week": 5.88,
+    "after_per_week": 6.0,
+    "before_severe_per_week": 3.25,
+    "after_severe_per_week": 2.5,
+    "p_value": 0.9238,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2021-10-25",
+    "drug": "Levetiracetam",
+    "action": "decrease",
+    "detail": "750/1000 (while oxcarbazepine increased)",
+    "before_per_week": 6.25,
+    "after_per_week": 5.88,
+    "before_severe_per_week": 3.5,
+    "after_severe_per_week": 2.12,
+    "p_value": 0.7656,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2021-11-06",
+    "drug": "Oxcarbazepine",
+    "action": "change",
+    "detail": "750/750/900 at 07:00, 14:00, 21:00 to smooth levels (seizures around 21:00 noted)",
+    "before_per_week": 6.75,
+    "after_per_week": 6.5,
+    "before_severe_per_week": 3.25,
+    "after_severe_per_week": 2.25,
+    "p_value": 0.8508,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2021-12-12",
+    "drug": "Levetiracetam",
+    "action": "change",
+    "detail": "500/500/500 three times daily",
+    "before_per_week": 6.0,
+    "after_per_week": 6.12,
+    "before_severe_per_week": 2.5,
+    "after_severe_per_week": 1.75,
+    "p_value": 0.9245,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2022-11-29",
+    "drug": "Brivaracetam",
+    "action": "start",
+    "detail": "replaces levetiracetam: 50/50/50; 50/50/100 from 29 Dec; 100/50/100 from 29 Jan 2023",
+    "before_per_week": 7.62,
+    "after_per_week": 5.88,
+    "before_severe_per_week": 2.75,
+    "after_severe_per_week": 2.25,
+    "p_value": 0.18,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2023-02-17",
+    "drug": "Cenobamate",
+    "action": "start",
+    "detail": "12.5 mg; 25 mg 3 Mar; 50 mg 17 Mar; 100 mg 31 Mar; 150 mg 14 Apr; 200 mg 28 Apr",
+    "before_per_week": 5.75,
+    "after_per_week": 5.12,
+    "before_severe_per_week": 2.75,
+    "after_severe_per_week": 2.12,
+    "p_value": 0.5966,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2023-04-28",
+    "drug": "Oxcarbazepine",
+    "action": "decrease",
+    "detail": "750/750/750 (cenobamate magnifies side effects: double vision)",
+    "before_per_week": 5.38,
+    "after_per_week": 4.25,
+    "before_severe_per_week": 2.0,
+    "after_severe_per_week": 1.25,
+    "p_value": 0.3086,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2023-05-16",
+    "drug": "Cenobamate",
+    "action": "increase",
+    "detail": "250 mg",
+    "before_per_week": 4.38,
+    "after_per_week": 3.88,
+    "before_severe_per_week": 1.62,
+    "after_severe_per_week": 1.12,
+    "p_value": 0.6289,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2023-05-17",
+    "drug": "Oxcarbazepine",
+    "action": "decrease",
+    "detail": "600/600/750; 600/600/600 from 25 May",
+    "before_per_week": 4.38,
+    "after_per_week": 4.0,
+    "before_severe_per_week": 1.62,
+    "after_severe_per_week": 1.12,
+    "p_value": 0.7209,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2023-06-20",
+    "drug": "Cenobamate",
+    "action": "increase",
+    "detail": "300 mg",
+    "before_per_week": 3.75,
+    "after_per_week": 5.62,
+    "before_severe_per_week": 0.88,
+    "after_severe_per_week": 1.88,
+    "p_value": 0.0838,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2023-06-20",
+    "drug": "Oxcarbazepine",
+    "action": "decrease",
+    "detail": "450/600/600; then 450/450/600 (4 Jul), 450/450/450 (18 Jul), 300/450/450 (5 Aug), 300/300/450 (19 Aug), 300/300/300 (4 Sep)",
+    "before_per_week": 3.75,
+    "after_per_week": 5.62,
+    "before_severe_per_week": 0.88,
+    "after_severe_per_week": 1.88,
+    "p_value": 0.0838,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2023-09-20",
+    "drug": "Cenobamate",
+    "action": "change",
+    "detail": "dose time 20:00 to 19:00 for morning tiredness",
+    "before_per_week": 6.12,
+    "after_per_week": 5.5,
+    "before_severe_per_week": 1.75,
+    "after_severe_per_week": 1.62,
+    "p_value": 0.6086,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2023-10-25",
+    "drug": "Cenobamate",
+    "action": "increase",
+    "detail": "350 mg",
+    "before_per_week": 6.25,
+    "after_per_week": 5.0,
+    "before_severe_per_week": 1.62,
+    "after_severe_per_week": 1.5,
+    "p_value": 0.2941,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2023-12-07",
+    "drug": "Oxcarbazepine",
+    "action": "decrease",
+    "detail": "300/150/300; 300/0/300 from 23 Dec",
+    "before_per_week": 5.0,
+    "after_per_week": 4.88,
+    "before_severe_per_week": 1.5,
+    "after_severe_per_week": 1.38,
+    "p_value": 0.917,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2024-01-21",
+    "drug": "Cenobamate",
+    "action": "change",
+    "detail": "split 150/200 am/pm; reverted to single 350 mg on 26 Jan",
+    "before_per_week": 4.75,
+    "after_per_week": 6.12,
+    "before_severe_per_week": 1.38,
+    "after_severe_per_week": 1.5,
+    "p_value": 0.2402,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2024-01-27",
+    "drug": "Oxcarbazepine",
+    "action": "decrease",
+    "detail": "150/0/300; 150/0/150 from 23 Feb",
+    "before_per_week": 4.38,
+    "after_per_week": 6.88,
+    "before_severe_per_week": 1.25,
+    "after_severe_per_week": 2.0,
+    "p_value": 0.0356,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2024-03-29",
+    "drug": "Cenobamate",
+    "action": "increase",
+    "detail": "400 mg (seizures up after oxcarbazepine reduction)",
+    "before_per_week": 6.62,
+    "after_per_week": 5.0,
+    "before_severe_per_week": 2.0,
+    "after_severe_per_week": 1.62,
+    "p_value": 0.179,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2024-05-08",
+    "drug": "Oxcarbazepine",
+    "action": "decrease",
+    "detail": "0/0/150",
+    "before_per_week": 5.75,
+    "after_per_week": 5.88,
+    "before_severe_per_week": 2.0,
+    "after_severe_per_week": 1.5,
+    "p_value": 0.923,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2024-07-21",
+    "drug": "Oxcarbazepine",
+    "action": "stop",
+    "detail": "stopped",
+    "before_per_week": 5.25,
+    "after_per_week": 6.12,
+    "before_severe_per_week": 1.25,
+    "after_severe_per_week": 1.62,
+    "p_value": 0.4669,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2024-10-19",
+    "drug": "Cenobamate",
+    "action": "decrease",
+    "detail": "350 mg",
+    "before_per_week": 5.62,
+    "after_per_week": 7.12,
+    "before_severe_per_week": 1.5,
+    "after_severe_per_week": 2.25,
+    "p_value": 0.2371,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2025-03-05",
+    "drug": "Cenobamate",
+    "action": "decrease",
+    "detail": "300 mg to reduce exhaustion",
+    "before_per_week": 7.0,
+    "after_per_week": 6.88,
+    "before_severe_per_week": 1.75,
+    "after_severe_per_week": 2.25,
+    "p_value": 0.9291,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2025-03-16",
+    "drug": "Cenobamate",
+    "action": "increase",
+    "detail": "back to 350 mg as seizures increased",
+    "before_per_week": 7.25,
+    "after_per_week": 6.62,
+    "before_severe_per_week": 1.88,
+    "after_severe_per_week": 2.0,
+    "p_value": 0.639,
+    "window_days": 56,
+    "verdict": "within usual range"
+   },
+   {
+    "date": "2025-09-01",
+    "drug": "Brivaracetam",
+    "action": "change",
+    "detail": "100/100/50 (more daytime cover; seizures from ~14:00 onwards) [date corrected from Excel day/month swap; also first day of drama-school term]",
+    "before_per_week": 5.38,
+    "after_per_week": 10.5,
+    "before_severe_per_week": 1.5,
+    "after_severe_per_week": 3.25,
+    "p_value": 0.0003,
+    "window_days": 56,
+    "verdict": "clear rise"
+   },
+   {
+    "date": "2025-09-06",
+    "drug": "Brivaracetam",
+    "action": "change",
+    "detail": "back to 100/50/100 (tiredness worse)",
+    "before_per_week": 5.38,
+    "after_per_week": 10.38,
+    "before_severe_per_week": 1.62,
+    "after_severe_per_week": 3.0,
+    "p_value": 0.0003,
+    "window_days": 56,
+    "verdict": "clear rise"
+   },
+   {
+    "date": "2025-09-10",
+    "drug": "Brivaracetam",
+    "action": "change",
+    "detail": "100/0/150: afternoon dose moved to evening to reduce daytime fatigue",
+    "before_per_week": 5.88,
+    "after_per_week": 9.38,
+    "before_severe_per_week": 1.75,
+    "after_severe_per_week": 2.75,
+    "p_value": 0.011,
+    "window_days": 56,
+    "verdict": "within usual range"
+   }
+  ],
+  "adherence_pct": null,
+  "missed_doses": 0,
+  "rescue_uses": [
+   {
+    "date": "2026-05-30",
+    "drug": "clobazam",
+    "dose_mg": 5.0,
+    "seizures_that_day": 1,
+    "seizures_next_3_days": 2
+   },
+   {
+    "date": "2026-06-01",
+    "drug": "clobazam",
+    "dose_mg": 2.5,
+    "seizures_that_day": 1,
+    "seizures_next_3_days": 2
+   },
+   {
+    "date": "2026-06-06",
+    "drug": "clobazam",
+    "dose_mg": 2.5,
+    "seizures_that_day": 2,
+    "seizures_next_3_days": 3
+   },
+   {
+    "date": "2026-06-08",
+    "drug": "clobazam",
+    "dose_mg": 2.5,
+    "seizures_that_day": 2,
+    "seizures_next_3_days": 4
+   },
+   {
+    "date": "2026-06-09",
+    "drug": "clobazam",
+    "dose_mg": 2.5,
+    "seizures_that_day": 1,
+    "seizures_next_3_days": 6
+   },
+   {
+    "date": "2026-06-11",
+    "drug": "clobazam",
+    "dose_mg": 5.0,
+    "seizures_that_day": 1,
+    "seizures_next_3_days": 4
+   },
+   {
+    "date": "2026-06-17",
+    "drug": "clobazam",
+    "dose_mg": 5.0,
+    "seizures_that_day": 4,
+    "seizures_next_3_days": 1
+   },
+   {
+    "date": "2026-06-22",
+    "drug": "clobazam",
+    "dose_mg": 5.0,
+    "seizures_that_day": 2,
+    "seizures_next_3_days": 2
+   },
+   {
+    "date": "2026-07-04",
+    "drug": "clobazam",
+    "dose_mg": 5.0,
+    "seizures_that_day": 1,
+    "seizures_next_3_days": 5
+   },
+   {
+    "date": "2026-07-05",
+    "drug": "clobazam",
+    "dose_mg": 5.0,
+    "seizures_that_day": 1,
+    "seizures_next_3_days": 4
+   },
+   {
+    "date": "2026-07-11",
+    "drug": "clobazam",
+    "dose_mg": 5.0,
+    "seizures_that_day": 1,
+    "seizures_next_3_days": 4
+   },
+   {
+    "date": "2026-07-19",
+    "drug": "clobazam",
+    "dose_mg": 5.0,
+    "seizures_that_day": 1,
+    "seizures_next_3_days": 2
+   },
+   {
+    "date": "2026-07-21",
+    "drug": "clobazam",
+    "dose_mg": 5.0,
+    "seizures_that_day": 1,
+    "seizures_next_3_days": 2
+   },
+   {
+    "date": "2026-07-27",
+    "drug": "clobazam",
+    "dose_mg": 5.0,
+    "seizures_that_day": 1,
+    "seizures_next_3_days": 3
+   },
+   {
+    "date": "2026-08-07",
+    "drug": "clobazam",
+    "dose_mg": 5.0,
+    "seizures_that_day": 1,
+    "seizures_next_3_days": 5
+   },
+   {
+    "date": "2026-08-13",
+    "drug": "clobazam",
+    "dose_mg": 5.0,
+    "seizures_that_day": 3,
+    "seizures_next_3_days": 4
+   }
+  ]
+ },
+ "wellbeing": {
+  "mean_stress": null,
+  "mean_fatigue": null,
+  "mean_sleep_hours": null,
+  "laep_total": null,
+  "nddie_total": null,
+  "nddie_item4_flag": null,
+  "gad7_total": null
+ },
+ "risk_factors": [
+  {
+   "factor": "Tonic-clonic seizures in window",
+   "present": false,
+   "detail": "0 in window; 0 in the last 12 months"
+  },
+  {
+   "factor": "Seizures during sleep",
+   "present": false,
+   "detail": "0 in the last 30 days (logged as asleep, or before 06:00)"
+  },
+  {
+   "factor": "Sleeps alone or unsupervised",
+   "present": false,
+   "detail": "from profile"
+  },
+  {
+   "factor": "Missed doses",
+   "present": null,
+   "detail": "dose logging not in use"
+  },
+  {
+   "factor": "Alcohol",
+   "present": null,
+   "detail": "not recorded"
+  },
+  {
+   "factor": "Frequency up more than 25% vs prior window",
+   "present": false,
+   "detail": "34.8 vs 47.9 per 28 days"
+  }
+ ],
+ "triggers": [
+  {
+   "trigger_id": "shower",
+   "trigger": "hot shower or bath",
+   "kind": "exposure",
+   "rung": "emerging",
+   "exposure_units": 51,
+   "unexposed_units": 2547,
+   "seizures_exposed": 27,
+   "seizures_unexposed": 764,
+   "rate_exposed": 0.5294,
+   "rate_unexposed": 0.3,
+   "ratio": 1.76,
+   "ci_low": 1.2,
+   "ci_high": 2.59,
+   "p_value": 0.001,
+   "p_adjusted": 0.003,
+   "tests_corrected_for": 6,
+   "confounder_note": "From seizure notes only: no days without the trigger are recorded, so this cannot rise above emerging until daily check-ins exist.",
+   "ratio_within_time_bands": null,
+   "units_to_next_verdict": null,
+   "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
+   "plain_text": "Of 51 seizures whose notes mention hot shower or bath, 53% were severe, 1.8\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
+   "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
+   "computed_at": "2026-10-31T13:36:01.331062Z",
+   "history": [
+    {
+     "at": "2026-10-31T13:36:01.331062Z",
+     "rung": "emerging"
+    }
+   ]
+  },
+  {
+   "trigger_id": "exercise",
+   "trigger": "exercise",
+   "kind": "exposure",
+   "rung": "emerging",
+   "exposure_units": 126,
+   "unexposed_units": 2472,
+   "seizures_exposed": 62,
+   "seizures_unexposed": 729,
+   "rate_exposed": 0.4921,
+   "rate_unexposed": 0.2949,
+   "ratio": 1.67,
+   "ci_low": 1.29,
+   "ci_high": 2.16,
+   "p_value": 0.001,
+   "p_adjusted": 0.003,
+   "tests_corrected_for": 6,
+   "confounder_note": "From seizure notes only: no days without the trigger are recorded, so this cannot rise above emerging until daily check-ins exist.",
+   "ratio_within_time_bands": null,
+   "units_to_next_verdict": null,
+   "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
+   "plain_text": "Of 126 seizures whose notes mention exercise, 49% were severe, 1.7\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
+   "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
+   "computed_at": "2026-10-31T13:36:01.375145Z",
+   "history": [
+    {
+     "at": "2026-10-31T13:36:01.375145Z",
+     "rung": "emerging"
+    }
+   ]
+  },
+  {
+   "trigger_id": "travel",
+   "trigger": "travel",
+   "kind": "exposure",
+   "rung": "emerging",
+   "exposure_units": 34,
+   "unexposed_units": 2564,
+   "seizures_exposed": 17,
+   "seizures_unexposed": 774,
+   "rate_exposed": 0.5,
+   "rate_unexposed": 0.3019,
+   "ratio": 1.66,
+   "ci_low": 1.02,
+   "ci_high": 2.68,
+   "p_value": 0.012,
+   "p_adjusted": 0.018,
+   "tests_corrected_for": 6,
+   "confounder_note": "From seizure notes only: no days without the trigger are recorded, so this cannot rise above emerging until daily check-ins exist.",
+   "ratio_within_time_bands": null,
+   "units_to_next_verdict": null,
+   "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
+   "plain_text": "Of 34 seizures whose notes mention travel, 50% were severe, 1.7\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
+   "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
+   "computed_at": "2026-10-31T13:36:01.361111Z",
+   "history": [
+    {
+     "at": "2026-10-31T13:36:01.361111Z",
+     "rung": "emerging"
+    }
+   ]
+  },
+  {
+   "trigger_id": "period",
+   "trigger": "period",
+   "kind": "exposure",
+   "rung": "emerging",
+   "exposure_units": 49,
+   "unexposed_units": 2549,
+   "seizures_exposed": 24,
+   "seizures_unexposed": 767,
+   "rate_exposed": 0.4898,
+   "rate_unexposed": 0.3009,
+   "ratio": 1.63,
+   "ci_low": 1.08,
+   "ci_high": 2.44,
+   "p_value": 0.007,
+   "p_adjusted": 0.014,
+   "tests_corrected_for": 6,
+   "confounder_note": "From seizure notes only: no days without the trigger are recorded, so this cannot rise above emerging until daily check-ins exist.",
+   "ratio_within_time_bands": null,
+   "units_to_next_verdict": null,
+   "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
+   "plain_text": "Of 49 seizures whose notes mention period, 49% were severe, 1.6\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
+   "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
+   "computed_at": "2026-10-31T13:36:01.346227Z",
+   "history": [
+    {
+     "at": "2026-10-31T13:36:01.346227Z",
+     "rung": "emerging"
+    }
+   ]
+  },
+  {
+   "trigger_id": "upset",
+   "trigger": "being upset",
+   "kind": "exposure",
+   "rung": "emerging",
+   "exposure_units": 66,
+   "unexposed_units": 2532,
+   "seizures_exposed": 29,
+   "seizures_unexposed": 762,
+   "rate_exposed": 0.4394,
+   "rate_unexposed": 0.3009,
+   "ratio": 1.46,
+   "ci_low": 1.01,
+   "ci_high": 2.12,
+   "p_value": 0.018,
+   "p_adjusted": 0.0216,
+   "tests_corrected_for": 6,
+   "confounder_note": "From seizure notes only: no days without the trigger are recorded, so this cannot rise above emerging until daily check-ins exist.",
+   "ratio_within_time_bands": null,
+   "units_to_next_verdict": null,
+   "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
+   "plain_text": "Of 66 seizures whose notes mention being upset, 44% were severe, 1.5\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
+   "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
+   "computed_at": "2026-10-31T13:36:01.391835Z",
+   "history": [
+    {
+     "at": "2026-10-31T13:36:01.391835Z",
+     "rung": "emerging"
+    }
+   ]
+  }
+ ],
+ "questions_for_clinician": [],
+ "sudep_last_discussed": null,
+ "logging_effort_note": "70 of 91 days have at least one entry (77%). Days without entries are not seizure-free.",
+ "wording_notes": [
+  "Seizure types use ILAE 2017 names; the person's own label is shown in brackets.",
+  "Unwitnessed or uncertain events are listed as unknown onset, possible seizure.",
+  "Rates are per 28 days; percentage change is against the prior window of the same length.",
+  "Days without any entry are not seizure-free; see the completeness line.",
+  "No seizure-free claim is made unless 12 months or three times the longest prior interval have passed.",
+  "Facts are reported, not diagnostic labels: a seizure of 5 minutes or more is listed as such."
+ ]
+}

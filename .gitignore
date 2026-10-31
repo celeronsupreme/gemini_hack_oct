@@ -1,0 +1,10 @@
+.env
+.env.local
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+apps/api/data/app.db*
+apps/api/data/test.db*
+apps/web/dev-dist/

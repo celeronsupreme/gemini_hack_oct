@@ -1,0 +1,14 @@
+{
+  "name": "@seizure/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "ts/index.ts",
+  "types": "ts/index.ts",
+  "scripts": {
+    "generate": "json2ts -i schema/contracts.schema.json -o ts/contracts.ts --no-additionalProperties && node scripts/postgen.mjs"
+  },
+  "devDependencies": {
+    "json-schema-to-typescript": "^15.0.4"
+  }
+}

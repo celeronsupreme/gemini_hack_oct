@@ -1,0 +1,48 @@
+date,drug,action,detail
+2018-07-23,Levetiracetam,start,1200/1200 mg am/pm
+2018-07-26,Lamotrigine,start,25 mg pm; titrated to 100/100 by 17 Sep
+2018-07-30,Lacosamide,ongoing,200/200 mg since 30 Jul 2018
+2018-10-02,Carbamazepine,start,200 mg pm; titrated to 400/600 by 30 Oct
+2018-10-02,Lamotrigine,taper,50/50 then 25/25; stopped 16 Oct 2018
+2018-10-19,Clobazam,start,2.5 mg; 5 mg from 22 Oct; 2.5 mg from 1 Nov (too sleepy)
+2018-11-14,Lacosamide,taper,100/200; 100/100 from 16 Dec; stopped 27 Jan 2019
+2018-12-02,Clobazam,increase,5 mg daily
+2018-12-11,Levetiracetam,change,liquid to tablets 1000 + 1250 mg
+2019-01-28,Clobazam,taper,4 mg; cluster of 3 seizures next day; 3.5 mg 11 Feb; 3 mg 25 Feb
+2019-03-08,Clobazam,increase,back to 5 mg due to increased seizures
+2019-08-07,Prednisolone,ongoing,"20 mg (weaning attempted, halted); stopped 2 Dec 2019"
+2019-09-17,Carbamazepine,increase,600/600; reverted 26 Sep (increase was non-epileptic events)
+2019-12-29,Oxcarbazepine,start,"replaces carbamazepine: 600/900 wk1, 750/900 wk2, 900/900 after"
+2020-02-17,Clobazam,stop,2.5 mg for a week then stopped (daily use ends; rescue use continues)
+2020-04-29,Levetiracetam,taper,wean 250 mg/week planned; halted 12 May for keto start
+2020-06-20,Ketogenic diet,start,full keto; stopped around Aug 2021
+2020-10-05,Oxcarbazepine,increase,1050/1050
+2020-10-05,Levetiracetam,decrease,1000/1000
+2020-12-18,VNS,surgery,vagus nerve stimulator implanted
+2021-01-11,Levetiracetam,decrease,750/750
+2021-10-18,Oxcarbazepine,increase,1200/1200
+2021-10-25,Levetiracetam,decrease,750/1000 (while oxcarbazepine increased)
+2021-11-06,Oxcarbazepine,change,"750/750/900 at 07:00, 14:00, 21:00 to smooth levels (seizures around 21:00 noted)"
+2021-12-12,Levetiracetam,change,500/500/500 three times daily
+2022-11-29,Brivaracetam,start,replaces levetiracetam: 50/50/50; 50/50/100 from 29 Dec; 100/50/100 from 29 Jan 2023
+2023-02-17,Cenobamate,start,12.5 mg; 25 mg 3 Mar; 50 mg 17 Mar; 100 mg 31 Mar; 150 mg 14 Apr; 200 mg 28 Apr
+2023-04-28,Oxcarbazepine,decrease,750/750/750 (cenobamate magnifies side effects: double vision)
+2023-05-16,Cenobamate,increase,250 mg
+2023-05-17,Oxcarbazepine,decrease,600/600/750; 600/600/600 from 25 May
+2023-06-20,Cenobamate,increase,300 mg
+2023-06-20,Oxcarbazepine,decrease,"450/600/600; then 450/450/600 (4 Jul), 450/450/450 (18 Jul), 300/450/450 (5 Aug), 300/300/450 (19 Aug), 300/300/300 (4 Sep)"
+2023-09-20,Cenobamate,change,dose time 20:00 to 19:00 for morning tiredness
+2023-10-25,Cenobamate,increase,350 mg
+2023-12-07,Oxcarbazepine,decrease,300/150/300; 300/0/300 from 23 Dec
+2024-01-21,Cenobamate,change,split 150/200 am/pm; reverted to single 350 mg on 26 Jan
+2024-01-27,Oxcarbazepine,decrease,150/0/300; 150/0/150 from 23 Feb
+2024-03-29,Cenobamate,increase,400 mg (seizures up after oxcarbazepine reduction)
+2024-05-08,Oxcarbazepine,decrease,0/0/150
+2024-07-21,Oxcarbazepine,stop,stopped
+2024-10-19,Cenobamate,decrease,350 mg
+2025-03-05,Cenobamate,decrease,300 mg to reduce exhaustion
+2025-03-16,Cenobamate,increase,back to 350 mg as seizures increased
+2025-09-01,Brivaracetam,change,100/100/50 (more daytime cover; seizures from ~14:00 onwards) [date corrected from Excel day/month swap; also first day of drama-school term]
+2025-09-06,Brivaracetam,change,back to 100/50/100 (tiredness worse)
+2025-09-10,Brivaracetam,change,100/0/150: afternoon dose moved to evening to reduce daytime fatigue
+2025-10-01,Current regimen,state,"brivaracetam 100 mg 09:00 + 150 mg 21:00; cenobamate 350 mg 19:00; clobazam 10 mg as needed for clusters; colecalciferol 25,000 IU every 4 weeks"

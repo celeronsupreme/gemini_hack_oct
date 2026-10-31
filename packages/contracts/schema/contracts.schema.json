@@ -1,0 +1,456 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://seizure-app.local/contracts.schema.json",
+  "title": "Contracts",
+  "description": "Single source of truth for every record exchanged between the web client, the API and the engine. Generated Pydantic and TypeScript types are derived from this file; edit here, then run `make contracts`.",
+  "type": "object",
+  "properties": {
+    "SeizureEvent": {"$ref": "#/$defs/SeizureEvent"},
+    "Dose": {"$ref": "#/$defs/Dose"},
+    "CheckIn": {"$ref": "#/$defs/CheckIn"},
+    "RiskNow": {"$ref": "#/$defs/RiskNow"},
+    "TriggerTest": {"$ref": "#/$defs/TriggerTest"},
+    "TriggerDefinition": {"$ref": "#/$defs/TriggerDefinition"},
+    "ClinicReport": {"$ref": "#/$defs/ClinicReport"},
+    "DiaryEntryBatch": {"$ref": "#/$defs/DiaryEntryBatch"},
+    "HourlyStats": {"$ref": "#/$defs/HourlyStats"},
+    "MonthlyStats": {"$ref": "#/$defs/MonthlyStats"},
+    "BaselineStats": {"$ref": "#/$defs/BaselineStats"},
+    "MedicationChange": {"$ref": "#/$defs/MedicationChange"},
+    "Profile": {"$ref": "#/$defs/Profile"},
+    "ImportPreview": {"$ref": "#/$defs/ImportPreview"},
+    "AnalysisAnswer": {"$ref": "#/$defs/AnalysisAnswer"},
+    "LiveToken": {"$ref": "#/$defs/LiveToken"}
+  },
+  "$defs": {
+    "SeizureType": {
+      "type": "string",
+      "description": "Plain-word type used in the app; mapped to ILAE 2017 names in the clinic report.",
+      "enum": ["aware", "staring", "impaired_awareness", "convulsive", "drop", "jerk", "unsure"]
+    },
+    "Awareness": {"type": "string", "enum": ["kept", "impaired", "lost", "unknown"]},
+    "ContextTag": {
+      "type": "string",
+      "enum": ["shower_bath", "hot", "cold", "exercise", "travel", "upset", "school", "unwell", "period", "hungry", "screen", "late_night", "other"]
+    },
+    "LoggedBy": {"type": "string", "enum": ["patient", "carer", "watch", "import"]},
+    "Confidence": {"type": "string", "enum": ["certain", "probable", "guess"]},
+    "Source": {"type": "string", "enum": ["tap", "voice", "import", "manual"]},
+    "Severity": {"type": "string", "enum": ["mild", "severe"]},
+    "RescueMed": {
+      "type": "object",
+      "properties": {
+        "drug": {"type": "string"},
+        "dose_mg": {"type": "number"},
+        "time": {"type": "string", "format": "date-time"}
+      },
+      "required": ["drug"],
+      "additionalProperties": false
+    },
+    "SeizureEvent": {
+      "type": "object",
+      "description": "One seizure. Only start_time is required; everything else may be filled later by voice or by hand.",
+      "properties": {
+        "id": {"type": "string"},
+        "start_time": {"type": "string", "format": "date-time"},
+        "duration_s": {"type": ["integer", "null"], "minimum": 0},
+        "duration_estimated": {"type": "boolean", "default": false},
+        "still_going": {"type": "boolean", "default": false},
+        "type": {"$ref": "#/$defs/SeizureType"},
+        "severity": {"$ref": "#/$defs/Severity"},
+        "awareness": {"$ref": "#/$defs/Awareness"},
+        "asleep_at_onset": {"type": ["boolean", "null"]},
+        "recovered_at": {"type": ["string", "null"], "format": "date-time"},
+        "injury": {"type": ["boolean", "null"]},
+        "incontinence": {"type": ["boolean", "null"]},
+        "rescue_med": {"anyOf": [{"$ref": "#/$defs/RescueMed"}, {"type": "null"}]},
+        "warning_before": {"type": ["boolean", "null"]},
+        "warning_text": {"type": ["string", "null"]},
+        "context_tags": {"type": "array", "items": {"$ref": "#/$defs/ContextTag"}, "default": []},
+        "notes": {"type": ["string", "null"]},
+        "original_label": {"type": ["string", "null"], "description": "The carer's own words for the type, kept verbatim."},
+        "who_logged": {"$ref": "#/$defs/LoggedBy"},
+        "confidence": {"$ref": "#/$defs/Confidence"},
+        "possibly_non_epileptic": {"type": "boolean", "default": false},
+        "source": {"$ref": "#/$defs/Source"},
+        "transcript_hash": {"type": ["string", "null"]}
+      },
+      "required": ["start_time", "type", "severity", "who_logged", "confidence", "source"],
+      "additionalProperties": false
+    },
+    "Dose": {
+      "type": "object",
+      "properties": {
+        "id": {"type": "string"},
+        "drug": {"type": "string"},
+        "dose_mg": {"type": "number"},
+        "scheduled_time": {"type": "string", "format": "date-time"},
+        "taken_time": {"type": ["string", "null"], "format": "date-time"},
+        "skipped": {"type": "boolean", "default": false},
+        "reason": {"type": ["string", "null"]},
+        "source": {"$ref": "#/$defs/Source"}
+      },
+      "required": ["drug", "dose_mg", "scheduled_time", "source"],
+      "additionalProperties": false
+    },
+    "CheckIn": {
+      "type": "object",
+      "description": "One per day. Every field optional; the daily_trigger_flags map carries one yes/no per trigger the lab is watching.",
+      "properties": {
+        "id": {"type": "string"},
+        "date": {"type": "string", "format": "date"},
+        "sleep_bed_time": {"type": ["string", "null"], "format": "date-time"},
+        "sleep_wake_time": {"type": ["string", "null"], "format": "date-time"},
+        "sleep_quality": {"type": ["integer", "null"], "minimum": 1, "maximum": 5},
+        "stress": {"type": ["integer", "null"], "minimum": 0, "maximum": 10},
+        "mood": {"type": ["integer", "null"], "minimum": 0, "maximum": 10},
+        "fatigue": {"type": ["integer", "null"], "minimum": 0, "maximum": 10},
+        "feeling_off": {"type": ["boolean", "null"]},
+        "unwell": {"type": ["boolean", "null"]},
+        "period_started": {"type": ["boolean", "null"]},
+        "alcohol_units": {"type": ["number", "null"], "minimum": 0},
+        "exercise": {"type": ["boolean", "null"]},
+        "big_event_tomorrow": {"type": ["boolean", "null"]},
+        "daily_trigger_flags": {"type": "object", "additionalProperties": {"type": "boolean"}, "default": {}},
+        "notes": {"type": ["string", "null"]},
+        "source": {"$ref": "#/$defs/Source"}
+      },
+      "required": ["date", "source"],
+      "additionalProperties": false
+    },
+    "RiskTier": {"type": "string", "enum": ["low", "medium", "high"]},
+    "RiskReason": {
+      "type": "object",
+      "properties": {
+        "factor": {"type": "string"},
+        "points": {"type": "number"},
+        "text": {"type": "string"}
+      },
+      "required": ["factor", "points", "text"],
+      "additionalProperties": false
+    },
+    "RiskNow": {
+      "type": "object",
+      "description": "Risk over the next few hours, computed by the engine. Never a prediction.",
+      "properties": {
+        "tier": {"$ref": "#/$defs/RiskTier"},
+        "score": {"type": "number"},
+        "computed_at": {"type": "string", "format": "date-time"},
+        "horizon_hours": {"type": "integer", "default": 3},
+        "reasons": {"type": "array", "items": {"$ref": "#/$defs/RiskReason"}},
+        "learning_mode": {"type": "boolean"},
+        "overnight_no_data": {"type": "boolean"},
+        "thresholds": {
+          "type": "object",
+          "properties": {"medium": {"type": "number"}, "high": {"type": "number"}},
+          "required": ["medium", "high"],
+          "additionalProperties": false
+        },
+        "disclaimer": {"type": "string"}
+      },
+      "required": ["tier", "score", "computed_at", "horizon_hours", "reasons", "learning_mode", "overnight_no_data", "thresholds", "disclaimer"],
+      "additionalProperties": false
+    },
+    "TriggerKind": {"type": "string", "enum": ["symptom", "exposure", "daily_factor"]},
+    "TriggerRung": {
+      "type": "string",
+      "description": "The five-rung ladder. Lack of data is never a verdict.",
+      "enum": ["watching", "emerging", "supported", "not_seen_so_far", "unlikely"]
+    },
+    "TriggerDefinition": {
+      "type": "object",
+      "properties": {
+        "id": {"type": "string"},
+        "name": {"type": "string"},
+        "kind": {"$ref": "#/$defs/TriggerKind"},
+        "context_tag": {"anyOf": [{"$ref": "#/$defs/ContextTag"}, {"type": "null"}]},
+        "checkin_field": {"type": ["string", "null"]},
+        "keywords": {"type": "array", "items": {"type": "string"}, "default": []},
+        "literature_prior": {"type": "boolean", "default": false},
+        "window_hours": {"type": "number", "default": 6},
+        "archived": {"type": "boolean", "default": false},
+        "created_at": {"type": "string", "format": "date-time"}
+      },
+      "required": ["name", "kind"],
+      "additionalProperties": false
+    },
+    "TriggerTest": {
+      "type": "object",
+      "properties": {
+        "trigger_id": {"type": "string"},
+        "trigger": {"type": "string"},
+        "kind": {"$ref": "#/$defs/TriggerKind"},
+        "rung": {"$ref": "#/$defs/TriggerRung"},
+        "exposure_units": {"type": "integer"},
+        "unexposed_units": {"type": "integer"},
+        "seizures_exposed": {"type": "integer"},
+        "seizures_unexposed": {"type": "integer"},
+        "rate_exposed": {"type": "number"},
+        "rate_unexposed": {"type": "number"},
+        "ratio": {"type": ["number", "null"]},
+        "ci_low": {"type": ["number", "null"]},
+        "ci_high": {"type": ["number", "null"]},
+        "p_value": {"type": ["number", "null"]},
+        "p_adjusted": {"type": ["number", "null"]},
+        "tests_corrected_for": {"type": "integer"},
+        "confounder_note": {"type": ["string", "null"]},
+        "ratio_within_time_bands": {"type": ["number", "null"]},
+        "units_to_next_verdict": {"type": ["integer", "null"]},
+        "next_step": {"type": "string"},
+        "plain_text": {"type": "string"},
+        "method": {"type": "string"},
+        "computed_at": {"type": "string", "format": "date-time"},
+        "history": {"type": "array", "items": {"type": "object", "properties": {"at": {"type": "string", "format": "date-time"}, "rung": {"$ref": "#/$defs/TriggerRung"}}, "required": ["at", "rung"], "additionalProperties": false}, "default": []}
+      },
+      "required": ["trigger_id", "trigger", "kind", "rung", "exposure_units", "unexposed_units", "seizures_exposed", "seizures_unexposed", "rate_exposed", "rate_unexposed", "tests_corrected_for", "next_step", "plain_text", "method", "computed_at"],
+      "additionalProperties": false
+    },
+    "TypeCount": {
+      "type": "object",
+      "properties": {
+        "type": {"$ref": "#/$defs/SeizureType"},
+        "ilae_name": {"type": "string"},
+        "patient_label": {"type": ["string", "null"]},
+        "count": {"type": "integer"},
+        "per_28_days": {"type": "number"},
+        "prior_count": {"type": "integer"},
+        "median_duration_s": {"type": ["number", "null"]},
+        "max_duration_s": {"type": ["number", "null"]},
+        "pct_asleep": {"type": ["number", "null"]},
+        "pct_witnessed": {"type": ["number", "null"]},
+        "count_ge_5min": {"type": "integer"},
+        "last_seen": {"type": ["string", "null"], "format": "date"}
+      },
+      "required": ["type", "ilae_name", "count", "per_28_days", "prior_count", "count_ge_5min"],
+      "additionalProperties": false
+    },
+    "MedicationChange": {
+      "type": "object",
+      "properties": {
+        "date": {"type": "string", "format": "date"},
+        "drug": {"type": "string"},
+        "action": {"type": "string"},
+        "detail": {"type": "string"},
+        "before_per_week": {"type": ["number", "null"]},
+        "after_per_week": {"type": ["number", "null"]},
+        "before_severe_per_week": {"type": ["number", "null"]},
+        "after_severe_per_week": {"type": ["number", "null"]},
+        "p_value": {"type": ["number", "null"]},
+        "window_days": {"type": "integer", "default": 56},
+        "verdict": {"type": "string", "description": "Plain text: within usual range / clear rise / clear fall / too early to tell"}
+      },
+      "required": ["date", "drug", "action", "detail", "verdict"],
+      "additionalProperties": false
+    },
+    "ClinicReport": {
+      "type": "object",
+      "properties": {
+        "generated_at": {"type": "string", "format": "date-time"},
+        "window_start": {"type": "string", "format": "date"},
+        "window_end": {"type": "string", "format": "date"},
+        "prior_window_start": {"type": "string", "format": "date"},
+        "prior_window_end": {"type": "string", "format": "date"},
+        "completeness": {
+          "type": "object",
+          "properties": {
+            "days_with_any_entry": {"type": "integer"},
+            "days_in_window": {"type": "integer"},
+            "pct_events_logged_within_24h": {"type": ["number", "null"]},
+            "logged_by": {"type": "object", "additionalProperties": {"type": "integer"}}
+          },
+          "required": ["days_with_any_entry", "days_in_window", "logged_by"],
+          "additionalProperties": false
+        },
+        "headline": {
+          "type": "object",
+          "properties": {
+            "total": {"type": "integer"},
+            "per_28_days": {"type": "number"},
+            "prior_per_28_days": {"type": "number"},
+            "pct_change": {"type": ["number", "null"]},
+            "seizure_days": {"type": "integer"},
+            "days_since_last_convulsive": {"type": ["integer", "null"]},
+            "longest_seizure_free_run_days": {"type": "integer"},
+            "last_seizure_by_type": {"type": "object", "additionalProperties": {"type": "string"}}
+          },
+          "required": ["total", "per_28_days", "prior_per_28_days", "seizure_days", "longest_seizure_free_run_days", "last_seizure_by_type"],
+          "additionalProperties": false
+        },
+        "by_type": {"type": "array", "items": {"$ref": "#/$defs/TypeCount"}},
+        "cluster_definition": {"type": "string"},
+        "cluster_days": {"type": "integer"},
+        "events_ge_5min": {"type": "integer"},
+        "nocturnal_count_30d": {"type": "integer"},
+        "convulsive_count_12m": {"type": "integer"},
+        "weekly_by_type": {"type": "array", "items": {"type": "object", "properties": {"week_start": {"type": "string", "format": "date"}, "counts": {"type": "object", "additionalProperties": {"type": "integer"}}}, "required": ["week_start", "counts"], "additionalProperties": false}},
+        "medication": {
+          "type": "object",
+          "properties": {
+            "current": {"type": "array", "items": {"type": "object", "properties": {"drug": {"type": "string"}, "dose_mg": {"type": "number"}, "times": {"type": "array", "items": {"type": "string"}}}, "required": ["drug", "dose_mg", "times"], "additionalProperties": false}},
+            "changes": {"type": "array", "items": {"$ref": "#/$defs/MedicationChange"}},
+            "adherence_pct": {"type": ["number", "null"]},
+            "missed_doses": {"type": "integer"},
+            "rescue_uses": {"type": "array", "items": {"type": "object", "properties": {"date": {"type": "string", "format": "date"}, "drug": {"type": "string"}, "dose_mg": {"type": ["number", "null"]}, "seizures_that_day": {"type": "integer"}, "seizures_next_3_days": {"type": "integer"}}, "required": ["date", "drug", "seizures_that_day", "seizures_next_3_days"], "additionalProperties": false}}
+          },
+          "required": ["current", "changes", "missed_doses", "rescue_uses"],
+          "additionalProperties": false
+        },
+        "wellbeing": {
+          "type": "object",
+          "properties": {
+            "mean_stress": {"type": ["number", "null"]},
+            "mean_fatigue": {"type": ["number", "null"]},
+            "mean_sleep_hours": {"type": ["number", "null"]},
+            "laep_total": {"type": ["integer", "null"]},
+            "nddie_total": {"type": ["integer", "null"]},
+            "nddie_item4_flag": {"type": ["boolean", "null"]},
+            "gad7_total": {"type": ["integer", "null"]}
+          },
+          "additionalProperties": false
+        },
+        "risk_factors": {"type": "array", "items": {"type": "object", "properties": {"factor": {"type": "string"}, "present": {"type": ["boolean", "null"]}, "detail": {"type": "string"}}, "required": ["factor", "present", "detail"], "additionalProperties": false}},
+        "triggers": {"type": "array", "items": {"$ref": "#/$defs/TriggerTest"}},
+        "questions_for_clinician": {"type": "array", "items": {"type": "string"}},
+        "sudep_last_discussed": {"type": ["string", "null"], "format": "date"},
+        "logging_effort_note": {"type": "string"},
+        "wording_notes": {"type": "array", "items": {"type": "string"}}
+      },
+      "required": ["generated_at", "window_start", "window_end", "prior_window_start", "prior_window_end", "completeness", "headline", "by_type", "cluster_definition", "cluster_days", "events_ge_5min", "nocturnal_count_30d", "convulsive_count_12m", "weekly_by_type", "medication", "wellbeing", "risk_factors", "triggers", "questions_for_clinician", "logging_effort_note", "wording_notes"],
+      "additionalProperties": false
+    },
+    "DiaryEntryBatch": {
+      "type": "object",
+      "description": "What the extractor returns from a voice transcript.",
+      "properties": {
+        "seizures": {"type": "array", "items": {"$ref": "#/$defs/SeizureEvent"}},
+        "doses": {"type": "array", "items": {"$ref": "#/$defs/Dose"}},
+        "checkin": {"anyOf": [{"$ref": "#/$defs/CheckIn"}, {"type": "null"}]},
+        "symptoms": {"type": "array", "items": {"type": "object", "properties": {"text": {"type": "string"}, "time": {"type": "string", "format": "date-time"}}, "required": ["text", "time"], "additionalProperties": false}},
+        "open_questions": {"type": "array", "items": {"type": "string"}},
+        "transcript_hash": {"type": ["string", "null"]}
+      },
+      "required": ["seizures", "doses", "symptoms", "open_questions"],
+      "additionalProperties": false
+    },
+    "HourlyStats": {
+      "type": "object",
+      "properties": {
+        "window_start": {"type": "string", "format": "date"},
+        "window_end": {"type": "string", "format": "date"},
+        "total": {"type": "integer"},
+        "by_hour": {"type": "array", "items": {"type": "object", "properties": {"hour": {"type": "integer"}, "all": {"type": "integer"}, "severe": {"type": "integer"}, "share_pct": {"type": "number"}, "vs_flat": {"type": "number"}}, "required": ["hour", "all", "severe", "share_pct", "vs_flat"], "additionalProperties": false}},
+        "peak_hour": {"type": ["integer", "null"]},
+        "share_12_22_pct": {"type": "number"},
+        "share_00_08_pct": {"type": "number"},
+        "scheduled_dose_times": {"type": "array", "items": {"type": "string"}}
+      },
+      "required": ["window_start", "window_end", "total", "by_hour", "share_12_22_pct", "share_00_08_pct", "scheduled_dose_times"],
+      "additionalProperties": false
+    },
+    "MonthlyStats": {
+      "type": "object",
+      "properties": {
+        "months": {"type": "array", "items": {"type": "object", "properties": {"month": {"type": "string"}, "all": {"type": "integer"}, "severe": {"type": "integer"}, "days_with_seizure": {"type": "integer"}, "median_duration_s": {"type": ["number", "null"]}}, "required": ["month", "all", "severe", "days_with_seizure"], "additionalProperties": false}},
+        "medication_changes": {"type": "array", "items": {"$ref": "#/$defs/MedicationChange"}}
+      },
+      "required": ["months", "medication_changes"],
+      "additionalProperties": false
+    },
+    "BaselineStats": {
+      "type": "object",
+      "properties": {
+        "as_of": {"type": "string", "format": "date"},
+        "window_days": {"type": "integer"},
+        "per_day_mean": {"type": "number"},
+        "per_week_mean": {"type": "number"},
+        "weekly_p25": {"type": "number"},
+        "weekly_median": {"type": "number"},
+        "weekly_p75": {"type": "number"},
+        "weekly_p90": {"type": "number"},
+        "daily_p90": {"type": "number"},
+        "this_week": {"type": "number"},
+        "this_week_verdict": {"type": "string"},
+        "severe_per_week_mean": {"type": "number"},
+        "pct_days_with_seizure": {"type": "number"},
+        "events_in_window": {"type": "integer"},
+        "learning_mode": {"type": "boolean"}
+      },
+      "required": ["as_of", "window_days", "per_day_mean", "per_week_mean", "weekly_p25", "weekly_median", "weekly_p75", "weekly_p90", "daily_p90", "this_week", "this_week_verdict", "severe_per_week_mean", "pct_days_with_seizure", "events_in_window", "learning_mode"],
+      "additionalProperties": false
+    },
+    "MedicationSchedule": {
+      "type": "object",
+      "properties": {
+        "drug": {"type": "string"},
+        "dose_mg": {"type": "number"},
+        "times": {"type": "array", "items": {"type": "string", "description": "HH:MM local"}},
+        "half_life_hours": {"type": ["number", "null"]},
+        "as_needed": {"type": "boolean", "default": false}
+      },
+      "required": ["drug", "dose_mg", "times"],
+      "additionalProperties": false
+    },
+    "Profile": {
+      "type": "object",
+      "properties": {
+        "display_name": {"type": "string"},
+        "role": {"type": "string", "enum": ["self", "carer"]},
+        "seizure_type_labels": {"type": "object", "additionalProperties": {"$ref": "#/$defs/SeizureType"}, "description": "patient label -> app type"},
+        "medications": {"type": "array", "items": {"$ref": "#/$defs/MedicationSchedule"}},
+        "rescue_plan": {"type": "object", "properties": {"rescue_drug": {"type": ["string", "null"]}, "rescue_dose_mg": {"type": ["number", "null"]}, "emergency_minutes_convulsive": {"type": "integer", "default": 5}, "emergency_minutes_other": {"type": "integer", "default": 10}, "call": {"type": "array", "items": {"type": "string"}}, "notes": {"type": ["string", "null"]}}, "additionalProperties": false},
+        "sleeps_alone": {"type": ["boolean", "null"]},
+        "photosensitive": {"type": ["boolean", "null"]},
+        "menstruating": {"type": ["boolean", "null"]},
+        "sleep_window": {"type": "object", "properties": {"start": {"type": "string"}, "end": {"type": "string"}}, "required": ["start", "end"], "additionalProperties": false},
+        "custom_vocabulary": {"type": "array", "items": {"type": "string"}},
+        "consent": {"type": "object", "properties": {"gemini_processing": {"type": "boolean"}, "accepted_at": {"type": ["string", "null"], "format": "date-time"}}, "required": ["gemini_processing"], "additionalProperties": false}
+      },
+      "required": ["display_name", "role", "medications", "rescue_plan", "sleep_window", "custom_vocabulary", "consent"],
+      "additionalProperties": false
+    },
+    "ImportPreview": {
+      "type": "object",
+      "properties": {
+        "job_id": {"type": "string"},
+        "source_name": {"type": "string"},
+        "sheets": {"type": "array", "items": {"type": "string"}},
+        "column_mapping": {"type": "object", "additionalProperties": {"type": "string"}},
+        "assumptions": {"type": "array", "items": {"type": "string"}},
+        "warnings": {"type": "array", "items": {"type": "string"}},
+        "preview_rows": {"type": "array", "items": {"$ref": "#/$defs/SeizureEvent"}},
+        "total_rows": {"type": "integer"},
+        "label_mapping": {"type": "object", "additionalProperties": {"$ref": "#/$defs/SeizureType"}}
+      },
+      "required": ["job_id", "source_name", "sheets", "column_mapping", "assumptions", "warnings", "preview_rows", "total_rows", "label_mapping"],
+      "additionalProperties": false
+    },
+    "AnalysisAnswer": {
+      "type": "object",
+      "properties": {
+        "question": {"type": "string"},
+        "answer": {"type": "string"},
+        "numbers": {"type": "object", "additionalProperties": true},
+        "chart_png_base64": {"type": ["string", "null"]},
+        "caveats": {"type": "array", "items": {"type": "string"}},
+        "model": {"type": "string"},
+        "mock": {"type": "boolean"}
+      },
+      "required": ["question", "answer", "numbers", "caveats", "model", "mock"],
+      "additionalProperties": false
+    },
+    "LiveToken": {
+      "type": "object",
+      "properties": {
+        "token": {"type": "string"},
+        "model": {"type": "string"},
+        "expires_at": {"type": "string", "format": "date-time"},
+        "system_instruction": {"type": "string"},
+        "custom_vocabulary": {"type": "array", "items": {"type": "string"}},
+        "tool_declarations": {"type": "array", "items": {"type": "object", "additionalProperties": true}},
+        "mock": {"type": "boolean"}
+      },
+      "required": ["token", "model", "expires_at", "system_instruction", "custom_vocabulary", "tool_declarations", "mock"],
+      "additionalProperties": false
+    }
+  }
+}

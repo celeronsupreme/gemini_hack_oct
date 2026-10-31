@@ -1,0 +1,11 @@
+{
+ "question": "Has moving the afternoon dose helped?",
+ "answer": "Mock fixture: see /analysis/ask with Gemini configured.",
+ "numbers": {},
+ "chart_png_base64": null,
+ "caveats": [
+  "fixture"
+ ],
+ "model": "mock",
+ "mock": true
+}

@@ -1,0 +1,250 @@
+[
+ {
+  "trigger_id": "shower",
+  "trigger": "hot shower or bath",
+  "kind": "exposure",
+  "rung": "emerging",
+  "exposure_units": 51,
+  "unexposed_units": 2547,
+  "seizures_exposed": 27,
+  "seizures_unexposed": 764,
+  "rate_exposed": 0.5294,
+  "rate_unexposed": 0.3,
+  "ratio": 1.76,
+  "ci_low": 1.2,
+  "ci_high": 2.59,
+  "p_value": 0.001,
+  "p_adjusted": 0.003,
+  "tests_corrected_for": 6,
+  "confounder_note": "From seizure notes only: no days without the trigger are recorded, so this cannot rise above emerging until daily check-ins exist.",
+  "ratio_within_time_bands": null,
+  "units_to_next_verdict": null,
+  "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
+  "plain_text": "Of 51 seizures whose notes mention hot shower or bath, 53% were severe, 1.8\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
+  "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
+  "computed_at": "2026-10-31T13:36:01.331062Z",
+  "history": [
+   {
+    "at": "2026-10-31T13:36:01.331062Z",
+    "rung": "emerging"
+   }
+  ]
+ },
+ {
+  "trigger_id": "exercise",
+  "trigger": "exercise",
+  "kind": "exposure",
+  "rung": "emerging",
+  "exposure_units": 126,
+  "unexposed_units": 2472,
+  "seizures_exposed": 62,
+  "seizures_unexposed": 729,
+  "rate_exposed": 0.4921,
+  "rate_unexposed": 0.2949,
+  "ratio": 1.67,
+  "ci_low": 1.29,
+  "ci_high": 2.16,
+  "p_value": 0.001,
+  "p_adjusted": 0.003,
+  "tests_corrected_for": 6,
+  "confounder_note": "From seizure notes only: no days without the trigger are recorded, so this cannot rise above emerging until daily check-ins exist.",
+  "ratio_within_time_bands": null,
+  "units_to_next_verdict": null,
+  "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
+  "plain_text": "Of 126 seizures whose notes mention exercise, 49% were severe, 1.7\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
+  "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
+  "computed_at": "2026-10-31T13:36:01.375145Z",
+  "history": [
+   {
+    "at": "2026-10-31T13:36:01.375145Z",
+    "rung": "emerging"
+   }
+  ]
+ },
+ {
+  "trigger_id": "travel",
+  "trigger": "travel",
+  "kind": "exposure",
+  "rung": "emerging",
+  "exposure_units": 34,
+  "unexposed_units": 2564,
+  "seizures_exposed": 17,
+  "seizures_unexposed": 774,
+  "rate_exposed": 0.5,
+  "rate_unexposed": 0.3019,
+  "ratio": 1.66,
+  "ci_low": 1.02,
+  "ci_high": 2.68,
+  "p_value": 0.012,
+  "p_adjusted": 0.018,
+  "tests_corrected_for": 6,
+  "confounder_note": "From seizure notes only: no days without the trigger are recorded, so this cannot rise above emerging until daily check-ins exist.",
+  "ratio_within_time_bands": null,
+  "units_to_next_verdict": null,
+  "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
+  "plain_text": "Of 34 seizures whose notes mention travel, 50% were severe, 1.7\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
+  "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
+  "computed_at": "2026-10-31T13:36:01.361111Z",
+  "history": [
+   {
+    "at": "2026-10-31T13:36:01.361111Z",
+    "rung": "emerging"
+   }
+  ]
+ },
+ {
+  "trigger_id": "period",
+  "trigger": "period",
+  "kind": "exposure",
+  "rung": "emerging",
+  "exposure_units": 49,
+  "unexposed_units": 2549,
+  "seizures_exposed": 24,
+  "seizures_unexposed": 767,
+  "rate_exposed": 0.4898,
+  "rate_unexposed": 0.3009,
+  "ratio": 1.63,
+  "ci_low": 1.08,
+  "ci_high": 2.44,
+  "p_value": 0.007,
+  "p_adjusted": 0.014,
+  "tests_corrected_for": 6,
+  "confounder_note": "From seizure notes only: no days without the trigger are recorded, so this cannot rise above emerging until daily check-ins exist.",
+  "ratio_within_time_bands": null,
+  "units_to_next_verdict": null,
+  "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
+  "plain_text": "Of 49 seizures whose notes mention period, 49% were severe, 1.6\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
+  "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
+  "computed_at": "2026-10-31T13:36:01.346227Z",
+  "history": [
+   {
+    "at": "2026-10-31T13:36:01.346227Z",
+    "rung": "emerging"
+   }
+  ]
+ },
+ {
+  "trigger_id": "upset",
+  "trigger": "being upset",
+  "kind": "exposure",
+  "rung": "emerging",
+  "exposure_units": 66,
+  "unexposed_units": 2532,
+  "seizures_exposed": 29,
+  "seizures_unexposed": 762,
+  "rate_exposed": 0.4394,
+  "rate_unexposed": 0.3009,
+  "ratio": 1.46,
+  "ci_low": 1.01,
+  "ci_high": 2.12,
+  "p_value": 0.018,
+  "p_adjusted": 0.0216,
+  "tests_corrected_for": 6,
+  "confounder_note": "From seizure notes only: no days without the trigger are recorded, so this cannot rise above emerging until daily check-ins exist.",
+  "ratio_within_time_bands": null,
+  "units_to_next_verdict": null,
+  "next_step": "Log it at check-in on ordinary days too, so it can be tested properly.",
+  "plain_text": "Of 66 seizures whose notes mention being upset, 44% were severe, 1.5\u00d7 the rate for your other seizures. This comes from seizure notes only, so there is no comparison with days it did not happen; treat it as a lead.",
+  "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
+  "computed_at": "2026-10-31T13:36:01.391835Z",
+  "history": [
+   {
+    "at": "2026-10-31T13:36:01.391835Z",
+    "rung": "emerging"
+   }
+  ]
+ },
+ {
+  "trigger_id": "screens",
+  "trigger": "screens",
+  "kind": "exposure",
+  "rung": "watching",
+  "exposure_units": 10,
+  "unexposed_units": 2588,
+  "seizures_exposed": 2,
+  "seizures_unexposed": 789,
+  "rate_exposed": 0.2,
+  "rate_unexposed": 0.3049,
+  "ratio": 0.66,
+  "ci_low": 0.16,
+  "ci_high": 2.63,
+  "p_value": 0.8621,
+  "p_adjusted": 0.8621,
+  "tests_corrected_for": 6,
+  "confounder_note": "From seizure notes only: no days without the trigger are recorded, so this cannot rise above emerging until daily check-ins exist.",
+  "ratio_within_time_bands": null,
+  "units_to_next_verdict": 10,
+  "next_step": "Keep logging screens; I will ask about it at check-in.",
+  "plain_text": "No sign of an effect yet (0.7\u00d7 within 6 h across 10 exposures), but 10 more exposures are needed before that means anything.",
+  "method": "notes only: share of severe seizures among seizures whose note mentions this vs the rest; no seizure-free comparison exists, so the rung is capped at emerging",
+  "computed_at": "2026-10-31T13:36:01.406786Z",
+  "history": [
+   {
+    "at": "2026-10-31T13:36:01.406786Z",
+    "rung": "watching"
+   }
+  ]
+ },
+ {
+  "trigger_id": "swimming",
+  "trigger": "swimming",
+  "kind": "daily_factor",
+  "rung": "watching",
+  "exposure_units": 0,
+  "unexposed_units": 0,
+  "seizures_exposed": 0,
+  "seizures_unexposed": 0,
+  "rate_exposed": 0.0,
+  "rate_unexposed": 0.0,
+  "ratio": null,
+  "ci_low": null,
+  "ci_high": null,
+  "p_value": null,
+  "p_adjusted": null,
+  "tests_corrected_for": 1,
+  "confounder_note": null,
+  "ratio_within_time_bands": null,
+  "units_to_next_verdict": 10,
+  "next_step": "Keep logging swimming; I will ask about it at check-in.",
+  "plain_text": "Logged. 0 days so far; not enough to compare yet. 10 more days and I can start comparing.",
+  "method": "daily factor: no check-ins yet",
+  "computed_at": "2026-10-31T13:36:01.419996Z",
+  "history": [
+   {
+    "at": "2026-10-31T13:36:01.419996Z",
+    "rung": "watching"
+   }
+  ]
+ },
+ {
+  "trigger_id": "stress",
+  "trigger": "stress",
+  "kind": "daily_factor",
+  "rung": "watching",
+  "exposure_units": 0,
+  "unexposed_units": 0,
+  "seizures_exposed": 0,
+  "seizures_unexposed": 0,
+  "rate_exposed": 0.0,
+  "rate_unexposed": 0.0,
+  "ratio": null,
+  "ci_low": null,
+  "ci_high": null,
+  "p_value": null,
+  "p_adjusted": null,
+  "tests_corrected_for": 1,
+  "confounder_note": null,
+  "ratio_within_time_bands": null,
+  "units_to_next_verdict": 10,
+  "next_step": "Keep logging stress; I will ask about it at check-in.",
+  "plain_text": "Logged. 0 days so far; not enough to compare yet. 10 more days and I can start comparing.",
+  "method": "daily factor: no check-ins yet",
+  "computed_at": "2026-10-31T13:36:01.420070Z",
+  "history": [
+   {
+    "at": "2026-10-31T13:36:01.420070Z",
+    "rung": "watching"
+   }
+  ]
+ }
+]

@@ -1,0 +1,38 @@
+{
+ "seizures": [
+  {
+   "id": null,
+   "start_time": "2026-08-24T18:20:00+01:00",
+   "duration_s": 90,
+   "duration_estimated": true,
+   "still_going": false,
+   "type": "impaired_awareness",
+   "severity": "severe",
+   "awareness": "impaired",
+   "asleep_at_onset": null,
+   "recovered_at": null,
+   "injury": null,
+   "incontinence": null,
+   "rescue_med": null,
+   "warning_before": null,
+   "warning_text": null,
+   "context_tags": [
+    "shower_bath"
+   ],
+   "notes": "She had one about quarter past seven, maybe a minute and a half, her head went to the side, she'd just got out of the shower.",
+   "original_label": null,
+   "who_logged": "carer",
+   "confidence": "guess",
+   "possibly_non_epileptic": false,
+   "source": "voice",
+   "transcript_hash": "b11f46d5f69daa5b"
+  }
+ ],
+ "doses": [],
+ "checkin": null,
+ "symptoms": [],
+ "open_questions": [
+  "Was the last dose taken on time?"
+ ],
+ "transcript_hash": "b11f46d5f69daa5b"
+}

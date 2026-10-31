@@ -1,0 +1,1 @@
+{ "name": "seizure-app", "private": true, "scripts": { "web": "pnpm --filter @seizure/web dev", "build:web": "pnpm --filter @seizure/web build", "contracts": "pnpm --filter @seizure/contracts generate" } }
